@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="3D Vista Dashboard" />
+    <meta name="3D Vista" content="3D Vista Dashboard" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>3D Vista Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.0/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.0/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+      color="#7952b3"
+    />
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#7952b3" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body class="text-white v-dark">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-auto col-logo">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo-realtio--white.svg" />
+            </a>
+          </div>
+          <div class="col-auto col-info">
+            <div class="badge">TOUR 22 <img src="images/icon-view.svg" /></div>
+          </div>
+          <div class="col col-menu--item">
+            <ul class="nav general-nav main-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">INFORMATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PANORAMAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">PHOTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VIDEO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AGENT INFO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SKINS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PUBLISH</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-icon" title="Share">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12.617"
+                      height="14"
+                      viewBox="0 0 12.617 14"
+                    >
+                      <path
+                        d="M2889.758,1563.26a2,2,0,0,1-2-1.995,1.841,1.841,0,0,1,.027-.289,1.551,1.551,0,0,1,.078-.306l-5.3-3.08a1.98,1.98,0,0,1-.648.481,1.8,1.8,0,0,1-.787.184,2,2,0,1,1,.77-3.832,2.1,2.1,0,0,1,.665.455l5.3-3.045a1.2,1.2,0,0,1-.078-.28,1.757,1.757,0,0,1-.027-.3,1.911,1.911,0,0,1,.587-1.417,2,2,0,0,1,2.826,2.826,1.912,1.912,0,0,1-1.418.586,2.357,2.357,0,0,1-.778-.131,1.493,1.493,0,0,1-.639-.429l-5.3,2.94a3.23,3.23,0,0,1,.062.324,2.336,2.336,0,0,1,.026.306,1.493,1.493,0,0,1-.026.263c-.018.093-.038.186-.062.28l5.3,3.01a2,2,0,0,1,1.417-.543,2,2,0,1,1,0,3.99Zm0-11.06a.927.927,0,1,0-.673-.271A.913.913,0,0,0,2889.758,1552.2Zm-8.627,5.005a.926.926,0,1,0-.674-.271A.915.915,0,0,0,2881.131,1557.2Zm8.627,5.005a.927.927,0,1,0-.673-.271A.913.913,0,0,0,2889.758,1562.21Z"
+                        transform="translate(-2879.136 -1549.26)"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-auto col-user">
+            <button class="btn btn-thumb btn-outline-light" title="New Tour">
+              <span>
+                <img src="images/user-thumb.svg" />
+              </span>
+              JOHN DOE
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="content">
+        <div class="container-fluid h-100">
+          <div class="row justify-content-between h-100">
+            <!-- List -->
+            <div class="col-md-5 position-relative col-shadow--light">
+              <div class="box-scroll">
+                <h6>Photoalbum content:</h6>
+                <div class="row row-cols-2">
+                  <div class="col">
+                    <div class="card card-item card-item--new">
+                      <div class="card-img-overlay card-img-overlay--ui">
+                        <!-- UI CARD TOP-->
+                        <div class="card-img-overlay--ui---top">
+                          <button
+                            class="btn btn-icon btn-outline-light"
+                            title="New Tour"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="11"
+                                height="11.002"
+                                viewBox="0 0 11 11.002"
+                              >
+                                <g transform="translate(-601.989 -2709.472)">
+                                  <path
+                                    d="M.5,11h-1V0h1Z"
+                                    transform="translate(607.49 2709.472)"
+                                  />
+                                  <path
+                                    d="M11,.5H0v-1H11Z"
+                                    transform="translate(601.989 2714.973)"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a
+                      href="#"
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="card-img-overlay card-img-overlay--title">
+                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END List -->
+            <!-- Gallery -->
+            <div class="col-md-7 col-center col-padding--fix">
+              <div class="gallery-carousel">
+                <div class="carousel-cell">
+                  <div
+                    class="card card-item card-item--full"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                  >
+                    <img
+                      src="https://picsum.photos/id/42/1024/700"
+                      class="card-img"
+                      alt="thumbnail_example"
+                    />
+                    <div class="card-img-overlay card-img-overlay--title">
+                      <ul class="nav nav-overlay--row">
+                        <li class="nav-item">
+                          <button
+                            class="btn btn-icon btn-outline-overlay"
+                            title="Add Photo"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25.574"
+                                height="18"
+                                viewBox="0 0 25.574 18"
+                              >
+                                <g transform="translate(-4385.934 -3505.705)">
+                                  <path
+                                    d="M4387.558,3523.705a1.645,1.645,0,0,1-1.624-1.625v-14.6a1.91,1.91,0,0,1,1.772-1.772h8.474l1.28,1.28h9.74a1.622,1.622,0,0,1,.934.284,1.735,1.735,0,0,1,.617.7h-11.7l-1.28-1.28h-8.061a.76.76,0,0,0-.788.788v14.456a.691.691,0,0,0,.136.443,1.165,1.165,0,0,0,.357.295l3.14-12.437h20.957l-3.1,12.27a1.586,1.586,0,0,1-.593.9,1.773,1.773,0,0,1-1.054.3Zm.884-.985h18.894l2.835-11.5h-18.894Zm0,0,2.835-11.5Zm-1.524-14.751v0Z"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            class="btn btn-icon btn-outline-overlay"
+                            title="Add Photo"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18.133"
+                                height="23"
+                                viewBox="0 0 18.133 23"
+                              >
+                                <g transform="translate(-4437.143 -3502.205)">
+                                  <path
+                                    d="M4438.665,3507.622c-.185,0-.326,0-.466,0a1.011,1.011,0,0,1-1.049-1.041c-.01-.342-.008-.684,0-1.025a1.016,1.016,0,0,1,1.092-1.077c1.59,0,3.18,0,4.77,0h.463c0-.211-.007-.379,0-.547a1.709,1.709,0,0,1,1.741-1.714c.656-.016,1.314-.014,1.971,0a1.711,1.711,0,0,1,1.76,1.735c.007.157,0,.314,0,.527h.444q2.344,0,4.69,0a1.047,1.047,0,0,1,1.193,1.177c0,.263,0,.525,0,.788a1.04,1.04,0,0,1-1.15,1.18c-.1,0-.207.01-.367.017v.506q0,7.056,0,14.111a2.692,2.692,0,0,1-1.734,2.732,3.42,3.42,0,0,1-1.151.2c-3.1.016-6.2.012-9.3.008a2.742,2.742,0,0,1-2.9-2.925q-.006-7.054,0-14.111Zm.791.016v.391q0,7.131,0,14.262a1.958,1.958,0,0,0,2.146,2.12q4.609,0,9.219,0a1.965,1.965,0,0,0,2.144-2.163q0-7.092,0-14.184v-.426Zm6.792-2.37c-2.442,0-4.884-.005-7.327,0-1.115,0-.974-.16-.982.98,0,.583,0,.583.594.583q7.446,0,14.891,0c1.237,0,1.047.174,1.06-1.059.006-.487-.016-.5-.515-.5Zm-1.942-.819h3.817c.138-1.053-.2-1.446-1.226-1.446h-1.418C4444.5,3503,4444.151,3503.428,4444.306,3504.449Z"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    d="M4443.351,3516.018q0-2.225,0-4.45a.917.917,0,0,1,.026-.387c.063-.123.194-.272.311-.286a.476.476,0,0,1,.374.2.865.865,0,0,1,.076.454q.006,4.47,0,8.94c0,.1.03.242-.024.306-.111.135-.273.321-.407.316a.507.507,0,0,1-.338-.365c-.041-.535-.02-1.075-.02-1.613Q4443.35,3517.573,4443.351,3516.018Z"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    d="M4449.073,3515.993q0,2.226,0,4.45a.8.8,0,0,1-.018.349c-.072.132-.206.318-.315.319a.682.682,0,0,1-.412-.258c-.063-.072-.044-.225-.044-.342q0-4.509,0-9.019a.64.64,0,0,1,.064-.377.591.591,0,0,1,.4-.218c.108.005.239.172.3.3a.948.948,0,0,1,.024.388Q4449.075,3513.788,4449.073,3515.993Z"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </button>
+                        </li>
+                      </ul>
+                      <h3 class="card-title">IMAGE1</h3>
+                      <p class="card-text">Enter optional description...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END Gallery -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      $(".gallery-carousel").flickity({
+        // options
+        cellAlign: "left",
+        contain: true,
+      });
+    </script>
+  </body>
+</html>

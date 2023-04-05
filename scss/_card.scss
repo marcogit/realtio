@@ -1,0 +1,255 @@
+.card {
+  transition: $tr-normal;
+
+  &.card-item {
+    border-color: transparent;
+    border-radius: $br-normal;
+    overflow: hidden;
+    background: transparent;
+    margin-bottom: $s-medium;
+
+    &:hover {
+      background: $primary;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .card-img-overlay {
+      padding: $s-small $s-padding;
+
+      &.card-img-overlay--title {
+        top: inherit;
+        padding-top: $s-medium;
+        background: $gradient-black;
+        transition: $tr-normal;
+
+        .card-text {
+          color: $primary;
+          font-size: $font-s-base;
+        }
+
+        .card-title {
+          font-size: $font-title-small;
+          font-weight: $f-weight--regular;
+          text-transform: uppercase;
+          margin-bottom: 0;
+        }
+      }
+
+      &.card-img-overlay--ui {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $black-med;
+        transition: $tr-normal;
+        opacity: 0;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          background: $gradient-black;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+
+        .card-img-overlay--ui---top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: $s-normal;
+          position: relative;
+          z-index: 2;
+        }
+
+        .card-img-overlay--ui---fixed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: $s-medium;
+          padding: $s-small $s-padding;
+          z-index: 3;
+        }
+
+        .card-img-overlay--ui---bottom {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: $s-medium;
+          padding: $s-small 0;
+          z-index: 3;
+        }
+      }
+    }
+
+    &:hover {
+      .card-img-overlay {
+        &.card-img-overlay--ui {
+          opacity: 1;
+        }
+        &.card-img-overlay--title {
+          opacity: 0;
+        }
+      }
+    }
+
+    &.card-item--new {
+      background: transparent;
+      border-color: $white-med;
+      padding-bottom: 59%;
+
+      .card-img-overlay {
+        &.card-img-overlay--ui {
+          opacity: 1;
+          background: transparent;
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        border-color: $primary;
+      }
+    }
+
+    &.card-item--photo {
+      background: $dark;
+      .card-item--photo---touch {
+        fill: $primary;
+        position: absolute;
+        top: 0;
+        right: $s-small;
+        opacity: 0;
+        transition: $tr-normal;
+      }
+      img {
+        opacity: 1;
+        transition: $tr-normal;
+      }
+      .card-img-overlay {
+        &.card-img-overlay--title {
+          color: white;
+        }
+      }
+      &:hover {
+        border: solid 1px $primary;
+        .card-item--photo---touch {
+          opacity: 1;
+        }
+        img {
+          opacity: 0.1;
+        }
+        .card-img-overlay {
+          &.card-img-overlay--title {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &.card-item--full {
+      background: $dark;
+
+      .card-img-overlay {
+        padding: $s-normal;
+
+        .nav {
+          position: absolute;
+          right: $s-small;
+          bottom: $s-small;
+        }
+
+        .card-title {
+          font-size: $font-title-card-small;
+          max-width: 75%;
+        }
+
+        .card-text {
+          max-width: 75%;
+          color: $white-med;
+        }
+      }
+
+      &:hover {
+        background: transparent;
+
+        .card-img-overlay {
+          &.card-img-overlay--title {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &.card-login {
+    background: rgba($color: $black-grey, $alpha: 0.8);
+    box-shadow: $sh-card;
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+
+    .card-title {
+      font-size: $font-title-card;
+      font-weight: $f-weight--regular;
+    }
+
+    p {
+      font-size: $font-nav;
+      color: $dark-grey;
+    }
+
+    .card-body {
+      padding: $s-big $s-extra $s-extra;
+    }
+  }
+
+  &.card-upload {
+    width: 400px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    border-color: transparent;
+    .card-header {
+      text-align: center;
+      border-color: transparent;
+      font-size: $font-nav;
+      color: $white-med;
+    }
+    .separator {
+      span {
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .btn {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

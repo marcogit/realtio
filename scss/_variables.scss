@@ -1,0 +1,85 @@
+// breakpoints 
+$break-xs: 0;
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+
+// Colors
+$primary: #E47828;
+$secondary: #04A3E1;
+$facebook: #1877F2;
+$my-light: #F7F0D4;
+$base: #293944;
+$dark: #22262C;
+$grey: #DDDDDD;
+$dark-grey: #999999;
+$black-grey: #3D444F;
+$white-small: rgba($color: white, $alpha: 0.1);
+$white-med: rgba($color: white, $alpha: 0.5);
+$black-med: rgba($color: black, $alpha: 0.7);
+$black-normal: rgba($color: black, $alpha: 0.3);
+$black-min: rgba($color: black, $alpha: 0.2);
+$secondary-none: rgba($color: $secondary, $alpha: 0);
+
+$hover-brightness: 1.2;
+
+// Sizes
+$s-min: 5px;
+$s-small: 7.5px;
+$s-padding: 12px;
+$s-normal: 16px;
+$s-medium: 30px;
+$s-big: 45px;
+$s-extra: 60px;
+$s-button: 50px;
+$s-extra-big: 90px;
+$s-extra-bottom: 120px;
+$s-gr--bottom: 110px;
+
+$s-min--n: -5px;
+$s-small--n: -7.5px;
+$s-normal--n: -15px;
+$s-medium--n: -30px;
+$s-big--n: -45px;
+$s-extra--n: -60px;
+$s-extra-big--n: -90px;
+
+$logo-header: 107px;
+$s-header: 64px;
+
+// Fonts
+$font-brand: 'Poppins', sans-serif;
+$f-weight--regular: 400;
+$f-weight--bold: 600;
+
+$font-title: 40px;
+$font-title-card: 34px;
+$font-title-card-small: 24px;
+$font-title-small: 15px;
+$font-nav: 14px;
+$font-input: 20px;
+$font-s-base: 13px;
+$font-s-small: 12px;
+
+$lh-title: 1em;
+$lh-base: 1.6em;
+
+// Radius
+$br-small: 4px;
+$br-normal: 10px;
+$br-max: 300px;
+
+// Transitions
+$tr-normal: all 0.2s ease;
+
+// Shadows
+$sh-card:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$sh-header: $black-med 0px 5px 60px;
+
+// Gradients
+$gradient-dark: linear-gradient(180deg, $dark 0%, $base 100%);
+$gradient-black: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+$gradient-bottom: linear-gradient(0deg, rgba(41,57,68,1) 0%, rgba(41,57,68,0.8) 50%, rgba(41,57,68,0) 100%);
+$gradient-top: linear-gradient(0deg, rgba(34,38,44,0) 0%, rgba(34,38,44,0.8) 50%, rgba(34,38,44,1) 100%);

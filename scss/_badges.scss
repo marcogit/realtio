@@ -1,0 +1,9 @@
+.badge {
+  font-weight: $f-weight--regular;
+  gap: $s-small;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-nav;
+}

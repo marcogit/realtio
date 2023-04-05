@@ -1,0 +1,45 @@
+header {
+  &.main-header {
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: $sh-header;
+    z-index: 500;
+    border-bottom: $white-small solid 1px;
+
+    .navbar-brand {
+      width: $logo-header;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .col-menu {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .col-menu--item {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    .col-user {
+      text-align: right;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

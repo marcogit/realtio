@@ -1,0 +1,87 @@
+.form-control {
+  font-size: $font-input;
+
+  &.form-transparent {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  &.form-control-lg {
+    font-size: $font-title;
+  }
+
+  &.form-control-sm {
+    font-size: $font-nav;
+  }
+
+  &.form-year {
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-text {
+      display: none;
+    }
+  }
+}
+
+.form-label,
+.form-check-label {
+  font-size: $font-s-small;
+  color: $white-med;
+}
+
+.input-group {
+  .form-control {
+    min-width: $s-medium;
+  }
+
+  .btn {
+    padding-left: $s-small;
+    padding-right: $s-small;
+    margin-left: 0 !important;
+  }
+}
+
+.form-check-input {
+  border-color: $secondary;
+  background-color: transparent;
+
+  &:checked {
+    border-color: $secondary;
+  }
+}
+
+textarea {
+  &.form-control-sm {
+    min-height: 100px;
+  }
+}
+
+.upload_dropZone {
+  background: linear-gradient(to right, transparent 33%, $white-med 0%) top/14px
+      1px repeat-x,
+    /* top */ linear-gradient(transparent 33%, $white-med 0%) right/1px 14px
+      repeat-y,
+    /* right */ linear-gradient(to right, transparent 33%, $white-med 0%)
+      bottom/14px 1px repeat-x,
+    /* bottom */ linear-gradient(transparent 33%, $white-med 0%) left/1px 14px
+      repeat-y; /* left */
+  padding: $s-extra;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: $br-normal;
+  transition: $tr-normal;
+
+  &.highlight {
+    background: $black-normal;
+  }
+
+  .upload_gallery {
+    margin-top: $s-normal;
+    img {
+        max-width: 100%;
+        border: solid 1px $white-med;
+        border-radius: $br-small;
+    }
+  }
+}

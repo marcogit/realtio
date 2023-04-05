@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="3D Vista Dashboard" />
+    <meta name="3D Vista" content="3D Vista Dashboard" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>3D Vista Dashboard</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.0/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.0/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+      color="#7952b3"
+    />
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body class="text-white v-dark">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-auto col-logo">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo-realtio--white.svg" />
+            </a>
+          </div>
+          <div class="col-auto col-info">
+            <div class="badge">TOUR 22 <img src="images/icon-view.svg" /></div>
+          </div>
+          <div class="col col-menu--item">
+            <ul class="nav general-nav main-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INFORMATION</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PANORAMAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PHOTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VIDEO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AGENT INFO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SKINS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PUBLISH</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-icon" title="Share">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12.617"
+                      height="14"
+                      viewBox="0 0 12.617 14"
+                    >
+                      <path
+                        d="M2889.758,1563.26a2,2,0,0,1-2-1.995,1.841,1.841,0,0,1,.027-.289,1.551,1.551,0,0,1,.078-.306l-5.3-3.08a1.98,1.98,0,0,1-.648.481,1.8,1.8,0,0,1-.787.184,2,2,0,1,1,.77-3.832,2.1,2.1,0,0,1,.665.455l5.3-3.045a1.2,1.2,0,0,1-.078-.28,1.757,1.757,0,0,1-.027-.3,1.911,1.911,0,0,1,.587-1.417,2,2,0,0,1,2.826,2.826,1.912,1.912,0,0,1-1.418.586,2.357,2.357,0,0,1-.778-.131,1.493,1.493,0,0,1-.639-.429l-5.3,2.94a3.23,3.23,0,0,1,.062.324,2.336,2.336,0,0,1,.026.306,1.493,1.493,0,0,1-.026.263c-.018.093-.038.186-.062.28l5.3,3.01a2,2,0,0,1,1.417-.543,2,2,0,1,1,0,3.99Zm0-11.06a.927.927,0,1,0-.673-.271A.913.913,0,0,0,2889.758,1552.2Zm-8.627,5.005a.926.926,0,1,0-.674-.271A.915.915,0,0,0,2881.131,1557.2Zm8.627,5.005a.927.927,0,1,0-.673-.271A.913.913,0,0,0,2889.758,1562.21Z"
+                        transform="translate(-2879.136 -1549.26)"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-auto col-user">
+            <button class="btn btn-thumb btn-outline-light" title="New Tour">
+              <span>
+                <img src="images/user-thumb.svg" />
+              </span>
+              JOHN DOE
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="content">
+        <div class="container-fluid h-100">
+          <div class="row justify-content-between h-100">
+            <!-- FORM -->
+            <div class="col-md-5 position-relative col-shadow--light">
+              <div class="box-scroll">
+                <form>
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <label for="input-a-01" class="form-label"
+                        >Your name:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="input-a-01"
+                      />
+                    </div>
+                    <div class="col-12 mb-3">
+                      <label for="input-a-02" class="form-label"
+                        >Subtitle:</label
+                      >
+                      <input type="text" class="form-control" id="input-a-02" />
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="input-a-03" class="form-label">Type:</label>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle btn-full"
+                          type="button"
+                          id="input-a-03"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          House
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="input-a-03">
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 01</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 02</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 03</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="input-a-04" class="form-label"
+                        >Contract:</label
+                      >
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle btn-full"
+                          type="button"
+                          id="input-a-04"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Sale
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="input-a-04">
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 01</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 02</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 03</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="input-a-05" class="form-label">Price:</label>
+                      <div class="input-group mb-3">
+                        <input
+                          type="number"
+                          class="form-control form-control-sm"
+                        />
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          id="input-a-05"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          €
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="input-a-05">
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 01</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 02</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 03</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="input-a-06" class="form-label">sqft:</label>
+                      <div class="input-group mb-3">
+                        <input
+                          type="number"
+                          class="form-control form-control-sm"
+                        />
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          id="input-a-06"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          sqft
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="input-a-06">
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 01</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 02</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#" role="button"
+                              >Option 03</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- TEXAREA -->
+                    <div class="col-12 mb-3 col-ia">
+                      <label for="input-a-07" class="form-label"
+                        >Description:</label
+                      >
+                      <textarea
+                        class="form-control form-control-sm"
+                        oninput="auto_grow(this)"
+                      >
+                      </textarea>
+                      <script>
+                        function auto_grow(element) {
+                          element.style.height = "5px";
+                          element.style.height = element.scrollHeight + "px";
+                        }
+                      </script>
+                      <button class="btn btn-outline-add btn-icon">
+                        <span>AI</span>
+                      </button>
+                      <!-- <button class="btn btn-outline-add btn-icon">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="10.962" height="8" viewBox="0 0 10.962 8"><path d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z" transform="translate(-5718.772 -3082.787)"/></svg></span>
+                      </button> -->
+                    </div>
+                    <!-- ADD PHOTO -->
+                    <div class="col-12 mb-3">
+                      <button
+                        class="btn btn-icon btn-outline-add"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11"
+                            height="11.002"
+                            viewBox="0 0 11 11.002"
+                          >
+                            <g transform="translate(-601.989 -2709.472)">
+                              <path
+                                d="M.5,11h-1V0h1Z"
+                                transform="translate(607.49 2709.472)"
+                              />
+                              <path
+                                d="M11,.5H0v-1H11Z"
+                                transform="translate(601.989 2714.973)"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                        Add photo
+                      </button>
+                    </div>
+                    <div class="col-12">
+                      <!-- Accordion -->
+                      <div class="accordion" id="accordionForm">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
+                              Property Details: (optional)
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionForm"
+                          >
+                            <div class="accordion-body">
+                              <!-- Form-->
+                              <div
+                                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+                              >
+                                <div class="col mb-3">
+                                  <label for="sub-form-01" class="form-label"
+                                    >Date:</label
+                                  >
+                                  <input
+                                    id="sub-form-01"
+                                    class="form-control form-control-sm form-year"
+                                    type="month"
+                                    name="sub-form-01"
+                                    value="2001-06"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="sub-form-02" class="form-label"
+                                    >Floors:</label
+                                  >
+                                  <input
+                                    id="sub-form-02"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-02"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-03" class="form-label"
+                                    >Bedrooms:</label
+                                  >
+                                  <input
+                                    id="sub-form-03"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-03"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-04" class="form-label"
+                                    >Bathrooms:</label
+                                  >
+                                  <input
+                                    id="sub-form-04"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-04"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-05" class="form-label"
+                                    >Concierge:</label
+                                  >
+                                  <input
+                                    id="sub-form-05"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-05"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="sub-form-06" class="form-label"
+                                    >Half Bath:</label
+                                  >
+                                  <input
+                                    id="sub-form-01"
+                                    class="form-control form-control-sm form-year"
+                                    type="month"
+                                    name="sub-form-01"
+                                    value="2001-06"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="sub-form-07" class="form-label"
+                                    >Garage:</label
+                                  >
+                                  <input
+                                    id="sub-form-07"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-07"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-08" class="form-label"
+                                    >Basement:</label
+                                  >
+                                  <input
+                                    id="sub-form-08"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-08"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-09" class="form-label"
+                                    >Kitchen:</label
+                                  >
+                                  <input
+                                    id="sub-form-09"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-09"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-10" class="form-label"
+                                    >Dressing R.:</label
+                                  >
+                                  <input
+                                    id="sub-form-10"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-10"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="sub-form-11" class="form-label"
+                                    >Terrace:</label
+                                  >
+                                  <input
+                                    id="sub-form-01"
+                                    class="form-control form-control-sm form-year"
+                                    type="month"
+                                    name="sub-form-01"
+                                    value="2001-06"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="sub-form-12" class="form-label"
+                                    >Gym:</label
+                                  >
+                                  <input
+                                    id="sub-form-12"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-12"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-13" class="form-label"
+                                    >SPA:</label
+                                  >
+                                  <input
+                                    id="sub-form-13"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-13"
+                                    value="2"
+                                  />
+                                </div>
+                                <div class="col mb-3">
+                                  <label for="input-a-14" class="form-label"
+                                    >S. Pool:</label
+                                  >
+                                  <input
+                                    id="sub-form-14"
+                                    class="form-control form-control-sm"
+                                    type="number"
+                                    name="sub-form-14"
+                                    value="2"
+                                  />
+                                </div>
+                              </div>
+                              <!-- END Form-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END Accordion -->
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- END FORM -->
+            <!-- MAP -->
+            <div class="col-md-7 col-padding--fix">
+              <div class="col-map">
+                <div class="col-map--header">
+                  <label for="input-a-01" class="form-label">Location:</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      id="input-a-01"
+                      placeholder="Enter property address..."
+                    />
+                    <button class="btn btn-outline-secondary">
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10.962" height="8" viewBox="0 0 10.962 8">
+                          <path d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z" transform="translate(-5718.772 -3082.787)"/>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-map--body">
+                  <div class="ratio ratio-100">
+                    <div class="ratio-avise">PLEASE ENTER AN ADDRESS</div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.990287762106!2d-3.626291222406732!3d37.18094109705587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1680166848739!5m2!1ses!2ses"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="col-map--footer">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Show the exact location
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END MAP -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

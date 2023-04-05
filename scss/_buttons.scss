@@ -1,0 +1,145 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $s-min;
+  font-size: $font-nav;
+  transition: $tr-normal;
+  border-radius: $br-normal;
+  
+  &.btn-primary {
+    background: $primary;
+    color: white !important;
+    border-color: $primary;
+
+    &:hover {
+      filter: brightness(0.85);
+    }
+  }
+
+  &.btn-facebook {
+    background: $facebook;
+    color: white !important;
+    border-color: $facebook;
+
+    &:hover {
+      filter: brightness(0.85);
+    }
+  }
+
+  &.btn-google {
+    background: white;
+    color: $dark-grey !important;
+    border-color: white;
+
+    &:hover {
+      filter: brightness(0.85);
+    }
+  }
+
+  &.btn-icon {
+    padding: 0;
+    color: $white-med;
+
+    span {
+      border: solid 1px;
+      border-radius: $br-max;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $s-button;
+      height: $s-button;
+      padding: 0;
+      transition: $tr-normal;
+
+      svg {
+        transition: $tr-normal;
+      }
+    }
+
+    &.btn-outline-light {
+      border-color: transparent;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &.btn-outline-primary {
+      border-color: transparent;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &.btn-outline-danger {
+      border-color: transparent;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &.btn-icon--small {
+      span {
+        border: none;
+        width: $s-normal;
+        height: $s-normal;
+      }
+    }
+  }
+
+  &.btn-thumb {
+    border-color: transparent;
+    span {
+      display: inline-flex;
+      overflow: hidden;
+      border-radius: $br-max;
+      line-height: 0;
+      width: 34px;
+      height: 34px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &.btn-full {
+    width: 100%;
+  }
+
+  &.dropdown-toggle {
+    font-size: $font-nav;
+    justify-content: space-between;
+
+    &::after {
+      width: 9px;
+      height: 5px;
+      border: none;
+      background-image: url(/images/icon-ch--down-color.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: $s-min;
+
+  li {
+    a {
+      font-size: $font-nav;
+      border-radius: $br-small;
+      color: $dark-grey;
+      padding: $s-small;
+
+      &:hover {
+        background: $primary;
+        color: white !important;
+      }
+    }
+  }
+}

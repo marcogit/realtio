@@ -1,0 +1,502 @@
+body {
+  &.v-dark {
+    background: $gradient-dark;
+    color: white;
+
+    &::after {
+      background: $gradient-top;
+    }
+
+    &.bg-dark--image {
+      &::before {
+        background: url(../images/bg-body.jpg) no-repeat center center;
+        background-size: cover;
+      }
+    }
+
+    &.bg-dark--login {
+      &::before {
+        background: url(../images/bg-body.jpg) no-repeat center center;
+        background-size: cover;
+        opacity: 1;
+      }
+    }
+
+    h6 {
+      color: $white-med;
+    }
+
+    a {
+      color: $primary;
+
+      &:hover {
+        color: $primary;
+        bac: brightness($hover-brightness);
+      }
+    }
+
+    .nav-link {
+      &.nav-link--sidebar {
+        color: $white-med;
+
+        svg {
+          fill: $white-med;
+        }
+
+        &:hover {
+          color: white;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &.active {
+          color: white;
+          background: transparent;
+
+          svg {
+            fill: white;
+          }
+        }
+      }
+
+      &.nav-link--panorama {
+        color: $white-med;
+
+        em {
+          border-color: $white-med;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        .drop {
+          fill: $primary;
+        }
+
+        &:hover {
+          border-color: $primary;
+          color: white;
+          background: $black-min;
+        }
+
+        &.active {
+          border-color: $primary;
+          color: white;
+        }
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      color: $white-med;
+
+      &:hover,
+      &:active {
+        color: white;
+        border-color: transparent;
+      }
+
+      &.btn-icon {
+        span {
+          border-color: transparent;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        &:hover,
+        &:active {
+          span {
+            border-color: transparent;
+
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+      }
+
+      &.btn-outline-light {
+        color: $white-med;
+
+        span {
+          border-color: $white-med;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: $primary;
+          background: transparent;
+
+          span {
+            border-color: $primary;
+
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+      }
+
+      &.btn-outline-danger {
+        color: $white-med;
+        span {
+          border-color: $white-med;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: red;
+          background: transparent;
+
+          span {
+            border-color: red;
+
+            svg {
+              fill: red;
+            }
+          }
+        }
+      }
+
+      &.btn-outline-primary {
+        color: $primary;
+        span {
+          border-color: $white-med;
+
+          svg {
+            fill: $primary;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: $primary;
+          background: transparent;
+          bac: brightness($primary);
+
+          span {
+            border-color: $primary;
+            bac: brightness($primary);
+
+            svg {
+              fill: $primary;
+              bac: brightness($primary);
+            }
+          }
+        }
+      }
+
+      &.btn-outline-secondary {
+        color: $secondary;
+        border-color: transparent;
+
+        span {
+          border-color: $white-med;
+
+          svg {
+            fill: $secondary;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: $secondary;
+          background: transparent;
+          bac: brightness($secondary);
+
+          span {
+            border-color: $secondary;
+            bac: brightness($secondary);
+
+            svg {
+              fill: $secondary;
+              bac: brightness($secondary);
+            }
+          }
+        }
+      }
+
+      &.btn-outline-add {
+        span {
+          border-color: $primary;
+          color: white;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: $primary;
+          background: transparent;
+
+          span {
+            background: $primary;
+            color: white;
+
+            svg {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      &.btn-outline-overlay {
+        color: white;
+        text-shadow: $dark 1px 1px 1px;
+        span {
+          border-color: transparent;
+          color: white;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: white;
+          background: transparent;
+
+          span {
+            background: $primary;
+            color: white;
+
+            svg {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      &.btn-outline-overlay--primary {
+        color: white;
+        text-shadow: $dark 1px 1px 1px;
+        span {
+          border-color: transparent;
+          color: white;
+
+          svg {
+            fill: $primary;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: white;
+          background: transparent;
+
+          span {
+            background: $primary;
+            color: white;
+
+            svg {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      &.dropdown-toggle {
+        color: $white-med;
+        background: $black-min;
+
+        &.dropdown-toggle--transparent {
+          background: transparent;
+        }
+
+        &:focus,
+        &.show {
+          color: white;
+          border-color: transparent;
+        }
+      }
+
+      &.btn-transparent {
+        background: transparent !important;
+        border-color: transparent;
+      }
+
+      &.btn-secondary {
+        background: $secondary;
+        color: white;
+
+        span {
+          background: $secondary;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: white;
+
+          span {
+            bac: brightness($secondary);
+            color: white;
+
+            svg {
+              fill: white;
+            }
+          }
+        }
+      }
+
+      &.btn-dark {
+        background: $black-min;
+        color: white;
+
+        svg {
+          fill: $white-med;
+        }
+
+        &:hover,
+        &:active {
+          svg {
+            fill: white;
+          }
+        }
+      }
+    }
+
+     /* Accordion */
+    .accordion {
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            color: $white-med;
+
+            &::after {
+              background: url(../images/icon-ch--down-color.svg) no-repeat center center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+    /* Colors */
+    .nav {
+      &.general-nav {
+        .nav-item {
+          .nav-link {
+            color: $white-med;
+
+            &:hover,
+            &:active,
+            &:focus {
+              color: white;
+            }
+
+            &.active {
+              color: white;
+            }
+          }
+        }
+      }
+
+      &.tab-nav {
+        .nav-item {
+          &::after {
+            background: $white-med;
+          }
+        }
+      }
+
+      &.main-nav {
+        .nav-item {
+          .nav-link {
+            &:hover {
+              color: $primary;
+            }
+
+            &.active {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+
+    /* Forms */
+    .form-control {
+      background: $black-min;
+      border-radius: $br-small;
+      border-color: transparent;
+      color: white;
+
+      &.form-noedit {
+        background: transparent;
+      }
+
+      &::placeholder {
+        color: white;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.form-transparent {
+        color: white;
+        background: transparent;
+
+        &::placeholder {
+          color: $white-med;
+        }
+      }
+
+      &.form-year {
+        &::-webkit-calendar-picker-indicator {
+          background: url(../images/icon-ch--down-color.svg) center center no-repeat;
+          background-size: contain;
+          width: $s-min;
+        }
+      }
+    }
+
+    .input-group {
+      .btn-outline-primary,
+      .btn-outline-secondary {
+        border-color: transparent;
+        background: $black-min;
+
+        &:hover {
+          background: $black-normal;
+        }
+      }
+
+      .dropdown-toggle {
+        background: $black-normal;
+      }
+    }
+
+    /* Badges */
+    .badge {
+      color: $white-med;
+    }
+
+    .avatar {
+      border-color: $white-med;
+
+      svg {
+        fill: $white-med;
+      }
+    }
+  }
+}
