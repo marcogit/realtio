@@ -1,0 +1,9 @@
+.progress {
+  height: 3px;
+  background: $grey;
+  margin-bottom: $s-normal;
+  
+  .progress-bar {
+    background: $primary;
+  }
+}

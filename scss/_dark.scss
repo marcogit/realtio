@@ -99,24 +99,17 @@ body {
         border-color: transparent;
       }
 
-      &.btn-icon {
-        span {
-          border-color: transparent;
+      &.nav-link {
+        border-color: $white-small;
 
-          svg {
-            fill: $white-med;
-          }
+        &:hover {
+          background: white;
+          color: $primary;
         }
 
-        &:hover,
-        &:active {
-          span {
-            border-color: transparent;
-
-            svg {
-              fill: $primary;
-            }
-          }
+        &.active {
+          background: $primary;
+          color: white;
         }
       }
 
@@ -173,6 +166,7 @@ body {
 
       &.btn-outline-primary {
         color: $primary;
+        border-color: $primary;
         span {
           border-color: $white-med;
 
@@ -257,8 +251,77 @@ body {
         }
       }
 
+      &.btn-icon {
+        span {
+          border-color: transparent;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        &:hover,
+        &:active {
+          span {
+            border-color: transparent;
+
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+
+        &.btn-outline-primary {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+
+        &.btn-outline-light {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+
+        &.btn-outline-primary--plus {
+          span {
+            border: $primary solid 1px !important;
+    
+            svg {
+              fill: $primary !important;
+            }
+          }
+    
+          &:hover {
+            span {
+              background: $primary;
+    
+              svg {
+                fill: white !important;
+              }
+            }
+          }
+        }
+
+        &.btn-outline-danger {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+      }
+
       &.btn-group-fix {
         background: $black-min;
+      }
+
+      &.btn-group-fix--dark{
+        background: $grey;
       }
 
       &.btn-outline-add {
@@ -366,6 +429,12 @@ body {
           color: $dark-grey;
           border-bottom: solid $grey 1px;
         }
+
+        &.dropdown-toggle--line {
+          background: transparent;
+          color: white;
+          border-bottom: solid $white-small 1px;
+        }
       }
 
       &.btn-transparent {
@@ -396,6 +465,10 @@ body {
         .accordion-header {
           .accordion-button {
             color: $white-med;
+
+            &.accordion-button--dark {
+              color: $dark-grey;
+            }
 
             &::after {
               background: url(../images/icon-ch--down-color.svg) no-repeat center center;
@@ -454,12 +527,21 @@ body {
       border-color: transparent;
       color: white;
 
-      &.form-noedit {
-        background: transparent;
-      }
-
       &::placeholder {
         color: white;
+      }
+
+      &.form-control--dark {
+        color: $black-grey;
+        background: $grey;
+
+        &::placeholder {
+          color: $dark-grey;
+        }
+      }
+
+      &.form-noedit {
+        background: transparent;
       }
 
       &:focus {

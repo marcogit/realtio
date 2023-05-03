@@ -5,7 +5,8 @@ html {
     height: 100%;
     font-family: $font-brand;
     font-weight: $f-weight--regular;
-    font-size: $lh-title;
+    font-size: $font-s-base;
+    line-height: $lh-base;
 
     &::before {
       position: fixed;
@@ -60,6 +61,11 @@ html {
       .col-panorama--iframe {
         padding: 0;
         height: calc(100% - 150px);
+      }
+
+      .col-publish--iframe {
+        padding: 0;
+        height: 100%;
       }
 
       .col-panorama--bottom {
@@ -177,8 +183,16 @@ html {
             top: $s-normal;
           }
 
-          textarea {
+          textarea,
+          p {
             max-width: 620px;
+            font-size: $font-nav;
+          }
+
+          h2 {
+            font-size: $font-title;
+            font-weight: $f-weight--bold;
+            padding: $s-normal 0 0 0;
           }
 
           .form-control-sm {
@@ -320,6 +334,21 @@ html {
           bottom: 0;
           padding: $s-small $s-small $s-extra-bottom $s-small;
 
+          .box-scroll--inner {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .box-scroll--inner-01 {
+              margin-bottom: auto;
+            }
+
+            .box-scroll--inner-02 {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+
           &::-webkit-scrollbar {
             -webkit-appearance: none;
 
@@ -382,6 +411,15 @@ html {
             margin-top: $s-medium;
           }
 
+          &.box-scroll--fix {
+            max-width: 85%;
+            padding-left: $s-big;
+            padding-right: $s-big;
+            margin-top: $s-medium;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
           &.box-scroll--md {
             max-width: 68%;
             margin-left: auto;
@@ -412,6 +450,15 @@ html {
     }
 
     .nav {
+      &.nav-skins {
+        max-width: 260px;
+  
+        margin-bottom: $s-normal;
+        .nav-item {
+          margin-bottom: $s-small;
+        }
+      }
+
       &.nav-sidebar {
         display: flex;
         flex-direction: column;
@@ -446,6 +493,10 @@ html {
         flex-direction: row;
         justify-content: flex-start;
       }
+    }
+
+    .tab-content {
+      width: 100%;
     }
 
     .nav-link {

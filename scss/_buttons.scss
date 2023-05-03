@@ -6,6 +6,16 @@
   font-size: $font-nav;
   transition: $tr-normal;
   border-radius: $br-normal;
+
+  &.nav-link {
+    text-align: left;
+    justify-content: flex-start;
+    background: transparent;
+  }
+
+  &.show {
+    background: transparent;
+  }
   
   &.btn-primary {
     background: $primary;
@@ -57,50 +67,6 @@
       }
     }
 
-    &.btn-outline-light {
-      border-color: transparent;
-
-      &:hover {
-        border-color: transparent;
-      }
-    }
-
-    &.btn-outline-primary {
-      border-color: transparent;
-
-      &:hover {
-        border-color: transparent;
-      }
-    }
-
-    &.btn-outline-primary--plus {
-      span {
-        border: $primary solid 1px !important;
-
-        svg {
-          fill: $primary !important;
-        }
-      }
-
-      &:hover {
-        span {
-          background: $primary;
-
-          svg {
-            fill: white !important;
-          }
-        }
-      }
-    }
-
-    &.btn-outline-danger {
-      border-color: transparent;
-
-      &:hover {
-        border-color: transparent;
-      }
-    }
-
     &.btn-icon--small {
       span {
         border: none;
@@ -112,6 +78,13 @@
     &.btn-icon--med {
       span {
         border: none;
+        width: $s-medium;
+        height: $s-medium;
+      }
+    }
+
+    &.btn-icon--med-border {
+      span {
         width: $s-medium;
         height: $s-medium;
       }
@@ -158,6 +131,14 @@
 
     &.dropdown-toggle--white {
       border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &.dropdown-toggle--line {
+      border-radius: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

@@ -45,6 +45,7 @@
     padding-left: $s-small;
     padding-right: $s-small;
     margin-left: 0 !important;
+    border-radius: $br-small;
   }
 }
 
@@ -109,6 +110,14 @@ input {
       max-width: 100%;
       border: solid 1px $white-med;
       border-radius: $br-small;
+    }
+  }
+}
+
+.form-floating {
+  .form-control {
+    &::placeholder {
+      opacity: 0;
     }
   }
 }
