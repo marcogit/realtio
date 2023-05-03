@@ -41,5 +41,10 @@ header {
       align-items: center;
       justify-content: flex-end;
     }
+
+    &.main-header--noshadow {
+      border-bottom: none;
+      box-shadow: inherit;
+    }
   }
 }

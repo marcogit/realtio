@@ -1,5 +1,7 @@
 .form-control {
   font-size: $font-input;
+  font-weight: $f-weight--regular;
+  border-radius: $br-small;
 
   &.form-transparent {
     background: transparent;
@@ -8,6 +10,7 @@
 
   &.form-control-lg {
     font-size: $font-title;
+    font-weight: $f-weight--bold;
   }
 
   &.form-control-sm {
@@ -29,6 +32,10 @@
   color: $white-med;
 }
 
+.invalid-feedback {
+  font-size: $font-s-small;
+}
+
 .input-group {
   .form-control {
     min-width: $s-medium;
@@ -44,15 +51,35 @@
 .form-check-input {
   border-color: $secondary;
   background-color: transparent;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $secondary;
+    box-shadow: none;
+  }
 
   &:checked {
+    background-color: $secondary;
     border-color: $secondary;
+    box-shadow: none;
   }
 }
 
 textarea {
   &.form-control-sm {
     min-height: 100px;
+  }
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
   }
 }
 
@@ -79,9 +106,9 @@ textarea {
   .upload_gallery {
     margin-top: $s-normal;
     img {
-        max-width: 100%;
-        border: solid 1px $white-med;
-        border-radius: $br-small;
+      max-width: 100%;
+      border: solid 1px $white-med;
+      border-radius: $br-small;
     }
   }
 }

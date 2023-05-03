@@ -4,9 +4,9 @@
   &.card-item {
     border-color: transparent;
     border-radius: $br-normal;
-    overflow: hidden;
     background: transparent;
     margin-bottom: $s-medium;
+    border-width: 1.5px;
 
     &:hover {
       background: $primary;
@@ -14,10 +14,12 @@
 
     img {
       max-width: 100%;
+      border-radius: $br-normal;
     }
 
     .card-img-overlay {
       padding: $s-small $s-padding;
+      border-radius: $br-normal;
 
       &.card-img-overlay--title {
         top: inherit;
@@ -35,6 +37,44 @@
           font-weight: $f-weight--regular;
           text-transform: uppercase;
           margin-bottom: 0;
+        }
+
+        &.card-img-overlay--title---edit {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .dropdown-toggle {
+            padding-right: 0;
+          }
+        }
+
+        &.card-img-overlay--title---ingallery {
+          .card-img-overlay--title---ingallery-edit {
+            display: flex;
+            align-items: center;
+            max-width: 80%;
+            border-radius: $br-small;
+            border: solid 1px transparent;
+            transition: $tr-normal;
+
+            .dropdown {
+              opacity: 0;
+            }
+
+            &:hover {
+              border: solid 1px $primary;
+
+              .dropdown {
+                opacity: 1;
+              }
+            }
+          }
+          textarea {
+            min-height: inherit;
+            max-width: 80%;
+            padding-left: $s-normal;
+          }
         }
       }
 
@@ -60,6 +100,7 @@
           right: 0;
           bottom: 0;
           z-index: 1;
+          border-radius: $br-normal;
         }
 
         .card-img-overlay--ui---top {
@@ -93,7 +134,7 @@
           align-items: center;
           justify-content: center;
           gap: $s-medium;
-          padding: $s-small 0;
+          padding: $s-small 0 $s-normal;
           z-index: 3;
         }
       }
@@ -123,6 +164,16 @@
           &::before {
             display: none;
           }
+          .card-img-overlay--ui---top {
+            .btn-transparent {
+              span {
+                svg {
+                  animation: rotating 3s linear infinite;
+                }
+              }
+            }
+          }
+          
         }
       }
 
@@ -141,6 +192,14 @@
         opacity: 0;
         transition: $tr-normal;
       }
+
+      .card-item--photo---delete {
+        position: absolute;
+        top: $s-min;
+        left: $s-min;
+        opacity: 0;
+      }
+
       img {
         opacity: 1;
         transition: $tr-normal;
@@ -152,12 +211,15 @@
       }
       &:hover {
         border: solid 1px $primary;
-        .card-item--photo---touch {
+        .card-item--photo---touch,
+        .card-item--photo---delete {
           opacity: 1;
         }
+
         img {
           opacity: 0.1;
         }
+
         .card-img-overlay {
           &.card-img-overlay--title {
             opacity: 1;
@@ -198,6 +260,10 @@
           }
         }
       }
+    }
+
+    &.active {
+      border-color: $primary;
     }
   }
 

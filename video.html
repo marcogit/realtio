@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -131,7 +131,7 @@
           <div class="row justify-content-between h-100">
             <!-- List -->
             <div class="col-md-5 position-relative col-shadow--light">
-              <div class="box-scroll box-scroll--noshadow">
+              <div class="box-scroll box-scroll--md box-scroll--noshadow">
                 <label for="input-a-02" class="form-label"
                   >Video URL (youtube, vimeo...)::</label
                 >
@@ -141,11 +141,12 @@
                     class="form-control form-control-sm"
                     id="input-a-02"
                   />
-                  <button class="btn btn-dark" type="button">
+                  <button class="btn btn-outline-secondary btn-group-fix" type="button">
+                    <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="10.962"
-                      height="8"
+                      width="16.44"
+                      height="12"
                       viewBox="0 0 10.962 8"
                     >
                       <path
@@ -153,13 +154,33 @@
                         transform="translate(-5718.772 -3082.787)"
                       />
                     </svg>
+                  </span>
                   </button>
-                  <button class="btn btn-dark" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10.756" height="14" viewBox="0 0 10.756 14"><g transform="translate(-976.577 -5685.56)"><path d="M977.343,5698a1.554,1.554,0,0,0,1.539,1.556h6.146a1.554,1.554,0,0,0,1.539-1.556v-8.334h-9.224Zm9.99-11.667h-2.69l-.766-.777h-3.844l-.767.777h-2.689v1.554h10.756Z" /></g></svg>
+                  <button class="btn btn-outline-secondary btn-group-fix" type="button">
+                    <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10.756"
+                      height="14"
+                      viewBox="0 0 10.756 14"
+                    >
+                      <g transform="translate(-976.577 -5685.56)">
+                        <path
+                          d="M977.343,5698a1.554,1.554,0,0,0,1.539,1.556h6.146a1.554,1.554,0,0,0,1.539-1.556v-8.334h-9.224Zm9.99-11.667h-2.69l-.766-.777h-3.844l-.767.777h-2.689v1.554h10.756Z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
                   </button>
                 </div>
-                <div class="ratio ratio-16x9 mb-3">
-                  <iframe src="https://www.youtube.com/embed/Tp_YZNqNBhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9 ratio-box mb-3">
+                  <iframe
+                    src="https://www.youtube.com/embed/Tp_YZNqNBhw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
                 <div class="form-check">
                   <input
@@ -176,29 +197,70 @@
             </div>
             <!-- END List -->
             <!-- Gallery -->
-            <div class="col-md-7 col-bg p-0" style="background-image: url(https://picsum.photos/id/42/1920/1080);">
-              
-            </div>
+            <div
+              class="col-md-7 col-bg p-0"
+              style="
+                background-image: url(https://picsum.photos/id/42/1920/1080);
+              "
+            ></div>
             <!-- END Gallery -->
           </div>
         </div>
       </div>
     </main>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      $(".gallery-carousel").flickity({
-        // options
-        cellAlign: "left",
-        contain: true,
-      });
-    </script>
+    <!-- Page Navigation dropup button -->
+    <div class="dropdown btn-group--page-navigation">
+      <button
+        class="btn dropdown-toggle"
+        type="button"
+        id="input-a-03"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="input-a-03">
+        <li>
+          <a class="dropdown-item" href="/login.html">Login</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/index.html">Listado de items</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/add_files.html">Añadir archivos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/information.html">Informacion</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/panorama.html">Panorama</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/photos.html">Fotos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/video.html">Video</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/user.html">Usuario</a>
+        </li>
+      </ul>
+    </div>
+    <!-- END Page Navigation dropup button -->
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $(".gallery-carousel").flickity({
+      // options
+      cellAlign: "left",
+      contain: true,
+    });
+  </script>
 </html>

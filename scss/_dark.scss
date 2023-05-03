@@ -31,7 +31,7 @@ body {
 
       &:hover {
         color: $primary;
-        bac: brightness($hover-brightness);
+        filter: brightness(1.2);
       }
     }
 
@@ -158,14 +158,14 @@ body {
 
         &:hover,
         &:active {
-          color: red;
+          color: white;
           background: transparent;
 
           span {
-            border-color: red;
+            border-color: white;
 
             svg {
-              fill: red;
+              fill: white;
             }
           }
         }
@@ -185,15 +185,43 @@ body {
         &:active {
           color: $primary;
           background: transparent;
-          bac: brightness($primary);
+          filter: brightness(1.2);
 
           span {
             border-color: $primary;
-            bac: brightness($primary);
+            filter: brightness(1.2);
 
             svg {
               fill: $primary;
-              bac: brightness($primary);
+              filter: brightness(1.2);
+            }
+          }
+        }
+      }
+
+      &.btn-secondary {
+        background: $secondary;
+        border-color: $secondary;
+        color: white;
+
+        span {
+          background: $secondary;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: white;
+
+          span {
+            filter: brightness(1.2);
+            color: white;
+
+            svg {
+              fill: white;
             }
           }
         }
@@ -215,18 +243,22 @@ body {
         &:active {
           color: $secondary;
           background: transparent;
-          bac: brightness($secondary);
+          filter: brightness(1.2);
 
           span {
             border-color: $secondary;
-            bac: brightness($secondary);
+            filter: brightness(1.2);
 
             svg {
               fill: $secondary;
-              bac: brightness($secondary);
+              filter: brightness(1.2);
             }
           }
         }
+      }
+
+      &.btn-group-fix {
+        background: $black-min;
       }
 
       &.btn-outline-add {
@@ -312,7 +344,7 @@ body {
       }
 
       &.dropdown-toggle {
-        color: $white-med;
+        color: white;
         background: $black-min;
 
         &.dropdown-toggle--transparent {
@@ -324,38 +356,21 @@ body {
           color: white;
           border-color: transparent;
         }
+
+        &::placeholder {
+          color: $white-med;
+        }
+
+        &.dropdown-toggle--white {
+          background: transparent;
+          color: $dark-grey;
+          border-bottom: solid $grey 1px;
+        }
       }
 
       &.btn-transparent {
         background: transparent !important;
         border-color: transparent;
-      }
-
-      &.btn-secondary {
-        background: $secondary;
-        color: white;
-
-        span {
-          background: $secondary;
-
-          svg {
-            fill: white;
-          }
-        }
-
-        &:hover,
-        &:active {
-          color: white;
-
-          span {
-            bac: brightness($secondary);
-            color: white;
-
-            svg {
-              fill: white;
-            }
-          }
-        }
       }
 
       &.btn-dark {
@@ -436,7 +451,6 @@ body {
     /* Forms */
     .form-control {
       background: $black-min;
-      border-radius: $br-small;
       border-color: transparent;
       color: white;
 
@@ -474,7 +488,6 @@ body {
       .btn-outline-primary,
       .btn-outline-secondary {
         border-color: transparent;
-        background: $black-min;
 
         &:hover {
           background: $black-normal;

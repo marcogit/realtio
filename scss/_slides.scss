@@ -1,0 +1,36 @@
+.gallery-carousel {
+  width: 100%;
+  padding: 0 $s-extra;
+
+  .carousel-cell {
+    width: 100%;
+  }
+
+  .flickity-button {
+    background: none;
+
+    &::before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 22px;
+      height: 10px;
+      background-image: url(/images/icon-ch--down-color.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    svg {
+      display: none;
+    }
+
+    &.previous {
+      transform: rotate(90deg);
+    }
+
+    &.next {
+      transform: rotate(-90deg);
+    }
+  }
+}

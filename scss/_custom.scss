@@ -48,6 +48,10 @@ html {
         justify-content: center;
       }
 
+      .col-panorama--menu {
+        background: $gradient-base;
+      }
+
       .col-bg {
         background-size: cover;
         background-position: center center;
@@ -60,6 +64,23 @@ html {
 
       .col-panorama--bottom {
         height: 150px;
+        background: $gradient--panorama-bottom;
+
+        .col-panorama--bottom---items {
+          position: relative;
+          flex: 0 0 1;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -1px;
+            bottom: 0;
+            width: $s-big;
+            background: $gradient-mini--toright;
+          }
+        }
       }
 
       .col-map {
@@ -148,12 +169,16 @@ html {
           z-index: 3;
           height: auto;
           background: $gradient-top;
-          padding: $s-small $s-medium 0 $s-medium;
+          padding: $s-small $s-extra-bottom 0 $s-medium;
 
           .nav-overlay--row {
             position: absolute;
             right: $s-normal;
             top: $s-normal;
+          }
+
+          textarea {
+            max-width: 620px;
           }
 
           .form-control-sm {
@@ -198,6 +223,12 @@ html {
 
         &.ratio-100 {
           height: 100%;
+        }
+
+        &.ratio-box {
+          border-radius: $br-normal;
+          overflow: hidden;
+          box-shadow: $sh-card;
         }
       }
 
@@ -287,13 +318,13 @@ html {
           left: $s-padding;
           right: $s-padding;
           bottom: 0;
-          padding: $s-medium $s-big $s-extra-bottom $s-medium;
+          padding: $s-small $s-small $s-extra-bottom $s-small;
 
           &::-webkit-scrollbar {
             -webkit-appearance: none;
 
             &:vertical {
-              width: $s-min;
+              width: 3px;
               background: transparent;
               border-radius: $br-max;
             }
@@ -334,7 +365,7 @@ html {
 
           &:hover {
             &::-webkit-scrollbar-thumb {
-              background-color: $secondary;
+              background-color: $secondary-med;
             }
           }
 
@@ -342,6 +373,20 @@ html {
             &::after {
               display: none;
             }
+          }
+
+          &.box-scroll--lg {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: $s-medium;
+          }
+
+          &.box-scroll--md {
+            max-width: 68%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: $s-medium;
           }
         }
       }
@@ -370,13 +415,19 @@ html {
       &.nav-sidebar {
         display: flex;
         flex-direction: column;
-        gap: $s-small;
+        gap: $s-medium;
         padding: 24px 0;
+
+        .nav-link {
+          font-weight: $f-weight--light;
+          font-size: $font-s-small;
+        }
       }
-  
+
       &.nav-panorama {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         gap: $s-min;
         align-items: center;
         justify-content: flex-start;
@@ -407,7 +458,7 @@ html {
         gap: $s-small;
         padding: $s-small;
         font-size: $font-nav;
-        
+
         span {
           font-kerning: $f-weight--regular;
         }
@@ -472,6 +523,7 @@ html {
         }
       }
     }
+
     .avatar-box {
       display: flex;
       align-items: center;
@@ -492,6 +544,52 @@ html {
       border: solid 1px;
       margin-left: auto;
       margin-right: auto;
+
+      svg {
+        transition: $tr-normal;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      &:hover {
+        svg {
+          fill: $primary;
+        }
+      }
+    }
+
+    .logo-img--up {
+      display: inline-flex;
+    }
+
+    .thumb-img--up {
+      display: block;
+      border-radius: $br-normal;
+      overflow: hidden;
+      position: relative;
+
+      .thumb-img--up---ui {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: $gradient-black--top;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: $s-normal;
+        min-height: 40%;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          gap: $s-normal;
+        }
+      }
     }
   }
 }

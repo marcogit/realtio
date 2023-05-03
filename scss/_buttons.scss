@@ -42,7 +42,7 @@
     color: $white-med;
 
     span {
-      border: solid 1px;
+      border: solid 1.5px;
       border-radius: $br-max;
       display: flex;
       align-items: center;
@@ -73,6 +73,26 @@
       }
     }
 
+    &.btn-outline-primary--plus {
+      span {
+        border: $primary solid 1px !important;
+
+        svg {
+          fill: $primary !important;
+        }
+      }
+
+      &:hover {
+        span {
+          background: $primary;
+
+          svg {
+            fill: white !important;
+          }
+        }
+      }
+    }
+
     &.btn-outline-danger {
       border-color: transparent;
 
@@ -86,6 +106,14 @@
         border: none;
         width: $s-normal;
         height: $s-normal;
+      }
+    }
+
+    &.btn-icon--med {
+      span {
+        border: none;
+        width: $s-medium;
+        height: $s-medium;
       }
     }
   }
@@ -110,8 +138,12 @@
     width: 100%;
   }
 
+  &.btn-lg {
+    text-transform: uppercase;
+  }
+
   &.dropdown-toggle {
-    font-size: $font-nav;
+    border-radius: $br-small;
     justify-content: space-between;
 
     &::after {
@@ -123,6 +155,10 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    &.dropdown-toggle--white {
+      border-radius: 0;
+    }
   }
 }
 
@@ -130,7 +166,7 @@
   padding: $s-min;
 
   li {
-    a {
+    .dropdown-item {
       font-size: $font-nav;
       border-radius: $br-small;
       color: $dark-grey;
@@ -140,6 +176,42 @@
         background: $primary;
         color: white !important;
       }
+
+      &.dropdown-item--ui {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: $s-small;
+        }
+      }
+    }
+
+    &.last-item {
+      justify-content: center;
+      display: flex;
+      padding: $s-small 0;
     }
   }
+
+  &.dropdown-menu--full {
+    width: 100%;
+    border-radius: $br-small;
+    box-shadow: $sh-card;
+    border-color: transparent;
+  }
+}
+
+.btn-group--page-navigation {
+  position: fixed;
+  bottom: $s-normal;
+  left: $s-normal;
+  z-index: 9000;
 }

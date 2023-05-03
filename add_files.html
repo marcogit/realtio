@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -132,7 +132,7 @@
             <fieldset class="upload_dropZone text-center">
               <legend class="visually-hidden">Image uploader</legend>
 
-              <img src="/images/icon-upload.svg" class="mb-2" />
+              <img src="images/icon-upload.svg" class="mb-2" />
 
               <p>Drop files here</p>
               <div class="separator mb-3">
@@ -160,13 +160,51 @@
         </div>
       </div>
     </main>
-
-    <script
+    <!-- Page Navigation dropup button -->
+    <div class="dropdown btn-group--page-navigation">
+      <button
+        class="btn dropdown-toggle"
+        type="button"
+        id="input-a-03"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="input-a-03">
+        <li>
+          <a class="dropdown-item" href="/login.html">Login</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/index.html">Listado de items</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/add_files.html">Añadir archivos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/information.html">Informacion</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/panorama.html">Panorama</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/photos.html">Fotos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/video.html">Video</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/user.html">Usuario</a>
+        </li>
+      </ul>
+    </div>
+    <!-- END Page Navigation dropup button -->
+  </body>
+  <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-  </body>
   <script>
     /* Bootstrap 5 JS included */
 

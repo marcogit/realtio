@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -131,7 +131,7 @@
           <div class="row justify-content-between h-100">
             <!-- List -->
             <div class="col-md-5 position-relative col-shadow--light">
-              <div class="box-scroll">
+              <div class="box-scroll box-scroll--md">
                 <h6>Photoalbum content:</h6>
                 <div class="row row-cols-2">
                   <div class="col">
@@ -168,57 +168,36 @@
                     </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
-                      type="button"
-                      class="card card-item card-item--photo"
-                      draggable="true"
-                      ondragstart="drag(event)"
-                    >
-                      <img
-                        src="https://picsum.photos/id/42/300/180"
-                        class="card-img"
-                        alt="thumbnail_example"
-                      />
-                      <div class="card-item--photo---touch">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
+                    <div class="card card-item card-item--new disabled">
+                      <div class="card-img-overlay card-img-overlay--ui">
+                        <!-- UI CARD TOP-->
+                        <div class="card-img-overlay--ui---top">
+                          <div
+                            class="btn btn-icon btn-transparent"
+                            title="Loading"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20.962"
+                                height="18"
+                                viewBox="0 0 10.962 8"
+                              >
+                                <path
+                                  d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z"
+                                  transform="translate(-5718.772 -3082.787)"
+                                />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
-                      </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
-                      class="card card-item card-item--photo"
+                      class="card card-item card-item--photo active"
                       draggable="true"
                       ondragstart="drag(event)"
                     >
@@ -256,14 +235,66 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
                       class="card card-item card-item--photo"
                       draggable="true"
@@ -303,14 +334,66 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
                       class="card card-item card-item--photo"
                       draggable="true"
@@ -350,14 +433,66 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
                       class="card card-item card-item--photo"
                       draggable="true"
@@ -397,14 +532,66 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
                       class="card card-item card-item--photo"
                       draggable="true"
@@ -444,14 +631,66 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div class="col">
-                    <a
-                      href="#"
+                    <div
                       type="button"
                       class="card card-item card-item--photo"
                       draggable="true"
@@ -491,10 +730,459 @@
                           </g>
                         </svg>
                       </div>
-                      <div class="card-img-overlay card-img-overlay--title">
-                        <h3 class="card-title">GREECE ISLANDS</h3>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      type="button"
+                      class="card card-item card-item--photo"
+                      draggable="true"
+                      ondragstart="drag(event)"
+                    >
+                      <img
+                        src="https://picsum.photos/id/42/300/180"
+                        class="card-img"
+                        alt="thumbnail_example"
+                      />
+                      <div class="card-item--photo---touch">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="7.443"
+                          height="12.663"
+                          viewBox="0 0 7.443 12.663"
+                        >
+                          <g transform="translate(-2700.473 -4216.117)">
+                            <path
+                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
+                            />
+                            <path
+                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
+                            />
+                            <path
+                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
+                            />
+                            <path
+                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
+                            />
+                            <path
+                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
+                            />
+                            <path
+                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      <button
+                        class="btn btn-icon btn-icon--small btn-outline-danger card-item--photo---delete"
+                        title="Delete"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.668"
+                            height="15"
+                            viewBox="0 0 11.668 15"
+                          >
+                            <path
+                              d="M2950.048,1491.954a1.675,1.675,0,0,0,1.669,1.667h6.666a1.675,1.675,0,0,0,1.669-1.667v-10h-10Zm10.836-12.5h-2.918l-.832-.833h-4.169l-.832.833h-2.917v1.665h11.668Z"
+                              transform="translate(-2949.216 -1478.621)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <div
+                        class="card-img-overlay card-img-overlay--title card-img-overlay--title---edit"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm form-noedit p-0"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -514,7 +1202,9 @@
                       class="card-img"
                       alt="thumbnail_example"
                     />
-                    <div class="card-img-overlay card-img-overlay--title">
+                    <div
+                      class="card-img-overlay card-img-overlay--title card-img-overlay--title---ingallery"
+                    >
                       <ul class="nav nav-overlay--row">
                         <li class="nav-item">
                           <button
@@ -567,8 +1257,159 @@
                           </button>
                         </li>
                       </ul>
-                      <h3 class="card-title">IMAGE1</h3>
-                      <p class="card-text">Enter optional description...</p>
+                      <div class="card-img-overlay--title---ingallery-edit">
+                        <input
+                          type="text"
+                          class="form-control form-noedit"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <textarea
+                        class="form-control form-control-sm form-noedit"
+                        id="exampleFormControlTextarea1"
+                        placeholder="Enter optional description..."
+                        rows="1"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div
+                    class="card card-item card-item--full"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                  >
+                    <img
+                      src="https://picsum.photos/id/42/1024/700"
+                      class="card-img"
+                      alt="thumbnail_example"
+                    />
+                    <div
+                      class="card-img-overlay card-img-overlay--title card-img-overlay--title---ingallery"
+                    >
+                      <ul class="nav nav-overlay--row">
+                        <li class="nav-item">
+                          <button
+                            class="btn btn-icon btn-outline-overlay"
+                            title="Add Photo"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25.574"
+                                height="18"
+                                viewBox="0 0 25.574 18"
+                              >
+                                <g transform="translate(-4385.934 -3505.705)">
+                                  <path
+                                    d="M4387.558,3523.705a1.645,1.645,0,0,1-1.624-1.625v-14.6a1.91,1.91,0,0,1,1.772-1.772h8.474l1.28,1.28h9.74a1.622,1.622,0,0,1,.934.284,1.735,1.735,0,0,1,.617.7h-11.7l-1.28-1.28h-8.061a.76.76,0,0,0-.788.788v14.456a.691.691,0,0,0,.136.443,1.165,1.165,0,0,0,.357.295l3.14-12.437h20.957l-3.1,12.27a1.586,1.586,0,0,1-.593.9,1.773,1.773,0,0,1-1.054.3Zm.884-.985h18.894l2.835-11.5h-18.894Zm0,0,2.835-11.5Zm-1.524-14.751v0Z"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </button>
+                        </li>
+                        <li class="nav-item">
+                          <button
+                            class="btn btn-icon btn-outline-overlay"
+                            title="Add Photo"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18.133"
+                                height="23"
+                                viewBox="0 0 18.133 23"
+                              >
+                                <g transform="translate(-4437.143 -3502.205)">
+                                  <path
+                                    d="M4438.665,3507.622c-.185,0-.326,0-.466,0a1.011,1.011,0,0,1-1.049-1.041c-.01-.342-.008-.684,0-1.025a1.016,1.016,0,0,1,1.092-1.077c1.59,0,3.18,0,4.77,0h.463c0-.211-.007-.379,0-.547a1.709,1.709,0,0,1,1.741-1.714c.656-.016,1.314-.014,1.971,0a1.711,1.711,0,0,1,1.76,1.735c.007.157,0,.314,0,.527h.444q2.344,0,4.69,0a1.047,1.047,0,0,1,1.193,1.177c0,.263,0,.525,0,.788a1.04,1.04,0,0,1-1.15,1.18c-.1,0-.207.01-.367.017v.506q0,7.056,0,14.111a2.692,2.692,0,0,1-1.734,2.732,3.42,3.42,0,0,1-1.151.2c-3.1.016-6.2.012-9.3.008a2.742,2.742,0,0,1-2.9-2.925q-.006-7.054,0-14.111Zm.791.016v.391q0,7.131,0,14.262a1.958,1.958,0,0,0,2.146,2.12q4.609,0,9.219,0a1.965,1.965,0,0,0,2.144-2.163q0-7.092,0-14.184v-.426Zm6.792-2.37c-2.442,0-4.884-.005-7.327,0-1.115,0-.974-.16-.982.98,0,.583,0,.583.594.583q7.446,0,14.891,0c1.237,0,1.047.174,1.06-1.059.006-.487-.016-.5-.515-.5Zm-1.942-.819h3.817c.138-1.053-.2-1.446-1.226-1.446h-1.418C4444.5,3503,4444.151,3503.428,4444.306,3504.449Z"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    d="M4443.351,3516.018q0-2.225,0-4.45a.917.917,0,0,1,.026-.387c.063-.123.194-.272.311-.286a.476.476,0,0,1,.374.2.865.865,0,0,1,.076.454q.006,4.47,0,8.94c0,.1.03.242-.024.306-.111.135-.273.321-.407.316a.507.507,0,0,1-.338-.365c-.041-.535-.02-1.075-.02-1.613Q4443.35,3517.573,4443.351,3516.018Z"
+                                    fill="#fff"
+                                  />
+                                  <path
+                                    d="M4449.073,3515.993q0,2.226,0,4.45a.8.8,0,0,1-.018.349c-.072.132-.206.318-.315.319a.682.682,0,0,1-.412-.258c-.063-.072-.044-.225-.044-.342q0-4.509,0-9.019a.64.64,0,0,1,.064-.377.591.591,0,0,1,.4-.218c.108.005.239.172.3.3a.948.948,0,0,1,.024.388Q4449.075,3513.788,4449.073,3515.993Z"
+                                  />
+                                </g>
+                              </svg>
+                            </span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="card-img-overlay--title---ingallery-edit">
+                        <input
+                          type="text"
+                          class="form-control form-noedit"
+                          placeholder="THE LIVING ROOM"
+                        />
+                        <div class="dropdown">
+                          <button
+                            class="btn dropdown-toggle btn-transparent"
+                            type="button"
+                            id="input-a-03"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="input-a-03"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 01</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 02</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#" role="button"
+                                >Option 03</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <textarea
+                        class="form-control form-control-sm form-noedit"
+                        id="exampleFormControlTextarea1"
+                        placeholder="Enter optional description..."
+                        rows="1"
+                      ></textarea>
                     </div>
                   </div>
                 </div>
@@ -579,21 +1420,64 @@
         </div>
       </div>
     </main>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      $(".gallery-carousel").flickity({
-        // options
-        cellAlign: "left",
-        contain: true,
-      });
-    </script>
+    <!-- Page Navigation dropup button -->
+    <div class="dropdown btn-group--page-navigation">
+      <button
+        class="btn dropdown-toggle"
+        type="button"
+        id="input-a-03"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="input-a-03">
+        <li>
+          <a class="dropdown-item" href="/login.html">Login</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/index.html">Listado de items</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/add_files.html">Añadir archivos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/information.html">Informacion</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/panorama.html">Panorama</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/photos.html">Fotos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/video.html">Video</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/user.html">Usuario</a>
+        </li>
+      </ul>
+    </div>
+    <!-- END Page Navigation dropup button -->
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    $(".gallery-carousel").flickity({
+      // options
+      cellAlign: "left",
+      contain: true,
+    });
+  </script>
 </html>

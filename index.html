@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -56,7 +56,7 @@
   </head>
   <body class="text-white v-dark bg-dark--image">
     <!-- HEADER -->
-    <header class="main-header">
+    <header class="main-header main-header--noshadow">
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-2 col-logo">
@@ -116,7 +116,7 @@
                       type="text"
                       class="form-control form-control-sm form-transparent"
                       aria-label="Search"
-                      placeholder="Search"
+                      placeholder="Search..."
                     />
                     <button
                       type="button"
@@ -3784,11 +3784,49 @@
         <!-- END BOX SCROLL -->
       </div>
     </main>
-
-    <script
+    <!-- Page Navigation dropup button -->
+    <div class="dropdown btn-group--page-navigation">
+      <button
+        class="btn dropdown-toggle"
+        type="button"
+        id="input-a-03"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="input-a-03">
+        <li>
+          <a class="dropdown-item" href="/login.html">Login</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/index.html">Listado de items</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/add_files.html">Añadir archivos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/information.html">Informacion</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/panorama.html">Panorama</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/photos.html">Fotos</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/video.html">Video</a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/user.html">Usuario</a>
+        </li>
+      </ul>
+    </div>
+    <!-- END Page Navigation dropup button -->
+  </body>
+  <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-  </body>
 </html>
