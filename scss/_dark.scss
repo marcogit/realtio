@@ -113,6 +113,71 @@ body {
         }
       }
 
+      &.btn-icon {
+        span {
+          border-color: transparent;
+
+          svg {
+            fill: $white-med;
+          }
+        }
+
+        &:hover,
+        &:active {
+          span {
+            border-color: transparent;
+
+            svg {
+              fill: $primary;
+            }
+          }
+        }
+
+        &.btn-outline-primary {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+
+        &.btn-outline-light {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+
+        &.btn-outline-primary--plus {
+          span {
+            border: $primary solid 1px !important;
+    
+            svg {
+              fill: $primary !important;
+            }
+          }
+    
+          &:hover {
+            span {
+              background: $primary;
+    
+              svg {
+                fill: white !important;
+              }
+            }
+          }
+        }
+
+        &.btn-outline-danger {
+          border-color: transparent;
+    
+          &:hover {
+            border-color: transparent;
+          }
+        }
+      }
+
       &.btn-outline-light {
         color: $white-med;
 
@@ -247,71 +312,6 @@ body {
               fill: $secondary;
               filter: brightness(1.2);
             }
-          }
-        }
-      }
-
-      &.btn-icon {
-        span {
-          border-color: transparent;
-
-          svg {
-            fill: $white-med;
-          }
-        }
-
-        &:hover,
-        &:active {
-          span {
-            border-color: transparent;
-
-            svg {
-              fill: $primary;
-            }
-          }
-        }
-
-        &.btn-outline-primary {
-          border-color: transparent;
-    
-          &:hover {
-            border-color: transparent;
-          }
-        }
-
-        &.btn-outline-light {
-          border-color: transparent;
-    
-          &:hover {
-            border-color: transparent;
-          }
-        }
-
-        &.btn-outline-primary--plus {
-          span {
-            border: $primary solid 1px !important;
-    
-            svg {
-              fill: $primary !important;
-            }
-          }
-    
-          &:hover {
-            span {
-              background: $primary;
-    
-              svg {
-                fill: white !important;
-              }
-            }
-          }
-        }
-
-        &.btn-outline-danger {
-          border-color: transparent;
-    
-          &:hover {
-            border-color: transparent;
           }
         }
       }

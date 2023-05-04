@@ -16,6 +16,14 @@
   &.show {
     background: transparent;
   }
+
+  &.navbar-toggler {
+    em {
+      font-style: normal;
+      color: $primary;
+      font-size: $font-input;
+    }
+  }
   
   &.btn-primary {
     background: $primary;

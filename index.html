@@ -57,35 +57,47 @@
   <body class="text-white v-dark bg-dark--image">
     <!-- HEADER -->
     <header class="main-header main-header--noshadow">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-2 col-logo">
-            <a href="#" class="navbar-brand">
-              <img src="images/logo-realtio--white.svg" />
-            </a>
-          </div>
-          <div class="col col-menu">
-            <ul class="nav general-nav main-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >MY TOURS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">LOCATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ANALYTICS</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-2 col-user">
-            <button class="btn btn-thumb" title="New Tour">
-              <span>
-                <img src="images/user-thumb.svg" />
-              </span>
-              JOHN DOE
-            </button>
+      <div class="navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-auto col-lg-2 col-logo">
+              <a href="#" class="navbar-brand">
+                <img src="images/logo-realtio--white.svg" />
+              </a>
+            </div>
+            <div class="col col-menu">
+              <button class="navbar-toggler btn btn-icon btn-icon--med-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsGeneral" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <em>MY TOURS</em>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="54.1" height="37.4" viewBox="0 0 54.1 37.4">
+                    <path d="M3759.009,251.215V246.54h54.1v4.675Zm0-16.362v-4.675h54.1v4.675Zm0-16.363v-4.675h54.1v4.675Z" transform="translate(-3759.009 -213.815)" fill="#e47828"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsGeneral">
+                <ul class="nav general-nav main-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >MY TOURS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LOCATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ANALYTICS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2 col-user">
+              <button class="btn btn-thumb" title="New Tour">
+                <span>
+                  <img src="images/user-thumb.svg" />
+                </span>
+                JOHN DOE
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -318,6 +318,10 @@ html {
 
       .topbar {
         padding: $s-big $s-medium $s-normal;
+
+        @media (max-width: $break-lg) {
+          padding: $s-normal $s-small;
+        }
       }
 
       .content {
@@ -462,7 +466,7 @@ html {
       &.nav-sidebar {
         display: flex;
         flex-direction: column;
-        gap: $s-medium;
+        gap: $s-normal;
         padding: 24px 0;
 
         .nav-link {

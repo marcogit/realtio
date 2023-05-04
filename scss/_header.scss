@@ -9,6 +9,11 @@ header {
     z-index: 500;
     border-bottom: $white-small solid 1px;
 
+    @media (max-width: $break-lg) {
+      padding-top: $s-normal;
+      padding-bottom: $s-normal;
+    }
+
     .navbar-brand {
       width: $logo-header;
 
@@ -23,6 +28,11 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
+
+      .navbar-toggler {
+        position: absolute;
+        right: $s-small;
+      }
     }
 
     .col-menu--item {
@@ -40,6 +50,10 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
+
+      @media (max-width: $break-lg) {
+        display: none;
+      }
     }
 
     &.main-header--noshadow {

@@ -1,5 +1,8 @@
 .nav {
   &.general-nav {
+    margin-left: auto;
+    margin-right: auto;
+
     .nav-item {
       position: relative;
 
@@ -7,6 +10,11 @@
         font-size: $font-nav;
         text-transform: uppercase;
         padding: 0 $s-normal;
+
+        @media (max-width: $break-lg) {
+          padding-right: $s-small;
+          padding-left: $s-small;
+        }
       }
 
       &:last-child {
