@@ -84,7 +84,8 @@ $sh-header: $dark 0px 5px 60px;
 // Gradients
 $gradient-dark: linear-gradient(180deg, $dark 0%, $base 100%);
 $gradient-base: linear-gradient(180deg, #293944 0%, $base 100%);
-$gradient--panorama-bottom: linear-gradient(90deg, $base 0%, #293944 100%);
+$gradient-aside: linear-gradient(180deg, $dark 0%, $base 100%);
+$gradient--panorama-bottom: linear-gradient(90deg, $dark 0%, #293944 100%);
 $gradient-black: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 $gradient-black--top: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 $gradient-mini--toright: linear-gradient(90deg, rgba(41,57,68,0) 0%, $base 100%);

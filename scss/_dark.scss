@@ -35,6 +35,20 @@ body {
       }
     }
 
+    p {
+      &.disabled {
+        color: $white-med;
+
+        a {
+          color: white;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
     .nav-link {
       &.nav-link--sidebar {
         color: $white-med;
@@ -103,12 +117,13 @@ body {
         border-color: $white-small;
 
         &:hover {
-          background: white;
-          color: $primary;
+          border-color: white;
+          color: white;
         }
 
         &.active {
           background: $primary;
+          border-color: $primary;
           color: white;
         }
       }

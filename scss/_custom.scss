@@ -50,7 +50,7 @@ html {
       }
 
       .col-panorama--menu {
-        background: $gradient-base;
+        background: $gradient-aside;
       }
 
       .col-bg {
@@ -317,7 +317,7 @@ html {
       }
 
       .topbar {
-        padding: $s-big $s-medium $s-normal;
+        padding: $s-normal $s-big $s-normal;
 
         @media (max-width: $break-lg) {
           padding: $s-normal $s-small;
@@ -336,7 +336,7 @@ html {
           left: $s-padding;
           right: $s-padding;
           bottom: 0;
-          padding: $s-small $s-small $s-extra-bottom $s-small;
+          padding: 0 $s-small $s-extra-bottom $s-small;
 
           .box-scroll--inner {
             display: flex;
@@ -402,6 +402,11 @@ html {
             }
           }
 
+          &.box-scroll--full {
+            padding-left: $s-big;
+            padding-right: $s-big;
+          }
+
           &.box-scroll--noshadow {
             &::after {
               display: none;
@@ -425,10 +430,11 @@ html {
           }
 
           &.box-scroll--md {
-            max-width: 68%;
+            max-width: 80%;
             margin-left: auto;
             margin-right: auto;
             margin-top: $s-medium;
+            padding-right: $s-medium;
           }
         }
       }

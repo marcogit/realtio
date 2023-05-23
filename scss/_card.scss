@@ -184,6 +184,13 @@
 
     &.card-item--photo {
       background: $dark;
+      cursor: grab;
+
+      &:focus,
+      &:active {
+        cursor: grabbing;
+      }
+
       .card-item--photo---touch {
         fill: $primary;
         position: absolute;
@@ -191,12 +198,13 @@
         right: $s-small;
         opacity: 0;
         transition: $tr-normal;
+        display: none;
       }
 
       .card-item--photo---delete {
         position: absolute;
         top: $s-min;
-        left: $s-min;
+        right: $s-min;
         opacity: 0;
       }
 

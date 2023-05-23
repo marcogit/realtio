@@ -1,7 +1,7 @@
 .flickity-enabled {
   .flickity-button {
     background: none;
-    margin-top: $s-normal--n;
+    margin-top: -22px;
 
     &::before {
       content: "";
@@ -31,6 +31,7 @@
   &.gallery-carousel {
     width: 100%;
     padding: 0 $s-extra;
+    margin-top: $s-medium;
 
     .carousel-cell {
       width: 100%;
