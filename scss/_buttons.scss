@@ -24,6 +24,16 @@
       font-size: $font-input;
     }
   }
+
+  &.btn-thumb {
+    strong {
+      font-weight: $f-weight--regular;
+
+      @media (max-width: $break-xl) {
+        display: none;
+      }
+    }
+  }
   
   &.btn-primary {
     background: $primary;

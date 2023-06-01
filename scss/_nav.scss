@@ -1,7 +1,6 @@
 .nav {
   &.general-nav {
     margin-left: auto;
-    margin-right: auto;
 
     .nav-item {
       position: relative;
@@ -9,11 +8,16 @@
       .nav-link {
         font-size: $font-nav;
         text-transform: uppercase;
-        padding: 0 $s-normal;
+        padding: $s-min $s-normal;
 
         @media (max-width: $break-lg) {
           padding-right: $s-small;
           padding-left: $s-small;
+        }
+
+        &.nav-link--publish {
+          border: transparent solid 1px;
+          border-radius: $br-max;
         }
       }
 

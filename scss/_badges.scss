@@ -6,4 +6,31 @@
   align-items: center;
   justify-content: center;
   font-size: $font-nav;
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  .badge-link {
+    line-height: 0;
+    opacity: 0.5;
+    display: inline-flex;
+    margin-top: -3px;
+    transition: $tr-normal;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.badge-lg {
+    font-size: $font-input;
+
+    @media (max-width: $break-xl) {
+      font-size: $font-nav;
+    }
+  }
 }

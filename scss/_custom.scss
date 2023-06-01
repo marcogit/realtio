@@ -32,11 +32,15 @@ html {
     }
 
     main {
-      height: 100%;
+      height: 100%; 
       display: flex;
       flex-direction: column;
       padding-top: $s-header;
       overflow: hidden;
+
+      @media (max-width: $break-lg) {
+        padding-top: $s-big;
+      }
 
       h6 {
         font-size: $font-s-small;
@@ -90,14 +94,13 @@ html {
       }
 
       .col-map {
-        height: calc(100% - 200px);
+        height: calc(100% - 115px);
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: $s-small;
+        gap: 0;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-bottom: $s-button;
 
         .col-map--body {
           width: 100%;
@@ -237,6 +240,7 @@ html {
 
         &.ratio-100 {
           height: 100%;
+          min-height: 320px;
         }
 
         &.ratio-box {
@@ -270,6 +274,16 @@ html {
       .col-padding--fix {
         padding-right: $s-medium;
         padding-top: $s-medium;
+
+        &:last-child {
+          padding-right: $s-normal;
+        }
+
+        @media (max-width: $break-md) {
+          padding-top: $s-normal;
+          padding-right: $s-normal;
+          padding-left: $s-normal;
+        }
       }
 
       .login-brand {
@@ -338,6 +352,11 @@ html {
           bottom: 0;
           padding: 0 $s-small $s-extra-bottom $s-small;
 
+          @media (max-width: $break-md) {
+            left: 0;
+            right: 0;
+          }
+
           .box-scroll--inner {
             display: flex;
             flex-direction: column;
@@ -405,6 +424,26 @@ html {
           &.box-scroll--full {
             padding-left: $s-big;
             padding-right: $s-big;
+
+            @media (max-width: $break-xxl) {
+              padding-left: $s-normal;
+              padding-right: $s-normal;
+            }
+          }
+
+          &.box-scroll--page {
+            padding-left: $s-big;
+            padding-right: $s-big;
+            padding-bottom: 0;
+
+            &::after {
+              display: none;
+            }
+
+            @media (max-width: $break-xxl) {
+              padding-left: $s-normal;
+              padding-right: $s-normal;
+            }
           }
 
           &.box-scroll--noshadow {

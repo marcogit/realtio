@@ -9,16 +9,23 @@ header {
     z-index: 500;
     border-bottom: $white-small solid 1px;
 
-    @media (max-width: $break-lg) {
-      padding-top: $s-normal;
-      padding-bottom: $s-normal;
+    .col-logo {
+      .navbar-brand {
+        width: $logo-header;
+  
+        img {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: $break-xl) {
+        display: none;
+      }
     }
 
-    .navbar-brand {
-      width: $logo-header;
-
-      img {
-        max-width: 100%;
+    .col-info {
+      @media (max-width: $break-xl) {
+       padding-left: 0;
       }
     }
 
@@ -42,6 +49,24 @@ header {
       align-items: center;
       justify-content: flex-end;
       padding: 0;
+
+      .nav-no-tablet {
+        display: none;
+      }
+
+      .dropdown-general-nav {
+        display: none;
+
+        @media (max-width: $break-lg) {
+          display: inline-flex;
+        }
+      }
+
+      .general-nav {
+        @media (max-width: $break-lg) {
+          display: none;
+        }
+      }
     }
 
     .col-user {

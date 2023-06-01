@@ -150,7 +150,7 @@ body {
 
         &.btn-outline-primary {
           border-color: transparent;
-    
+
           &:hover {
             border-color: transparent;
           }
@@ -158,7 +158,7 @@ body {
 
         &.btn-outline-light {
           border-color: transparent;
-    
+
           &:hover {
             border-color: transparent;
           }
@@ -167,16 +167,16 @@ body {
         &.btn-outline-primary--plus {
           span {
             border: $primary solid 1px !important;
-    
+
             svg {
               fill: $primary !important;
             }
           }
-    
+
           &:hover {
             span {
               background: $primary;
-    
+
               svg {
                 fill: white !important;
               }
@@ -186,7 +186,7 @@ body {
 
         &.btn-outline-danger {
           border-color: transparent;
-    
+
           &:hover {
             border-color: transparent;
           }
@@ -335,7 +335,7 @@ body {
         background: $black-min;
       }
 
-      &.btn-group-fix--dark{
+      &.btn-group-fix--dark {
         background: $grey;
       }
 
@@ -474,7 +474,7 @@ body {
       }
     }
 
-     /* Accordion */
+    /* Accordion */
     .accordion {
       .accordion-item {
         .accordion-header {
@@ -486,7 +486,8 @@ body {
             }
 
             &::after {
-              background: url(../images/icon-ch--down-color.svg) no-repeat center center;
+              background: url(../images/icon-ch--down-color.svg) no-repeat
+                center center;
               background-size: contain;
             }
           }
@@ -508,6 +509,10 @@ body {
 
             &.active {
               color: white;
+            }
+
+            &.nav-link--publish {
+              border-color: $white-med;
             }
           }
         }
@@ -574,7 +579,8 @@ body {
 
       &.form-year {
         &::-webkit-calendar-picker-indicator {
-          background: url(../images/icon-ch--down-color.svg) center center no-repeat;
+          background: url(../images/icon-ch--down-color.svg) center center
+            no-repeat;
           background-size: contain;
           width: $s-min;
         }
@@ -599,6 +605,14 @@ body {
     /* Badges */
     .badge {
       color: $white-med;
+
+      &.badge-info {
+        span {
+          @media (max-width: $break-lg) {
+            color: white;
+          }
+        }
+      }
     }
 
     .avatar {
