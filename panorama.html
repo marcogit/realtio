@@ -27,29 +27,29 @@
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
-      href="/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+      href="images/favicons/apple-touch-icon.png"
       sizes="180x180"
     />
     <link
       rel="icon"
-      href="/docs/5.0/assets/img/favicons/favicon-32x32.png"
+      href="images/favicons/favicon-32x32.png"
       sizes="32x32"
       type="image/png"
     />
     <link
       rel="icon"
-      href="/docs/5.0/assets/img/favicons/favicon-16x16.png"
+      href="images/favicons/favicon-16x16.png"
       sizes="16x16"
       type="image/png"
     />
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json" />
+    <link rel="manifest" href="images/favicons/manifest.json" />
     <link
       rel="mask-icon"
-      href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
-      color="#7952b3"
+      href="images/favicons/safari-pinned-tab.svg"
+      color="#22262C"
     />
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico" />
-    <meta name="theme-color" content="#7952b3" />
+    <link rel="icon" href="images/favicons/favicons/favicon.ico" />
+    <meta name="theme-color" content="#22262C" />
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet" />
@@ -59,21 +59,24 @@
     <header class="main-header">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-auto col-logo">
+          <div class="col-auto col-logo pe-0">
             <a href="#" class="navbar-brand">
               <img src="images/logo-realtio--white.svg" />
             </a>
           </div>
           <div class="col-auto col-info">
-            <div class="badge">TOUR 22 <img src="images/icon-view.svg" /></div>
+            <div class="badge badge-info badge-lg">
+              <a class="badge-link" href="#"><img src="images/icon-home.svg" /></a> / <span title="MY NEW TOUR IN FLORENCIA 22">MY NEW TOUR IN FLORENCIA 22</span></div>
           </div>
           <div class="col col-menu--item">
             <ul class="nav general-nav main-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">INFORMATION</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INFORMATION</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">PANORAMAS</a>
+                <a class="nav-link" href="#">PANORAMAS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">PHOTOS</a>
@@ -82,15 +85,18 @@
                 <a class="nav-link" href="#">VIDEO</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">AUDIO</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">AGENT INFO</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SKINS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PUBLISH</a>
+                <a class="nav-link nav-link--publish" href="#">PUBLISH</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-no-tablet">
                 <button class="btn btn-icon" title="Share">
                   <span>
                     <svg
@@ -107,14 +113,88 @@
                   </span>
                 </button>
               </li>
+              <li class="nav-item nav-no-tablet">
+                <button class="btn btn-icon" title="view">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24.023" height="15.78" viewBox="0 0 24.023 15.78">
+                      <g transform="translate(-296.413 -9.33)">
+                        <path d="M785.956,6720.04a12.2,12.2,0,0,1,5.314,1.2,13.77,13.77,0,0,1,3.688,2.621,15.212,15.212,0,0,1,2.859,3.813l.1.206-.091.21a14.071,14.071,0,0,1-2.733,3.868,13.121,13.121,0,0,1-3.679,2.655,12.95,12.95,0,0,1-10.93,0,13.363,13.363,0,0,1-3.711-2.653,14.328,14.328,0,0,1-2.783-3.865l-.1-.215.1-.211a15.5,15.5,0,0,1,2.908-3.811,14.026,14.026,0,0,1,3.721-2.619A12.3,12.3,0,0,1,785.956,6720.04Zm10.852,7.861a14.975,14.975,0,0,0-2.575-3.354,12.765,12.765,0,0,0-3.414-2.417,11.426,11.426,0,0,0-9.762.009,13.036,13.036,0,0,0-3.455,2.434,15.2,15.2,0,0,0-2.594,3.326,14.059,14.059,0,0,0,2.5,3.377,12.342,12.342,0,0,0,3.427,2.44,11.951,11.951,0,0,0,10.049-.009,12.117,12.117,0,0,0,3.4-2.455A13.7,13.7,0,0,0,796.808,6727.9Z" transform="translate(-477.481 -6710.71)"/>
+                        <path d="M4,1A3,3,0,1,0,7,4,3,3,0,0,0,4,1M4,0A4,4,0,1,1,0,4,4,4,0,0,1,4,0Z" transform="translate(304.466 13.33)"/>
+                      </g>
+                    </svg>
+                  </span>
+                </button>
+              </li>
             </ul>
+            <div class="dropdown dropdown-general-nav">
+              <button
+                class="btn dropdown-toggle btn-transparent"
+                type="button"
+                id="dropdownMenuType"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Information
+              </button>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuType"
+              >
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Panoramas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Photos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Video</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Audio</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Agent Info</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Skins</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" role="button"
+                    >Publish</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="col-auto col-user">
             <button class="btn btn-thumb btn-outline-light" title="New Tour">
               <span>
                 <img src="images/user-thumb.svg" />
               </span>
-              JOHN DOE
+              <strong>JOHN DOE</strong>
+            </button>
+            <button class="btn btn-icon btn-icon--small" title="view">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3.546" height="16.24" viewBox="0 0 3.546 16.24">
+                  <g transform="translate(-4437.662 -6720.68)">
+                    <path d="M4441.208,6722.455a1.773,1.773,0,1,1-1.773-1.775A1.773,1.773,0,0,1,4441.208,6722.455Z"/>
+                    <path d="M4441.208,6728.8a1.773,1.773,0,1,1-1.773-1.773A1.775,1.775,0,0,1,4441.208,6728.8Z"/>
+                    <path d="M4441.208,6735.147a1.773,1.773,0,1,1-1.773-1.773A1.774,1.774,0,0,1,4441.208,6735.147Z" />
+                  </g>
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -122,1218 +202,482 @@
     </header>
     <!-- MAIN -->
     <main>
-      <div class="container-fluid h-100">
-        <div class="row h-100">
-          <div class="col-auto col-panorama--menu">
-            <!-- NAV -->
-            <ul class="nav nav-sidebar">
-              <li class="nav-item">
-                <a
-                  href="#"
-                  class="nav-link nav-link--sidebar active"
-                  aria-current="page"
-                  title="Info"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="27.324"
-                    height="18"
-                    viewBox="0 0 27.324 18"
+      <div class="content">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-auto col-panorama--menu">
+              <!-- NAV -->
+              <ul class="nav nav-sidebar">
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link nav-link--sidebar active"
+                    aria-current="page"
+                    title="Info"
                   >
-                    <g transform="translate(-2602.23 -3506.936)">
-                      <path
-                        d="M2602.23,3506.936v18h27.324v-18Zm19.354,3.036h3.795v1.518h-3.795Zm-2.656,14.205h-15.939V3507.7h15.939Zm7.969-5.1h-5.313v-1.518h5.313Zm0-2.53h-5.313v-1.518h5.313Zm.759-2.53h-6.072V3512.5h6.072Z"
-                      />
-                      <path
-                        d="M2609.132,3513.446l2.812,3.538,1.407-1.569,2.978,4.044H2605.1Z"
-                      />
-                      <path
-                        d="M2615.174,3513.593a.945.945,0,1,1-.925-.965A.947.947,0,0,1,2615.174,3513.593Z"
-                      />
-                    </g>
-                  </svg>
-                  <span>Info</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="Text">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11.143"
-                    height="13.3"
-                    viewBox="0 0 11.143 13.3"
-                  >
-                    <path
-                      d="M2616.3,3592.392v-12.367h-5.117v-.933h11.143v.933h-5.117v12.367Z"
-                      transform="translate(-2611.186 -3579.092)"
-                    />
-                  </svg>
-                  <span>Text</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="Image">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18.9"
-                    height="16.8"
-                    viewBox="0 0 18.9 16.8"
-                  >
-                    <path
-                      d="M2616.758,3660.431a3.7,3.7,0,0,0,2.7-1.089,3.866,3.866,0,0,0,0-5.408,3.807,3.807,0,0,0-6.51,2.717,3.634,3.634,0,0,0,1.1,2.691A3.7,3.7,0,0,0,2616.758,3660.431Zm0-.787a2.879,2.879,0,0,1-2.14-.867,2.993,2.993,0,1,1,4.279,0A2.878,2.878,0,0,1,2616.758,3659.644Zm-8.007,4.3a1.434,1.434,0,0,1-1.443-1.444V3650.8a1.435,1.435,0,0,1,.42-1.036,1.371,1.371,0,0,1,1.023-.434h3.36l1.943-2.178h5.407l1.943,2.178h3.36a1.373,1.373,0,0,1,1.024.434,1.435,1.435,0,0,1,.42,1.036V3662.5a1.434,1.434,0,0,1-1.444,1.444Zm16.013-.814a.629.629,0,0,0,.63-.63V3650.8a.649.649,0,0,0-.184-.459.588.588,0,0,0-.446-.2h-3.728l-1.942-2.179h-4.673l-1.942,2.179h-3.728a.589.589,0,0,0-.446.2.654.654,0,0,0-.184.459V3662.5a.628.628,0,0,0,.63.63Z"
-                      transform="translate(-2607.308 -3647.149)"
-                    />
-                  </svg>
-                  <span>Image</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="Video">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18.9"
-                    height="14.7"
-                    viewBox="0 0 18.9 14.7"
-                  >
-                    <path
-                      d="M2614.815,3728.951l5.618-3.622-5.618-3.623Zm-6.064,3.754a1.434,1.434,0,0,1-1.443-1.444v-11.812a1.434,1.434,0,0,1,1.443-1.444h16.013a1.434,1.434,0,0,1,1.444,1.444v11.812a1.434,1.434,0,0,1-1.444,1.444Zm0-.814h16.013a.676.676,0,0,0,.63-.63v-11.812a.678.678,0,0,0-.63-.63h-16.013a.678.678,0,0,0-.63.63v11.812a.676.676,0,0,0,.63.63Zm-.63,0v0Z"
-                      transform="translate(-2607.308 -3718.005)"
-                    />
-                  </svg>
-                  <span>Video</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="Url">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20.3"
-                    height="9.115"
-                    viewBox="0 0 20.3 9.115"
-                  >
-                    <path
-                      d="M2615.332,3799.719h-4.167a4.558,4.558,0,1,1,0-9.115h4.167v.867h-4.167a3.691,3.691,0,1,0,0,7.382h4.167Zm-2.405-4.138v-.839h7.689v.839Zm5.257,4.138v-.866h4.166a3.691,3.691,0,1,0,0-7.382h-4.166v-.867h4.166a4.558,4.558,0,1,1,0,9.115Z"
-                      transform="translate(-2606.608 -3790.604)"
-                    />
-                  </svg>
-                  <span>Url</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="FX Video">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16.408"
-                    height="19"
-                    viewBox="0 0 16.408 19"
-                  >
-                    <path
-                      d="M2609.455,3866.264a7.258,7.258,0,0,0,4.336,6.656,3.63,3.63,0,0,1-.549-1.909,3.2,3.2,0,0,1,.272-1.308,3.639,3.639,0,0,1,.767-1.111l2.477-2.441,2.5,2.441a3.485,3.485,0,0,1,.755,1.111,3.328,3.328,0,0,1,.262,1.308,3.646,3.646,0,0,1-.55,1.909,7.259,7.259,0,0,0,4.336-6.656,7.316,7.316,0,0,0-.606-2.922,8.079,8.079,0,0,0-1.731-2.532,4.7,4.7,0,0,1-1.256.632,4.379,4.379,0,0,1-5.76-4.04v-.271a15.824,15.824,0,0,0-2.218,2.049,13.371,13.371,0,0,0-1.655,2.289,11.221,11.221,0,0,0-1.025,2.405A8.552,8.552,0,0,0,2609.455,3866.264Zm7.3,1.154-1.855,1.826a2.635,2.635,0,0,0-.563.818,2.357,2.357,0,0,0-.2.949,2.441,2.441,0,0,0,.76,1.811,2.681,2.681,0,0,0,3.709,0,2.524,2.524,0,0,0,.563-2.783,2.386,2.386,0,0,0-.563-.8Zm-1.172-11.95v1.772a3.378,3.378,0,0,0,1.026,2.5,3.454,3.454,0,0,0,2.519,1.012,3.172,3.172,0,0,0,1.072-.186,3.717,3.717,0,0,0,.986-.536l.5-.4a7.886,7.886,0,0,1,2.4,2.9,8.331,8.331,0,0,1,.866,3.728,8.2,8.2,0,1,1-16.408,0,10.848,10.848,0,0,1,1.877-5.926A15.291,15.291,0,0,1,2615.586,3855.468Z"
-                      transform="translate(-2608.554 -3855.468)"
-                    />
-                  </svg>
-                  <span>FX Video</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link nav-link--sidebar" title="Blur">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16.009"
-                    height="19"
-                    viewBox="0 0 16.009 19"
-                  >
-                    <path
-                      d="M2616.758,3943.463a7.835,7.835,0,0,1-5.659-2.275,7.475,7.475,0,0,1-2.346-5.586,7.147,7.147,0,0,1,.649-3.074,9.849,9.849,0,0,1,1.686-2.51l5.67-5.555,5.669,5.555a9.661,9.661,0,0,1,1.686,2.543,7.216,7.216,0,0,1,.649,3.041,7.513,7.513,0,0,1-2.332,5.572A7.8,7.8,0,0,1,2616.758,3943.463Zm0-.879a6.95,6.95,0,0,0,5.037-2.039,6.651,6.651,0,0,0,2.088-4.943,6.611,6.611,0,0,0-2.05-4.891l-5.075-4.99-5.076,4.99a6.607,6.607,0,0,0-2.049,4.891,6.652,6.652,0,0,0,2.088,4.943A6.949,6.949,0,0,0,2616.758,3942.584Z"
-                      transform="translate(-2608.753 -3924.463)"
-                    />
-                  </svg>
-                  <span>Blur</span>
-                </a>
-              </li>
-            </ul>
-            <!-- END NAV -->
-          </div>
-          <div class="col col-panorama--iframe">
-            <!-- IFRAME -->
-            <div
-              class="ratio ratio-100 gate"
-              ondrop="drop(event)"
-              ondragover="allowDrop(event)"
-            >
-              <div class="ratio-title">
-                <div class="dropdown">
-                  <button
-                    class="btn btn-icon btn-outline-primary btn-ratio-dropdown"
-                    type="button"
-                    id="input-a-03"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="9.671"
-                        height="5.115"
-                        viewBox="0 0 9.671 5.115"
-                      >
-                        <path
-                          d="M4270.435,1202.519l-4.836-4.373.671-.742,4.165,3.767,4.164-3.767.671.742Z"
-                          transform="translate(-4265.599 -1197.404)"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="input-a-03">
-                    <li>
-                      <a class="dropdown-item" href="#" role="button"
-                        >Option 01</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" role="button"
-                        >Option 02</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#" role="button"
-                        >Option 03</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <input
-                  type="text"
-                  class="form-control form-control-lg form-noedit"
-                  placeholder="THE LIVING ROOM"
-                />
-                <textarea
-                  class="form-control form-control-sm form-noedit"
-                  id="exampleFormControlTextarea1"
-                  placeholder="Room Description"
-                  rows="3"
-                ></textarea>
-
-                <ul class="nav nav-overlay--row">
-                  <li class="nav-item">
-                    <button
-                      class="btn btn-icon btn-outline-overlay"
-                      title="Add Photo"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25.574"
-                          height="18"
-                          viewBox="0 0 25.574 18"
-                        >
-                          <g transform="translate(-4385.934 -3505.705)">
-                            <path
-                              d="M4387.558,3523.705a1.645,1.645,0,0,1-1.624-1.625v-14.6a1.91,1.91,0,0,1,1.772-1.772h8.474l1.28,1.28h9.74a1.622,1.622,0,0,1,.934.284,1.735,1.735,0,0,1,.617.7h-11.7l-1.28-1.28h-8.061a.76.76,0,0,0-.788.788v14.456a.691.691,0,0,0,.136.443,1.165,1.165,0,0,0,.357.295l3.14-12.437h20.957l-3.1,12.27a1.586,1.586,0,0,1-.593.9,1.773,1.773,0,0,1-1.054.3Zm.884-.985h18.894l2.835-11.5h-18.894Zm0,0,2.835-11.5Zm-1.524-14.751v0Z"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                    </button>
-                  </li>
-                  <li class="nav-item">
-                    <button
-                      class="btn btn-icon btn-outline-overlay"
-                      title="Add Photo"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18.133"
-                          height="23"
-                          viewBox="0 0 18.133 23"
-                        >
-                          <g transform="translate(-4437.143 -3502.205)">
-                            <path
-                              d="M4438.665,3507.622c-.185,0-.326,0-.466,0a1.011,1.011,0,0,1-1.049-1.041c-.01-.342-.008-.684,0-1.025a1.016,1.016,0,0,1,1.092-1.077c1.59,0,3.18,0,4.77,0h.463c0-.211-.007-.379,0-.547a1.709,1.709,0,0,1,1.741-1.714c.656-.016,1.314-.014,1.971,0a1.711,1.711,0,0,1,1.76,1.735c.007.157,0,.314,0,.527h.444q2.344,0,4.69,0a1.047,1.047,0,0,1,1.193,1.177c0,.263,0,.525,0,.788a1.04,1.04,0,0,1-1.15,1.18c-.1,0-.207.01-.367.017v.506q0,7.056,0,14.111a2.692,2.692,0,0,1-1.734,2.732,3.42,3.42,0,0,1-1.151.2c-3.1.016-6.2.012-9.3.008a2.742,2.742,0,0,1-2.9-2.925q-.006-7.054,0-14.111Zm.791.016v.391q0,7.131,0,14.262a1.958,1.958,0,0,0,2.146,2.12q4.609,0,9.219,0a1.965,1.965,0,0,0,2.144-2.163q0-7.092,0-14.184v-.426Zm6.792-2.37c-2.442,0-4.884-.005-7.327,0-1.115,0-.974-.16-.982.98,0,.583,0,.583.594.583q7.446,0,14.891,0c1.237,0,1.047.174,1.06-1.059.006-.487-.016-.5-.515-.5Zm-1.942-.819h3.817c.138-1.053-.2-1.446-1.226-1.446h-1.418C4444.5,3503,4444.151,3503.428,4444.306,3504.449Z"
-                              fill="#fff"
-                            />
-                            <path
-                              d="M4443.351,3516.018q0-2.225,0-4.45a.917.917,0,0,1,.026-.387c.063-.123.194-.272.311-.286a.476.476,0,0,1,.374.2.865.865,0,0,1,.076.454q.006,4.47,0,8.94c0,.1.03.242-.024.306-.111.135-.273.321-.407.316a.507.507,0,0,1-.338-.365c-.041-.535-.02-1.075-.02-1.613Q4443.35,3517.573,4443.351,3516.018Z"
-                              fill="#fff"
-                            />
-                            <path
-                              d="M4449.073,3515.993q0,2.226,0,4.45a.8.8,0,0,1-.018.349c-.072.132-.206.318-.315.319a.682.682,0,0,1-.412-.258c-.063-.072-.044-.225-.044-.342q0-4.509,0-9.019a.64.64,0,0,1,.064-.377.591.591,0,0,1,.4-.218c.108.005.239.172.3.3a.948.948,0,0,1,.024.388Q4449.075,3513.788,4449.073,3515.993Z"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="ratio-menu">
-                <ul class="nav nav-overlay--column">
-                  <li class="nav-item">
-                    <button
-                      class="btn btn-icon btn-outline-overlay"
-                      title="Add Photo"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25.06"
-                          height="22.276"
-                          viewBox="0 0 25.06 22.276"
-                        >
-                          <path
-                            d="M2696.868,4115.477a4.909,4.909,0,0,0,3.585-1.444,5.126,5.126,0,0,0,0-7.17,5.17,5.17,0,0,0-7.17,0,5.127,5.127,0,0,0,0,7.17A4.907,4.907,0,0,0,2696.868,4115.477Zm0-1.044a3.818,3.818,0,0,1-2.837-1.149,3.969,3.969,0,1,1,5.673,0A3.817,3.817,0,0,1,2696.868,4114.433Zm-10.616,5.708a1.9,1.9,0,0,1-1.914-1.914V4102.7a1.9,1.9,0,0,1,.557-1.374,1.817,1.817,0,0,1,1.357-.575h4.455l2.576-2.889h7.17l2.575,2.889h4.455a1.819,1.819,0,0,1,1.358.575,1.9,1.9,0,0,1,.557,1.374v15.524a1.9,1.9,0,0,1-1.915,1.914Zm21.231-1.079a.834.834,0,0,0,.836-.835V4102.7a.862.862,0,0,0-.244-.609.778.778,0,0,0-.592-.261h-4.942l-2.576-2.889h-6.2l-2.575,2.889h-4.943a.78.78,0,0,0-.592.261.866.866,0,0,0-.243.609v15.524a.831.831,0,0,0,.835.835Z"
-                            transform="translate(-2684.338 -4097.865)"
-                          />
-                        </svg>
-                      </span>
-                      TAKE PHOTO
-                    </button>
-                  </li>
-                  <li class="nav-item">
-                    <button
-                      class="btn btn-icon btn-outline-overlay"
-                      title="Add Photo"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="23"
-                          height="23"
-                          viewBox="0 0 23 23"
-                        >
-                          <g transform="translate(-2685.368 -4144.117)">
-                            <path
-                              d="M2685.368,4167.117v-8.091h1.273v6.818h6.818v1.273Zm0-14.909v-8.091h8.091v1.274h-6.818v6.817Zm14.909,14.909v-1.273h6.818v-6.818h1.273v8.091Zm6.818-14.909v-6.817h-6.818v-1.274h8.091v8.091Z"
-                              fill="#fff"
-                            />
-                            <circle
-                              cx="1.5"
-                              cy="1.5"
-                              r="1.5"
-                              transform="translate(2695.368 4154.117)"
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      SET INITIAL VIEW
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="ratio-end">
-                <ul class="nav nav-overlay--column">
-                  <li class="nav-item">
-                    <button
-                      class="btn btn-icon btn-outline-overlay"
-                      title="Add Photo"
-                    >
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="27.307"
-                          viewBox="0 0 24 27.307"
-                        >
-                          <path
-                            d="M4358.627,4169.893l-9.449-5.528a2.951,2.951,0,0,1-.9-.921,2.456,2.456,0,0,1-.33-1.3V4151.09a2.531,2.531,0,0,1,.33-1.252,2.786,2.786,0,0,1,.9-.969l9.5-5.527a2.342,2.342,0,0,1,2.551,0l9.5,5.527a2.789,2.789,0,0,1,.9.969,2.533,2.533,0,0,1,.331,1.252v11.055a2.6,2.6,0,0,1-.307,1.3,2.5,2.5,0,0,1-.969.921l-9.5,5.528a2.61,2.61,0,0,1-1.3.378A2.364,2.364,0,0,1,4358.627,4169.893Zm.8-.756v-12.283l-10.441-5.906v11.2a1.4,1.4,0,0,0,.189.709,1.63,1.63,0,0,0,.567.567Zm1.039,0,9.685-5.716a1.631,1.631,0,0,0,.567-.567,1.408,1.408,0,0,0,.189-.709v-11.2l-10.441,5.906Zm-.519-13.181,10.441-6-9.685-5.622a1.607,1.607,0,0,0-1.512,0l-9.685,5.622Z"
-                            transform="translate(-4347.95 -4142.964)"
-                          />
-                        </svg>
-                      </span>
-                      DOLLHOUSE
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1680630943285!6m8!1m7!1sl82kr51xT4lp1wLnCnQ13Q!2m2!1d37.1768063871428!2d-3.589929319243936!3f248.25258550337946!4f0!5f0.7820865974627469"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <!-- END IFRAME -->
-          </div>
-          <div class="col-12 col-panorama--bottom">
-            <div class="row h-100 align-items-center justify-content-between">
-              <div class="col-11 p-0 col-panorama--bottom---items">
-                <div class="scroll-lateral">
-                  <!-- NAV -->
-                  <ul class="nav nav-panorama">
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama active"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
-                        type="button"
-                        class="nav-link nav-link--panorama"
-                        draggable="true"
-                        ondragstart="drag(event)"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="7.443"
-                          height="12.663"
-                          viewBox="0 0 7.443 12.663"
-                          class="drop"
-                        >
-                          <g transform="translate(-2700.473 -4216.117)">
-                            <path
-                              d="M2703.238,4217.5a1.383,1.383,0,1,1-1.384-1.383A1.383,1.383,0,0,1,2703.238,4217.5Z"
-                            />
-                            <path
-                              d="M2703.238,4222.449a1.383,1.383,0,1,1-1.384-1.383A1.384,1.384,0,0,1,2703.238,4222.449Z"
-                            />
-                            <path
-                              d="M2703.238,4227.4a1.383,1.383,0,1,1-1.384-1.382A1.384,1.384,0,0,1,2703.238,4227.4Z"
-                            />
-                            <path
-                              d="M2707.916,4217.5a1.383,1.383,0,1,1-1.383-1.383A1.383,1.383,0,0,1,2707.916,4217.5Z"
-                            />
-                            <path
-                              d="M2707.916,4222.449a1.383,1.383,0,1,1-1.383-1.383A1.384,1.384,0,0,1,2707.916,4222.449Z"
-                            />
-                            <path
-                              d="M2707.916,4227.4a1.383,1.383,0,1,1-1.383-1.382A1.384,1.384,0,0,1,2707.916,4227.4Z"
-                            />
-                          </g>
-                        </svg>
-                        <figure>
-                          <img
-                            src="https://picsum.photos/id/42/100/100"
-                            class="card-img"
-                            alt="thumbnail_example"
-                          />
-                        </figure>
-                        <span>Info</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <div class="nav-link nav-link--panorama disabled">
-                        <em
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="10.962"
-                            height="8"
-                            viewBox="0 0 10.962 8"
-                          >
-                            <path
-                              d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z"
-                              transform="translate(-5718.772 -3082.787)"
-                            />
-                          </svg>
-                        </em>
-                        <span>Info</span>
-                      </div>
-                    </li>
-                  </ul>
-                  <!-- END NAV -->
-                </div>
-              </div>
-              <div class="col-auto">
-                <button class="btn btn-icon btn-secondary btn-transparent">
-                  <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="11"
-                      height="11.002"
-                      viewBox="0 0 11 11.002"
+                      width="27.324"
+                      height="18"
+                      viewBox="0 0 27.324 18"
                     >
-                      <g transform="translate(-601.989 -2709.472)">
+                      <g transform="translate(-2602.23 -3506.936)">
                         <path
-                          d="M.5,11h-1V0h1Z"
-                          transform="translate(607.49 2709.472)"
+                          d="M2602.23,3506.936v18h27.324v-18Zm19.354,3.036h3.795v1.518h-3.795Zm-2.656,14.205h-15.939V3507.7h15.939Zm7.969-5.1h-5.313v-1.518h5.313Zm0-2.53h-5.313v-1.518h5.313Zm.759-2.53h-6.072V3512.5h6.072Z"
                         />
                         <path
-                          d="M11,.5H0v-1H11Z"
-                          transform="translate(601.989 2714.973)"
+                          d="M2609.132,3513.446l2.812,3.538,1.407-1.569,2.978,4.044H2605.1Z"
+                        />
+                        <path
+                          d="M2615.174,3513.593a.945.945,0,1,1-.925-.965A.947.947,0,0,1,2615.174,3513.593Z"
                         />
                       </g>
                     </svg>
-                  </span>
-                </button>
+                    <span>Info</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="Text">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11.143"
+                      height="13.3"
+                      viewBox="0 0 11.143 13.3"
+                    >
+                      <path
+                        d="M2616.3,3592.392v-12.367h-5.117v-.933h11.143v.933h-5.117v12.367Z"
+                        transform="translate(-2611.186 -3579.092)"
+                      />
+                    </svg>
+                    <span>Text</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="Image">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18.9"
+                      height="16.8"
+                      viewBox="0 0 18.9 16.8"
+                    >
+                      <path
+                        d="M2616.758,3660.431a3.7,3.7,0,0,0,2.7-1.089,3.866,3.866,0,0,0,0-5.408,3.807,3.807,0,0,0-6.51,2.717,3.634,3.634,0,0,0,1.1,2.691A3.7,3.7,0,0,0,2616.758,3660.431Zm0-.787a2.879,2.879,0,0,1-2.14-.867,2.993,2.993,0,1,1,4.279,0A2.878,2.878,0,0,1,2616.758,3659.644Zm-8.007,4.3a1.434,1.434,0,0,1-1.443-1.444V3650.8a1.435,1.435,0,0,1,.42-1.036,1.371,1.371,0,0,1,1.023-.434h3.36l1.943-2.178h5.407l1.943,2.178h3.36a1.373,1.373,0,0,1,1.024.434,1.435,1.435,0,0,1,.42,1.036V3662.5a1.434,1.434,0,0,1-1.444,1.444Zm16.013-.814a.629.629,0,0,0,.63-.63V3650.8a.649.649,0,0,0-.184-.459.588.588,0,0,0-.446-.2h-3.728l-1.942-2.179h-4.673l-1.942,2.179h-3.728a.589.589,0,0,0-.446.2.654.654,0,0,0-.184.459V3662.5a.628.628,0,0,0,.63.63Z"
+                        transform="translate(-2607.308 -3647.149)"
+                      />
+                    </svg>
+                    <span>Image</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="Video">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18.9"
+                      height="14.7"
+                      viewBox="0 0 18.9 14.7"
+                    >
+                      <path
+                        d="M2614.815,3728.951l5.618-3.622-5.618-3.623Zm-6.064,3.754a1.434,1.434,0,0,1-1.443-1.444v-11.812a1.434,1.434,0,0,1,1.443-1.444h16.013a1.434,1.434,0,0,1,1.444,1.444v11.812a1.434,1.434,0,0,1-1.444,1.444Zm0-.814h16.013a.676.676,0,0,0,.63-.63v-11.812a.678.678,0,0,0-.63-.63h-16.013a.678.678,0,0,0-.63.63v11.812a.676.676,0,0,0,.63.63Zm-.63,0v0Z"
+                        transform="translate(-2607.308 -3718.005)"
+                      />
+                    </svg>
+                    <span>Video</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="Url">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20.3"
+                      height="9.115"
+                      viewBox="0 0 20.3 9.115"
+                    >
+                      <path
+                        d="M2615.332,3799.719h-4.167a4.558,4.558,0,1,1,0-9.115h4.167v.867h-4.167a3.691,3.691,0,1,0,0,7.382h4.167Zm-2.405-4.138v-.839h7.689v.839Zm5.257,4.138v-.866h4.166a3.691,3.691,0,1,0,0-7.382h-4.166v-.867h4.166a4.558,4.558,0,1,1,0,9.115Z"
+                        transform="translate(-2606.608 -3790.604)"
+                      />
+                    </svg>
+                    <span>Url</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="FX Video">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16.408"
+                      height="19"
+                      viewBox="0 0 16.408 19"
+                    >
+                      <path
+                        d="M2609.455,3866.264a7.258,7.258,0,0,0,4.336,6.656,3.63,3.63,0,0,1-.549-1.909,3.2,3.2,0,0,1,.272-1.308,3.639,3.639,0,0,1,.767-1.111l2.477-2.441,2.5,2.441a3.485,3.485,0,0,1,.755,1.111,3.328,3.328,0,0,1,.262,1.308,3.646,3.646,0,0,1-.55,1.909,7.259,7.259,0,0,0,4.336-6.656,7.316,7.316,0,0,0-.606-2.922,8.079,8.079,0,0,0-1.731-2.532,4.7,4.7,0,0,1-1.256.632,4.379,4.379,0,0,1-5.76-4.04v-.271a15.824,15.824,0,0,0-2.218,2.049,13.371,13.371,0,0,0-1.655,2.289,11.221,11.221,0,0,0-1.025,2.405A8.552,8.552,0,0,0,2609.455,3866.264Zm7.3,1.154-1.855,1.826a2.635,2.635,0,0,0-.563.818,2.357,2.357,0,0,0-.2.949,2.441,2.441,0,0,0,.76,1.811,2.681,2.681,0,0,0,3.709,0,2.524,2.524,0,0,0,.563-2.783,2.386,2.386,0,0,0-.563-.8Zm-1.172-11.95v1.772a3.378,3.378,0,0,0,1.026,2.5,3.454,3.454,0,0,0,2.519,1.012,3.172,3.172,0,0,0,1.072-.186,3.717,3.717,0,0,0,.986-.536l.5-.4a7.886,7.886,0,0,1,2.4,2.9,8.331,8.331,0,0,1,.866,3.728,8.2,8.2,0,1,1-16.408,0,10.848,10.848,0,0,1,1.877-5.926A15.291,15.291,0,0,1,2615.586,3855.468Z"
+                        transform="translate(-2608.554 -3855.468)"
+                      />
+                    </svg>
+                    <span>FX Video</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link nav-link--sidebar" title="Blur">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16.009"
+                      height="19"
+                      viewBox="0 0 16.009 19"
+                    >
+                      <path
+                        d="M2616.758,3943.463a7.835,7.835,0,0,1-5.659-2.275,7.475,7.475,0,0,1-2.346-5.586,7.147,7.147,0,0,1,.649-3.074,9.849,9.849,0,0,1,1.686-2.51l5.67-5.555,5.669,5.555a9.661,9.661,0,0,1,1.686,2.543,7.216,7.216,0,0,1,.649,3.041,7.513,7.513,0,0,1-2.332,5.572A7.8,7.8,0,0,1,2616.758,3943.463Zm0-.879a6.95,6.95,0,0,0,5.037-2.039,6.651,6.651,0,0,0,2.088-4.943,6.611,6.611,0,0,0-2.05-4.891l-5.075-4.99-5.076,4.99a6.607,6.607,0,0,0-2.049,4.891,6.652,6.652,0,0,0,2.088,4.943A6.949,6.949,0,0,0,2616.758,3942.584Z"
+                        transform="translate(-2608.753 -3924.463)"
+                      />
+                    </svg>
+                    <span>Blur</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- END NAV -->
+            </div>
+            <div class="col col-panorama--iframe">
+              <!-- IFRAME -->
+              <div
+                class="ratio ratio-100 gate"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <div class="ratio-title">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-icon btn-outline-primary btn-ratio-dropdown"
+                      type="button"
+                      id="input-a-03"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="9.671"
+                          height="5.115"
+                          viewBox="0 0 9.671 5.115"
+                        >
+                          <path
+                            d="M4270.435,1202.519l-4.836-4.373.671-.742,4.165,3.767,4.164-3.767.671.742Z"
+                            transform="translate(-4265.599 -1197.404)"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="input-a-03">
+                      <li>
+                        <a class="dropdown-item" href="#" role="button"
+                          >Option 01</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" role="button"
+                          >Option 02</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" role="button"
+                          >Option 03</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg form-noedit"
+                    placeholder="THE LIVING ROOM"
+                  />
+                  <textarea
+                    class="form-control form-control-sm form-noedit"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Room Description"
+                    rows="3"
+                  ></textarea>
+
+                  <ul class="nav nav-overlay--row">
+                    <li class="nav-item">
+                      <button
+                        class="btn btn-icon btn-outline-overlay"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25.574"
+                            height="18"
+                            viewBox="0 0 25.574 18"
+                          >
+                            <g transform="translate(-4385.934 -3505.705)">
+                              <path
+                                d="M4387.558,3523.705a1.645,1.645,0,0,1-1.624-1.625v-14.6a1.91,1.91,0,0,1,1.772-1.772h8.474l1.28,1.28h9.74a1.622,1.622,0,0,1,.934.284,1.735,1.735,0,0,1,.617.7h-11.7l-1.28-1.28h-8.061a.76.76,0,0,0-.788.788v14.456a.691.691,0,0,0,.136.443,1.165,1.165,0,0,0,.357.295l3.14-12.437h20.957l-3.1,12.27a1.586,1.586,0,0,1-.593.9,1.773,1.773,0,0,1-1.054.3Zm.884-.985h18.894l2.835-11.5h-18.894Zm0,0,2.835-11.5Zm-1.524-14.751v0Z"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button
+                        class="btn btn-icon btn-outline-overlay"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18.133"
+                            height="23"
+                            viewBox="0 0 18.133 23"
+                          >
+                            <g transform="translate(-4437.143 -3502.205)">
+                              <path
+                                d="M4438.665,3507.622c-.185,0-.326,0-.466,0a1.011,1.011,0,0,1-1.049-1.041c-.01-.342-.008-.684,0-1.025a1.016,1.016,0,0,1,1.092-1.077c1.59,0,3.18,0,4.77,0h.463c0-.211-.007-.379,0-.547a1.709,1.709,0,0,1,1.741-1.714c.656-.016,1.314-.014,1.971,0a1.711,1.711,0,0,1,1.76,1.735c.007.157,0,.314,0,.527h.444q2.344,0,4.69,0a1.047,1.047,0,0,1,1.193,1.177c0,.263,0,.525,0,.788a1.04,1.04,0,0,1-1.15,1.18c-.1,0-.207.01-.367.017v.506q0,7.056,0,14.111a2.692,2.692,0,0,1-1.734,2.732,3.42,3.42,0,0,1-1.151.2c-3.1.016-6.2.012-9.3.008a2.742,2.742,0,0,1-2.9-2.925q-.006-7.054,0-14.111Zm.791.016v.391q0,7.131,0,14.262a1.958,1.958,0,0,0,2.146,2.12q4.609,0,9.219,0a1.965,1.965,0,0,0,2.144-2.163q0-7.092,0-14.184v-.426Zm6.792-2.37c-2.442,0-4.884-.005-7.327,0-1.115,0-.974-.16-.982.98,0,.583,0,.583.594.583q7.446,0,14.891,0c1.237,0,1.047.174,1.06-1.059.006-.487-.016-.5-.515-.5Zm-1.942-.819h3.817c.138-1.053-.2-1.446-1.226-1.446h-1.418C4444.5,3503,4444.151,3503.428,4444.306,3504.449Z"
+                                fill="#fff"
+                              />
+                              <path
+                                d="M4443.351,3516.018q0-2.225,0-4.45a.917.917,0,0,1,.026-.387c.063-.123.194-.272.311-.286a.476.476,0,0,1,.374.2.865.865,0,0,1,.076.454q.006,4.47,0,8.94c0,.1.03.242-.024.306-.111.135-.273.321-.407.316a.507.507,0,0,1-.338-.365c-.041-.535-.02-1.075-.02-1.613Q4443.35,3517.573,4443.351,3516.018Z"
+                                fill="#fff"
+                              />
+                              <path
+                                d="M4449.073,3515.993q0,2.226,0,4.45a.8.8,0,0,1-.018.349c-.072.132-.206.318-.315.319a.682.682,0,0,1-.412-.258c-.063-.072-.044-.225-.044-.342q0-4.509,0-9.019a.64.64,0,0,1,.064-.377.591.591,0,0,1,.4-.218c.108.005.239.172.3.3a.948.948,0,0,1,.024.388Q4449.075,3513.788,4449.073,3515.993Z"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ratio-menu">
+                  <ul class="nav nav-overlay--column">
+                    <li class="nav-item">
+                      <button
+                        class="btn btn-icon btn-outline-overlay"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25.06"
+                            height="22.276"
+                            viewBox="0 0 25.06 22.276"
+                          >
+                            <path
+                              d="M2696.868,4115.477a4.909,4.909,0,0,0,3.585-1.444,5.126,5.126,0,0,0,0-7.17,5.17,5.17,0,0,0-7.17,0,5.127,5.127,0,0,0,0,7.17A4.907,4.907,0,0,0,2696.868,4115.477Zm0-1.044a3.818,3.818,0,0,1-2.837-1.149,3.969,3.969,0,1,1,5.673,0A3.817,3.817,0,0,1,2696.868,4114.433Zm-10.616,5.708a1.9,1.9,0,0,1-1.914-1.914V4102.7a1.9,1.9,0,0,1,.557-1.374,1.817,1.817,0,0,1,1.357-.575h4.455l2.576-2.889h7.17l2.575,2.889h4.455a1.819,1.819,0,0,1,1.358.575,1.9,1.9,0,0,1,.557,1.374v15.524a1.9,1.9,0,0,1-1.915,1.914Zm21.231-1.079a.834.834,0,0,0,.836-.835V4102.7a.862.862,0,0,0-.244-.609.778.778,0,0,0-.592-.261h-4.942l-2.576-2.889h-6.2l-2.575,2.889h-4.943a.78.78,0,0,0-.592.261.866.866,0,0,0-.243.609v15.524a.831.831,0,0,0,.835.835Z"
+                              transform="translate(-2684.338 -4097.865)"
+                            />
+                          </svg>
+                        </span>
+                        <strong>TAKE PHOTO</strong>
+                      </button>
+                    </li>
+                    <li class="nav-item">
+                      <button
+                        class="btn btn-icon btn-outline-overlay"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="23"
+                            height="23"
+                            viewBox="0 0 23 23"
+                          >
+                            <g transform="translate(-2685.368 -4144.117)">
+                              <path
+                                d="M2685.368,4167.117v-8.091h1.273v6.818h6.818v1.273Zm0-14.909v-8.091h8.091v1.274h-6.818v6.817Zm14.909,14.909v-1.273h6.818v-6.818h1.273v8.091Zm6.818-14.909v-6.817h-6.818v-1.274h8.091v8.091Z"
+                                fill="#fff"
+                              />
+                              <circle
+                                cx="1.5"
+                                cy="1.5"
+                                r="1.5"
+                                transform="translate(2695.368 4154.117)"
+                              />
+                            </g>
+                          </svg>
+                        </span>
+                        <strong>SET INITIAL VIEW</strong>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ratio-end">
+                  <ul class="nav nav-overlay--column">
+                    <li class="nav-item">
+                      <button
+                        class="btn btn-icon btn-outline-overlay"
+                        title="Add Photo"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="27.307"
+                            viewBox="0 0 24 27.307"
+                          >
+                            <path
+                              d="M4358.627,4169.893l-9.449-5.528a2.951,2.951,0,0,1-.9-.921,2.456,2.456,0,0,1-.33-1.3V4151.09a2.531,2.531,0,0,1,.33-1.252,2.786,2.786,0,0,1,.9-.969l9.5-5.527a2.342,2.342,0,0,1,2.551,0l9.5,5.527a2.789,2.789,0,0,1,.9.969,2.533,2.533,0,0,1,.331,1.252v11.055a2.6,2.6,0,0,1-.307,1.3,2.5,2.5,0,0,1-.969.921l-9.5,5.528a2.61,2.61,0,0,1-1.3.378A2.364,2.364,0,0,1,4358.627,4169.893Zm.8-.756v-12.283l-10.441-5.906v11.2a1.4,1.4,0,0,0,.189.709,1.63,1.63,0,0,0,.567.567Zm1.039,0,9.685-5.716a1.631,1.631,0,0,0,.567-.567,1.408,1.408,0,0,0,.189-.709v-11.2l-10.441,5.906Zm-.519-13.181,10.441-6-9.685-5.622a1.607,1.607,0,0,0-1.512,0l-9.685,5.622Z"
+                              transform="translate(-4347.95 -4142.964)"
+                            />
+                          </svg>
+                        </span>
+                        <strong>DOLLHOUSE</strong>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1680630943285!6m8!1m7!1sl82kr51xT4lp1wLnCnQ13Q!2m2!1d37.1768063871428!2d-3.589929319243936!3f248.25258550337946!4f0!5f0.7820865974627469"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- END IFRAME -->
+            </div>
+            <div class="col-12 col-panorama--bottom">
+              <div class="row h-100 align-items-center justify-content-between">
+                <div class="col-md-11 p-0 col-panorama--bottom---items">
+                  <div class="scroll-lateral">
+                    <!-- NAV -->
+                    <ul class="nav nav-panorama">
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          type="button"
+                          class="nav-link nav-link--panorama"
+                          draggable="true"
+                          ondragstart="drag(event)"
+                        >
+                          <figure>
+                            <img
+                              src="https://picsum.photos/id/42/100/100"
+                              class="card-img"
+                              alt="thumbnail_example"
+                            />
+                          </figure>
+                          <span>Info csc csdc csdc dsc sdcs c</span>
+                        </a>
+                      </li>                     
+                    </ul>
+                    <!-- END NAV -->
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <button class="btn btn-icon btn-secondary btn-transparent btn-panorama--add">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11.002"
+                        viewBox="0 0 11 11.002"
+                      >
+                        <g transform="translate(-601.989 -2709.472)">
+                          <path
+                            d="M.5,11h-1V0h1Z"
+                            transform="translate(607.49 2709.472)"
+                          />
+                          <path
+                            d="M11,.5H0v-1H11Z"
+                            transform="translate(601.989 2714.973)"
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

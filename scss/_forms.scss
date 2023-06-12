@@ -2,6 +2,11 @@
   font-size: $font-input;
   font-weight: $f-weight--regular;
   border-radius: $br-small;
+  resize: none;
+
+  &.form-text--right {
+    text-align: right;
+  }
 
   &.form-control-fix-h {
     height: 26vh;
@@ -15,6 +20,12 @@
   &.form-control-lg {
     font-size: $font-title;
     font-weight: $f-weight--bold;
+
+    @media (max-width: $break-sm) {
+      font-size: $font-title-card-small;
+      padding-top: $s-small;
+      padding-top: $s-small;
+    }
   }
 
   &.form-control-sm {
@@ -35,6 +46,14 @@
   font-size: $font-s-small;
   color: $white-med;
   margin-bottom: 0.2rem;
+}
+
+.form-check--gallery {
+  margin: $s-normal 0 0 $s-extra;
+
+  @media (max-width: $break-lg) {
+    margin: $s-normal 0 0 0;
+  }
 }
 
 .invalid-feedback {

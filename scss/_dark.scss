@@ -91,9 +91,8 @@ body {
         }
 
         &:hover {
-          border-color: $primary;
+          border-color: $white-med;
           color: white;
-          background: $black-min;
         }
 
         &.active {
@@ -562,6 +561,11 @@ body {
 
       &.form-noedit {
         background: transparent;
+
+        &:focus,
+        &:hover {
+          border-color: $primary;
+        }
       }
 
       &:focus {

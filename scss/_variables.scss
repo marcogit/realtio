@@ -65,6 +65,8 @@ $font-nav: 14px;
 $font-input: 20px;
 $font-s-base: 14px;
 $font-s-small: 12px;
+$font-s-med: 11px;
+$font-s-min: 10px;
 
 $lh-title: 1em;
 $lh-base: 1.6em;
@@ -80,14 +82,18 @@ $tr-normal: all 0.2s ease;
 // Shadows
 $sh-card:rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $sh-header: $dark 0px 5px 60px;
+$sh-header--big: $dark 0px 40px 60px;
+$sh-primary: 0px 10px 30px -5px rgba(228,122,40,0.3);
 
 // Gradients
+$gradient-bg-deco: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 $gradient-dark: linear-gradient(180deg, $dark 0%, $base 100%);
 $gradient-base: linear-gradient(180deg, #293944 0%, $base 100%);
-$gradient-aside: linear-gradient(180deg, $dark 0%, $base 100%);
+$gradient-aside: linear-gradient(00deg, #16191d 0%, #293944 100%);
 $gradient--panorama-bottom: linear-gradient(90deg, $dark 0%, #293944 100%);
 $gradient-black: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 $gradient-black--top: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 $gradient-mini--toright: linear-gradient(90deg, rgba(41,57,68,0) 0%, $base 100%);
 $gradient-bottom: linear-gradient(0deg, rgba(41,57,68,1) 0%, rgba(41,57,68,0.8) 50%, rgba(41,57,68,0) 100%);
 $gradient-top: linear-gradient(0deg, rgba(34,38,44,0) 0%, rgba(34,38,44,0.8) 50%, rgba(34,38,44,1) 100%);
+$gradient-top--small: linear-gradient(0deg, rgba(34,38,44,0) 70%, rgba(34,38,44,0.5) 100%);

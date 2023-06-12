@@ -28,6 +28,11 @@
   }
 
   &.tab-nav {
+
+    @media (max-width: $break-sm) {
+      justify-content: center;
+    }
+    
     .nav-item {
       &::after {
         content: "";
@@ -38,6 +43,12 @@
         bottom: $s-min;
         right: 0;
         opacity: 0.3;
+      }
+
+      .nav-link {
+        @media (max-width: $break-sm) {
+          font-size: $font-s-small;
+        }
       }
 
       &:first-child {

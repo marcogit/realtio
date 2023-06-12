@@ -32,11 +32,14 @@ html {
     }
 
     main {
-      height: 100%; 
+      height: 100%;
       display: flex;
       flex-direction: column;
       padding-top: $s-header;
       overflow: hidden;
+      background: url(../images/bg-content.png) no-repeat;
+      background-size: contain;
+      background-position: right top;
 
       @media (max-width: $break-lg) {
         padding-top: $s-big;
@@ -47,24 +50,83 @@ html {
         margin-bottom: $s-normal;
       }
 
+      ul {
+        &.list-group--audio {
+          background: transparent;
+          padding: 0;
+          margin: 0 0 $s-normal;
+
+          .list-group-item {
+            margin-bottom: $s-small;
+          }
+
+          audio {
+            width: 100%;
+            border: solid 1px $white-small;
+            border-radius: $br-max;
+            height: 30px;
+
+            &::-webkit-media-controls-panel {
+              background: $white-small;
+              padding: 0;
+
+              
+            }
+
+            &::-webkit-media-controls-current-time-display,
+            &::-webkit-media-controls-time-remaining-display {
+              color: $dark;
+            }
+          }
+        }
+      }
+
       &.main-full {
         padding-top: 0;
         align-items: center;
         justify-content: center;
       }
 
+      .col-img--deco {
+        position: relative;
+
+        @media (max-width: $break-md) {
+          display: none;
+        }
+
+        &::before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 10px;
+          background: $gradient-bg-deco;
+        }
+      }
+
       .col-panorama--menu {
         background: $gradient-aside;
+
+        @media (max-width: $break-sm) {
+          display: none;
+        }
       }
 
       .col-bg {
         background-size: cover;
-        background-position: center center;
+        background-position: right center;
       }
 
       .col-panorama--iframe {
         padding: 0;
         height: calc(100% - 150px);
+
+        @media (max-width: $break-sm) {
+          flex: 0 0 100%;
+          height: calc(100% - 130px);
+        }
       }
 
       .col-publish--iframe {
@@ -75,6 +137,14 @@ html {
       .col-panorama--bottom {
         height: 150px;
         background: $gradient--panorama-bottom;
+
+        .btn-panorama--add {
+          @media (max-width: $break-sm) {
+            position: fixed;
+            bottom: 115px;
+            left: calc(50% - 26px);
+          }
+        }
 
         .col-panorama--bottom---items {
           position: relative;
@@ -89,6 +159,10 @@ html {
             bottom: 0;
             width: $s-big;
             background: $gradient-mini--toright;
+
+            @media (max-width: $break-sm) {
+              display: none;
+            }
           }
         }
       }
@@ -125,7 +199,7 @@ html {
           position: absolute;
           top: $s-normal;
           bottom: 0;
-          right: $s-normal;
+          right: 0;
           background: $base;
           border-radius: $br-max;
         }
@@ -177,13 +251,32 @@ html {
           right: 0;
           z-index: 3;
           height: auto;
-          background: $gradient-top;
-          padding: $s-small $s-extra-bottom 0 $s-medium;
+          padding: $s-small $s-extra-bottom 0 $s-small;
+
+          @media (max-width: $break-sm) {
+            padding-top: 0;
+          }
+
+          input.form-noedit {
+            padding-left: $s-medium;
+            text-shadow: 2px 2px 4px #22262C;
+            max-height: 30px;
+          }
+
+          textarea.form-noedit {
+            margin-left: $s-medium;
+            text-shadow: 2px 2px 4px #22262C;
+          }
 
           .nav-overlay--row {
             position: absolute;
             right: $s-normal;
             top: $s-normal;
+
+            @media (max-width: $break-sm) {
+              top: 0;
+              right: 0;
+            }
           }
 
           textarea,
@@ -207,6 +300,10 @@ html {
             top: 20px;
             left: 0;
 
+            @media (max-width: $break-sm) {
+              top: 0;
+            }
+
             .btn {
               span {
                 border-color: transparent !important;
@@ -224,6 +321,20 @@ html {
           padding: $s-normal;
           height: auto;
           width: auto;
+
+          .btn {
+            strong {
+              font-weight: $f-weight--regular;
+
+              @media (max-width: $break-sm) {
+                display: none;
+              }
+            }
+          }
+
+          @media (max-width: $break-sm) {
+            padding: 0;
+          }
         }
 
         .ratio-end {
@@ -236,6 +347,20 @@ html {
           padding: $s-normal;
           height: auto;
           width: auto;
+
+          .btn {
+            strong {
+              font-weight: $f-weight--regular;
+
+              @media (max-width: $break-sm) {
+                display: none;
+              }
+            }
+          }
+
+          @media (max-width: $break-sm) {
+            padding: 0;
+          }
         }
 
         &.ratio-100 {
@@ -333,8 +458,41 @@ html {
       .topbar {
         padding: $s-normal $s-big $s-normal;
 
-        @media (max-width: $break-lg) {
-          padding: $s-normal $s-small;
+        @media (max-width: $break-xxl) {
+          padding-left: $s-normal;
+          padding-right: $s-normal;
+        }
+
+        @media (max-width: $break-sm) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .row-filter {
+          @media (max-width: $break-sm) {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            background: $black-med;
+            justify-content: center;
+            margin: 0;
+            padding: $s-small;
+          }
+
+          .col-auto {
+            @media (max-width: $break-sm) {
+              padding: 0;
+            }
+          }
+
+          .form-text--right {
+            @media (max-width: $break-sm) {
+              text-align: left;
+              max-width: 90px;
+            }
+          }
         }
       }
 
@@ -446,6 +604,15 @@ html {
             }
           }
 
+          &.box-scroll--left {
+            padding-left: $s-big;
+
+            @media (max-width: $break-xxl) {
+              padding-left: $s-normal;
+              padding-right: $s-normal;
+            }
+          }
+
           &.box-scroll--noshadow {
             &::after {
               display: none;
@@ -469,11 +636,12 @@ html {
           }
 
           &.box-scroll--md {
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            max-width: 90%;
             margin-top: $s-medium;
-            padding-right: $s-medium;
+
+            @media (max-width: $break-xxl) {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -485,6 +653,23 @@ html {
       }
       @media (max-width: $break-xl) {
         max-width: inherit;
+      }
+    }
+
+    .row-gallery {
+
+      .col-gallery--list {
+        @media (max-width: $break-xl) {
+          order: 2;
+          height: 65%;
+        }
+      }
+  
+      .col-gallery--slider {
+        @media (max-width: $break-xl) {
+          order: 1;
+          height: 45%;
+        }
       }
     }
 
@@ -501,7 +686,7 @@ html {
     .nav {
       &.nav-skins {
         max-width: 260px;
-  
+
         margin-bottom: $s-normal;
         .nav-item {
           margin-bottom: $s-small;
@@ -516,7 +701,7 @@ html {
 
         .nav-link {
           font-weight: $f-weight--light;
-          font-size: $font-s-small;
+          font-size: $font-s-med;
         }
       }
 
@@ -572,7 +757,7 @@ html {
         justify-content: center;
         gap: $s-min;
         padding: $s-small $s-normal;
-        font-size: $font-s-small;
+        font-size: $font-s-med;
         border: transparent solid 1px;
         border-radius: $br-normal;
         position: relative;
@@ -586,6 +771,16 @@ html {
 
         span {
           text-transform: uppercase;
+          display: block;
+          max-width: 86px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          text-align: center;
+
+          @media (max-width: $break-sm) {
+            max-width: 70px;
+          }
         }
 
         em {
@@ -596,6 +791,11 @@ html {
           height: 86px;
           border: transparent solid 1px;
           border-radius: $br-max;
+
+          @media (max-width: $break-sm) {
+            width: 70px;
+            height: 70px;
+          }
 
           svg {
             height: 20px;
@@ -611,15 +811,17 @@ html {
           margin: 0;
           width: 86px;
 
+          @media (max-width: $break-sm) {
+            width: 70px;
+          }
+
           img {
             max-width: 100%;
           }
         }
 
         &:hover {
-          .drop {
-            opacity: 1;
-          }
+          cursor: grab;
         }
       }
     }
