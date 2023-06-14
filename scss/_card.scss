@@ -332,6 +332,10 @@
 
     .card-body {
       padding: $s-big $s-extra $s-extra;
+
+      @media (max-width: $break-sm) {
+        padding: $s-big $s-medium $s-extra;
+      }
     }
   }
 

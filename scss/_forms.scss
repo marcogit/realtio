@@ -20,6 +20,15 @@
   &.form-control-lg {
     font-size: $font-title;
     font-weight: $f-weight--bold;
+    line-height: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &.form-noedit {
+      min-height: inherit;
+      padding: 0;
+      max-height: $s-big;
+    }
 
     @media (max-width: $break-sm) {
       font-size: $font-title-card-small;
@@ -109,20 +118,13 @@ input {
 }
 
 .upload_dropZone {
-  background: linear-gradient(to right, transparent 33%, $white-med 0%) top/14px
-      1px repeat-x,
-    /* top */ linear-gradient(transparent 33%, $white-med 0%) right/1px 14px
-      repeat-y,
-    /* right */ linear-gradient(to right, transparent 33%, $white-med 0%)
-      bottom/14px 1px repeat-x,
-    /* bottom */ linear-gradient(transparent 33%, $white-med 0%) left/1px 14px
-      repeat-y; /* left */
   padding: $s-extra;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border-radius: $br-normal;
   transition: $tr-normal;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23FFFFFF2E' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: $br-normal;
 
   &.highlight {
     background: $black-normal;

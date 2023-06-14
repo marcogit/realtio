@@ -74,8 +74,10 @@ html {
             }
 
             &::-webkit-media-controls-current-time-display,
-            &::-webkit-media-controls-time-remaining-display {
-              color: $dark;
+            &::-webkit-media-controls-time-remaining-display,
+            &::-webkit-media-controls-timeline,
+            &::-webkit-media-controls-mute-button {
+              display: none;
             }
           }
         }
@@ -260,7 +262,7 @@ html {
           input.form-noedit {
             padding-left: $s-medium;
             text-shadow: 2px 2px 4px #22262C;
-            max-height: 30px;
+            margin-top: $s-normal;
           }
 
           textarea.form-noedit {
@@ -373,16 +375,14 @@ html {
           overflow: hidden;
           box-shadow: $sh-card;
         }
+
+        &.ratio-box--video {
+          background: url(../images/bg-play.svg) no-repeat center center;
+        }
       }
 
       .col-ia {
         position: relative;
-
-        .btn {
-          position: absolute;
-          right: $s-normal;
-          top: 35px;
-        }
 
         .form-control {
           padding-right: $s-extra;

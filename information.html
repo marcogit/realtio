@@ -65,7 +65,7 @@
             </a>
           </div>
           <div class="col-auto col-info">
-            <div class="badge badge-info badge-lg">
+            <div class="badge badge-info badge-sm">
               <a class="badge-link" href="#"><img src="images/icon-home.svg" /></a> / <span title="MY NEW TOUR IN FLORENCIA 22">MY NEW TOUR IN FLORENCIA 22</span></div>
           </div>
           <div class="col col-menu--item">
@@ -364,19 +364,18 @@
                       >Description:</label
                     >
                     <textarea
-                      class="form-control form-control-fix-h form-control-sm"
+                      class="form-control form-control-fix-h form-control-sm mb-2"
                       oninput="auto_grow(this)"
                     >
                     </textarea>
+                    <button class="btn btn-small btn-outline-light-2">Generate text with AI</button>
                     <script>
                       function auto_grow(element) {
                         element.style.height = "5px";
                         element.style.height = element.scrollHeight + "px";
                       }
                     </script>
-                    <button class="btn btn-outline-add btn-icon">
-                      <span>AI</span>
-                    </button>
+                    
                     <!-- <button class="btn btn-outline-add btn-icon">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="10.962" height="8" viewBox="0 0 10.962 8"><path d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z" transform="translate(-5718.772 -3082.787)"/></svg></span>
                       </button> -->
@@ -424,7 +423,7 @@
                     </div>
                   </div>
                   <!-- IMAGEN ya cargada
-                  <div class="thumb-img--up">
+                  <div class="thumb-img--up mb-3">
                     <div class="thumb-img--up---ui">
                       <ul>
                         <li>

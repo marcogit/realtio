@@ -207,6 +207,7 @@ body {
         &:active {
           color: $primary;
           background: transparent;
+          border-color: $white-small;
 
           span {
             border-color: $primary;
@@ -215,6 +216,19 @@ body {
               fill: $primary;
             }
           }
+        }
+      }
+
+      &.btn-outline-light-2 {
+        color: $primary;
+        border-color: $white-small;
+
+
+        &:hover,
+        &:active {
+          color: white;
+          background: transparent;
+          border-color: $white-med;
         }
       }
 
