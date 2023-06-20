@@ -13,7 +13,7 @@
     text-overflow: ellipsis;
     max-width: 320px;
 
-    @media (max-width: $break-md) {
+    @media (max-width: $break-xxl) {
       max-width: 150px;
     }
   }

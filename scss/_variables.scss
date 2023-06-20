@@ -87,9 +87,10 @@ $sh-primary: 0px 10px 30px -5px rgba(228,122,40,0.3);
 
 // Gradients
 $gradient-bg-deco: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
-$gradient-dark: linear-gradient(180deg, $dark 0%, $base 100%);
+$gradient-dark: linear-gradient(90deg, $dark 0%, $base 100%);
 $gradient-base: linear-gradient(180deg, #293944 0%, $base 100%);
 $gradient-aside: linear-gradient(00deg, #16191d 0%, #293944 100%);
+$gradient-aside--2: linear-gradient(90deg, rgba(57, 70, 80, 0) 0%, rgba(44,56,66,1) 100%);
 $gradient--panorama-bottom: linear-gradient(90deg, $dark 0%, #293944 100%);
 $gradient-black: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 $gradient-black--top: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);

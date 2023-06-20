@@ -89,22 +89,16 @@ html {
         justify-content: center;
       }
 
+      .col-aside {
+        max-width: 30%;
+      }
+
       .col-img--deco {
         position: relative;
+        z-index: 1;
 
         @media (max-width: $break-md) {
           display: none;
-        }
-
-        &::before {
-          display: block;
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 10px;
-          background: $gradient-bg-deco;
         }
       }
 
@@ -193,29 +187,41 @@ html {
 
       .col-shadow--light {
         position: relative;
+        z-index: 2;
 
-        &::after,
-        &::before {
+        &::after {
           content: "";
           display: block;
           position: absolute;
-          top: $s-normal;
+          top: 0;
           bottom: 0;
           right: 0;
-          background: $base;
-          border-radius: $br-max;
-        }
-
-        &::after {
-          width: $s-normal;
-          filter: blur(10px);
+          width: 30%;
           z-index: -1;
+          background: $gradient-aside--2;
+
+          
         }
 
         &::before {
-          width: 50%;
-          filter: blur(60px);
-          z-index: -1;
+          display: block;
+          content: "";
+          position: absolute;
+          top: 0;
+          right: -10px;
+          bottom: 0;
+          width: 10px;
+          background: $gradient-bg-deco;
+        }
+      }
+
+      .col-gallery--list {
+        .col-gallery--list---header {
+          padding: $s-extra $s-normal $s-normal $s-big;
+
+          @media (max-width: $break-xxl) {
+            padding-left: $s-normal;
+          }
         }
       }
 
@@ -641,6 +647,22 @@ html {
 
             @media (max-width: $break-xxl) {
               max-width: 100%;
+            }
+          }
+
+          &.box-scroll--photo {
+            max-width: 90%;
+            margin-top: $s-extra-big;
+            bottom: $s-extra-big;
+
+            @media (max-width: $break-xxl) {
+              max-width: 100%;
+            }
+
+            &::after {
+              bottom: $s-extra-big;
+              right: inherit;
+              width: 30%;
             }
           }
         }
