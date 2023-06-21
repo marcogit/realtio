@@ -41,45 +41,6 @@
     .carousel-cell {
       width: 100%;
     }
-
-    .card {
-      margin-bottom: 0;
-
-      &.card-item {
-        &.card-item--full {
-          .card-img-overlay--title {
-            textarea {
-              max-width: inherit;
-            }
-          }
-          .card-img-overlay--title---ingallery-edit {
-            @media (max-width: $break-lg) {
-              max-width: inherit;
-            }
-          }
-
-          .dropdown {
-            @media (max-width: $break-lg) {
-              width: 0;
-            }
-          }
-
-          .nav-overlay--row {
-            position: absolute;
-            right: $s-normal;
-            bottom: $s-normal;
-            z-index: 4;
-
-            @media (max-width: $break-lg) {
-              top: $s-normal;
-              bottom: inherit;
-              background: $black-med;
-              border-radius: $br-max;
-            }
-          }
-        }
-      }
-    }
   }
 
   &.minigallery-carousel {

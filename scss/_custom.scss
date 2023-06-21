@@ -69,8 +69,6 @@ html {
             &::-webkit-media-controls-panel {
               background: $white-small;
               padding: 0;
-
-              
             }
 
             &::-webkit-media-controls-current-time-display,
@@ -275,13 +273,13 @@ html {
 
           input.form-noedit {
             padding-left: $s-medium;
-            text-shadow: 2px 2px 4px #22262C;
+            text-shadow: 2px 2px 4px #22262c;
             margin-top: $s-normal;
           }
 
           textarea.form-noedit {
             margin-left: $s-medium;
-            text-shadow: 2px 2px 4px #22262C;
+            text-shadow: 2px 2px 4px #22262c;
           }
 
           .nav-overlay--row {
@@ -694,15 +692,66 @@ html {
     }
 
     .row-gallery {
-
       .col-gallery--list {
         @media (max-width: $break-md) {
           order: 2;
           height: 65%;
         }
       }
-  
+
       .col-gallery--slider {
+        padding-right: $s-big !important;
+
+        @media (max-width: $break-lg) {
+          padding-right: 0 !important;
+        }
+
+        .col-gallery--slider---oneitem {
+          max-width: 1100px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 55px;
+        }
+
+        .card {
+          margin-bottom: 0;
+
+          &.card-item {
+            &.card-item--full {
+
+              .card-img-overlay--title {
+                textarea {
+                  max-width: inherit;
+                }
+              }
+              .card-img-overlay--title---ingallery-edit {
+                @media (max-width: $break-lg) {
+                  max-width: inherit;
+                }
+              }
+
+              .dropdown {
+                @media (max-width: $break-lg) {
+                  width: 0;
+                }
+              }
+
+              .nav-overlay--row {
+                position: absolute;
+                right: $s-normal;
+                bottom: $s-normal;
+                z-index: 4;
+
+                @media (max-width: $break-lg) {
+                  top: $s-normal;
+                  bottom: inherit;
+                  background: $black-med;
+                  border-radius: $br-max;
+                }
+              }
+            }
+          }
+        }
         @media (max-width: $break-md) {
           order: 1;
           height: 45%;

@@ -576,8 +576,11 @@ body {
       &.form-noedit {
         background: transparent;
 
-        &:focus,
         &:hover {
+          border-color: $white-med;
+        }
+
+        &:focus {
           border-color: $primary;
         }
       }
