@@ -90,6 +90,20 @@ html {
       .col-aside {
         max-width: 600px;
 
+        @media (max-width: $break-xxl) {
+          max-width: 500px;
+        }
+
+        @media (max-width: $break-md) {
+          max-width: inherit;
+          width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+
+      .col-aside--small {
+        max-width: 320px;
+
         @media (max-width: $break-md) {
           max-width: inherit;
           width: 100%;
@@ -219,7 +233,7 @@ html {
 
       .col-gallery--list {
         .col-gallery--list---header {
-          padding: $s-extra $s-normal $s-normal $s-big;
+          padding: $s-medium $s-normal $s-normal $s-big;
 
           @media (max-width: $break-xxl) {
             padding-left: $s-normal;
@@ -420,6 +434,27 @@ html {
           padding-top: $s-normal;
           padding-right: $s-normal;
           padding-left: $s-normal;
+        }
+      }
+
+      .col-center---oneitem {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: $s-big;
+        padding-left: $s-big ;
+
+        @media (max-width: $break-xxl) {
+          max-width: 800px;
+        }
+
+        @media (max-width: $break-lg) {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
+        @media (max-width: $break-md) {
+          padding-top: 0px;
         }
       }
 
@@ -658,7 +693,7 @@ html {
 
           &.box-scroll--photo {
             max-width: 90%;
-            margin-top: $s-extra-big;
+            margin-top: $s-extra;
             bottom: 0;
 
             @media (max-width: $break-xxl) {
@@ -700,17 +735,30 @@ html {
       }
 
       .col-gallery--slider {
-        padding-right: $s-big !important;
-
-        @media (max-width: $break-lg) {
-          padding-right: 0 !important;
+        @media (max-width: $break-md) {
+          background: transparent !important;
         }
 
         .col-gallery--slider---oneitem {
           max-width: 1100px;
           margin-left: auto;
           margin-right: auto;
-          padding-top: 55px;
+          padding-top: $s-medium;
+          padding-right: $s-big;
+          padding-left: $s-big ;
+
+          @media (max-width: $break-xxl) {
+            max-width: 800px;
+          }
+
+          @media (max-width: $break-lg) {
+            padding-right: 0;
+            padding-left: 0;
+          }
+
+          @media (max-width: $break-md) {
+            padding-top: 0px;
+          }
         }
 
         .card {
@@ -748,11 +796,19 @@ html {
                   background: $black-med;
                   border-radius: $br-max;
                 }
+
+                @media (max-width: $break-md) {
+                  position: fixed;
+                  top: $s-extra;
+                  border-radius: $br-normal;
+
+                }
               }
             }
           }
         }
         @media (max-width: $break-md) {
+          display: flex;
           order: 1;
           height: 45%;
         }

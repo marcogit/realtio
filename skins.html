@@ -131,101 +131,106 @@
         <div class="container-fluid h-100">
           <div class="row h-100">
             <!-- List -->
-            <div class="col col-aside position-relative col-shadow--light">
-              <div class="box-scroll box-scroll--md">
+            <div class="col col-aside--small position-relative col-shadow--light col-gallery--list">
+              <div class="col-gallery--list---header">
                 <h6>Choose a Skin:</h6>
-                <ul class="nav flex-column nav-skins" id="nav-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link active"
-                      id="skin-tab-01"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-01"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-01"
-                      aria-selected="true"
-                    >
-                      Blue Real Estate
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link"
-                      id="skin-tab-02"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-02"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-02"
-                      aria-selected="false"
-                    >
-                      Classic Brown
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link"
-                      id="skin-tab-03"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-03"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-03"
-                      aria-selected="false"
-                    >
-                      *Orange Enterprise
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link"
-                      id="skin-tab-04"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-04"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-4"
-                      aria-selected="false"
-                    >
-                    *Red Modern Real Estate
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link"
-                      id="skin-tab-05"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-05"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-5"
-                      aria-selected="false"
-                    >
-                    *Greem Adventure
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button
-                      class="btn btn-full nav-link"
-                      id="skin-tab-06"
-                      data-bs-toggle="tab"
-                      data-bs-target="#skin-06"
-                      type="button"
-                      role="tab"
-                      aria-controls="skin-6"
-                      aria-selected="false"
-                    >
-                    *Pink Casual
-                    </button>
-                  </li>
-                </ul>
-                <p class="disabled"><small>*(Requires <a href="#" class="is-link">UPGRADE</a>)</small></p>
+              </div>
+              <div class="box-scroll-box">
+                <div class="box-scroll box-scroll--photo box-scroll--left">
+                  <ul class="nav flex-column nav-skins" id="nav-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link active"
+                        id="skin-tab-01"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-01"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-01"
+                        aria-selected="true"
+                      >
+                        Blue Real Estate
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link"
+                        id="skin-tab-02"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-02"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-02"
+                        aria-selected="false"
+                      >
+                        Classic Brown
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link"
+                        id="skin-tab-03"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-03"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-03"
+                        aria-selected="false"
+                      >
+                        *Orange Enterprise
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link"
+                        id="skin-tab-04"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-04"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-4"
+                        aria-selected="false"
+                      >
+                      *Red Modern Real Estate
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link"
+                        id="skin-tab-05"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-05"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-5"
+                        aria-selected="false"
+                      >
+                      *Greem Adventure
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="btn btn-full nav-link"
+                        id="skin-tab-06"
+                        data-bs-toggle="tab"
+                        data-bs-target="#skin-06"
+                        type="button"
+                        role="tab"
+                        aria-controls="skin-6"
+                        aria-selected="false"
+                      >
+                      *Pink Casual
+                      </button>
+                    </li>
+                  </ul>
+                  <p class="disabled"><small>*(Requires <a href="#" class="is-link">UPGRADE</a>)</small></p>
+                </div>
               </div>
             </div>
             <!-- END List -->
             <!-- Gallery -->
-            <div class="col col-padding--fix">
+            <div class="col col-padding--fix col-gallery--slider">
+              <div class="col-center---oneitem">
               <h6>Skin preview</h6>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="skin-01" role="tabpanel" aria-labelledby="skin-tab-01">
@@ -276,6 +281,7 @@
                     </video>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
             <!-- END Gallery -->
