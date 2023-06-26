@@ -34,7 +34,7 @@
       }
     }
   }
-  
+
   &.btn-primary {
     background: $primary;
     color: white !important;
@@ -131,6 +131,56 @@
 
   &.btn-lg {
     text-transform: uppercase;
+  }
+
+  &.play-button {
+    span {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+
+      &::before,
+      &::after {
+        display: block;
+        content: "";
+        transition: $tr-normal;
+      }
+    }
+
+    &.btn-pause {
+      span {
+        &::before {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7.5px 0 7.5px 13px;
+          border-color: transparent transparent transparent $white-med;
+          margin-left: 10px;
+        }
+      }
+
+      &:hover {
+        span {
+          &::before {
+            border-color: transparent transparent transparent white;
+          }
+        }
+      }
+    }
+
+    &.btn-play {
+      span {
+        &::before,
+        &::after {
+          width: 3px;
+          height: 15px;
+          border: none;
+          background: white;
+        }
+      }
+    }
   }
 
   &.dropdown-toggle {

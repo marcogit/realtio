@@ -42,7 +42,7 @@ html {
       background-position: right top;
 
       @media (max-width: $break-lg) {
-        padding-top: $s-big;
+        padding-top: 37px;
       }
 
       h6 {
@@ -60,21 +60,19 @@ html {
             margin-bottom: $s-small;
           }
 
-          audio {
-            width: 100%;
-            border: solid 1px $white-small;
-            border-radius: $br-max;
-            height: 30px;
+          .audio-player {
+            gap: $s-small;
 
-            &::-webkit-media-controls-panel {
-              background: $white-small;
-              padding: 0;
+            strong {
+              font-weight: $f-weight--regular;
             }
 
-            &::-webkit-media-controls-current-time-display,
-            &::-webkit-media-controls-time-remaining-display,
-            &::-webkit-media-controls-timeline,
-            &::-webkit-media-controls-mute-button {
+            time {
+              margin-left: auto;
+              padding: 0 $s-normal;
+            }
+
+            audio {
               display: none;
             }
           }
@@ -102,7 +100,10 @@ html {
       }
 
       .col-aside--small {
-        max-width: 320px;
+        max-width: 380px;
+        @media (max-width: $break-xxl) {
+          max-width: 320px;
+        }
 
         @media (max-width: $break-md) {
           max-width: inherit;
@@ -438,6 +439,7 @@ html {
       }
 
       .col-center---oneitem {
+        width: 100%;
         max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
@@ -675,11 +677,15 @@ html {
 
           &.box-scroll--fix {
             max-width: 85%;
-            padding-left: $s-big;
-            padding-right: $s-big;
+            padding-left: $s-medium;
+            padding-right: $s-medium;
             margin-top: $s-medium;
             margin-left: auto;
             margin-right: auto;
+            
+            @media (max-width: $break-md) {
+              max-width: 100%;
+            }
           }
 
           &.box-scroll--md {
@@ -711,6 +717,12 @@ html {
               @media (max-width: $break-xl) {
                 display: none;
               }
+            }
+
+            .form-check--fixed {
+              position: fixed;
+              bottom: $s-medium;
+              z-index: 3;
             }
           }
         }
@@ -827,8 +839,6 @@ html {
 
     .nav {
       &.nav-skins {
-        max-width: 260px;
-
         margin-bottom: $s-normal;
         .nav-item {
           margin-bottom: $s-small;

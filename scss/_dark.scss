@@ -577,11 +577,11 @@ body {
         background: transparent;
 
         &:hover {
-          border-color: $white-med;
+          border-color: $primary;
         }
 
         &:focus {
-          border-color: $primary;
+          border-color: transparent;
         }
       }
 

@@ -49,10 +49,18 @@
     .flickity-button {
       &.previous {
         margin-left: $s-extra--n;
+
+        @media (max-width: $break-md) {
+          margin-left: $s-big--n;
+        }
       }
 
       &.next {
         margin-right: $s-extra--n;
+
+        @media (max-width: $break-md) {
+          margin-right: $s-big--n;
+        }
       }
     }
   }
