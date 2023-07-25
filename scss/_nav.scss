@@ -18,6 +18,8 @@
         &.nav-link--publish {
           border: transparent solid 1px;
           border-radius: $br-max;
+          margin-left: $s-normal;
+          margin-right: $s-min;
         }
       }
 

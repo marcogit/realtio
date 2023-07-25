@@ -122,7 +122,6 @@
                 opacity: 1;
                 top: -5px;
               }
-              
 
               .btn-ratio-dropdown {
                 span {
@@ -204,6 +203,28 @@
           gap: $s-medium;
           padding: $s-small 0 $s-normal;
           z-index: 3;
+
+          .btn-icon--small {
+            span {
+              width: auto;
+              svg {
+                height: 100%;
+                width: auto;
+              }
+            }
+
+            &:first-child {
+              span {
+                height: 20px;
+              }
+            }
+
+            &:last-child {
+              span {
+                height: 14px;
+              }
+            }
+          }
         }
       }
     }
@@ -351,7 +372,7 @@
     box-shadow: $sh-card;
     margin: 0 auto;
     text-align: center;
-    width: 400px;
+    width: 420px;
     max-width: 100%;
 
     .card-title {
@@ -380,7 +401,7 @@
     margin-right: auto;
     background: transparent;
     border-color: transparent;
-  
+
     .card-header {
       text-align: center;
       border-color: transparent;

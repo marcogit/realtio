@@ -26,8 +26,18 @@ body {
       color: $white-med;
     }
 
-    a {
+    a{
       color: $primary;
+
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+        filter: brightness(1.2);
+      }
+    }
+
+    .link-primary {
+      color: $primary !important;
 
       &:hover {
         color: $primary;
@@ -484,6 +494,16 @@ body {
             fill: white;
           }
         }
+      }
+    }
+
+    .alert {
+      border-radius: $br-normal !important;
+
+      &.alert-primary {
+        background: $primary;
+        border-color: $primary;
+        color: white;
       }
     }
 

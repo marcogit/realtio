@@ -1,7 +1,7 @@
 .form-control {
   font-size: $font-input;
   font-weight: $f-weight--regular;
-  border-radius: $br-small;
+  border-radius: $br-normal;
   resize: none;
 
   &.form-text--right {
@@ -23,6 +23,9 @@
     line-height: 1em;
     padding-top: 0;
     padding-bottom: 0;
+    height: auto;
+    text-transform: uppercase;
+    min-height: inherit;
 
     &.form-noedit {
       min-height: inherit;
@@ -39,6 +42,7 @@
 
   &.form-control-sm {
     font-size: $font-nav;
+    padding: $s-min $s-small;
   }
 
   &.form-year {
@@ -55,10 +59,14 @@
   font-size: $font-s-small;
   color: $white-med;
   margin-bottom: 0.2rem;
+
+  &.form-check-label--big {
+    font-size: $font-nav;
+  }
 }
 
 .form-check--gallery {
-  margin: $s-normal 0 0 $s-normal;
+  margin: $s-normal 0 0 0;
 
   @media (max-width: $break-lg) {
     margin: $s-normal 0 0 0;
@@ -141,9 +149,25 @@ input {
 }
 
 .form-floating {
+  label {
+    font-size: $font-nav;
+    padding: $s-small;
+  }
   .form-control {
+    font-size: $font-nav;
+    padding: $s-small;
+    height: 40px;
+
     &::placeholder {
       opacity: 0;
     }
+  }
+
+  &>.form-control:not(:placeholder-shown)~label {
+    font-size: $font-s-min;
+  }
+
+  &>.form-control:not(:placeholder-shown) {
+    padding-top: 20px;
   }
 }

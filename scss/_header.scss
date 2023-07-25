@@ -15,8 +15,13 @@ header {
     }
 
     .col-logo {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      
       .navbar-brand {
         width: $logo-header;
+        display: inline-flex;
 
         img {
           max-width: 100%;

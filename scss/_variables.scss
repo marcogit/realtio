@@ -48,7 +48,7 @@ $s-extra--n: -60px;
 $s-extra-big--n: -90px;
 
 $logo-header: 107px;
-$s-header: 64px;
+$s-header: 63px;
 
 // Fonts
 $font-brand: 'Poppins', sans-serif;
@@ -73,7 +73,7 @@ $lh-base: 1.6em;
 
 // Radius
 $br-small: 4px;
-$br-normal: 10px;
+$br-normal: 7px;
 $br-max: 300px;
 
 // Transitions
@@ -86,7 +86,7 @@ $sh-header--big: $dark 0px 40px 60px;
 $sh-primary: 0px 10px 30px -5px rgba(228,122,40,0.3);
 
 // Gradients
-$gradient-bg-deco: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+$gradient-bg-deco: linear-gradient(90deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
 $gradient-dark: linear-gradient(90deg, $dark 0%, $base 100%);
 $gradient-base: linear-gradient(180deg, #293944 0%, $base 100%);
 $gradient-aside: linear-gradient(00deg, #16191d 0%, #293944 100%);

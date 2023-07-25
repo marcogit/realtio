@@ -112,6 +112,19 @@ html {
         }
       }
 
+      .col-aside--medium {
+        max-width: 480px;
+        @media (max-width: $break-xxl) {
+          max-width: 320px;
+        }
+
+        @media (max-width: $break-md) {
+          max-width: inherit;
+          width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+
       .col-img--deco {
         position: relative;
         z-index: 1;
@@ -405,6 +418,11 @@ html {
 
         &.ratio-box--video {
           background: url(../images/bg-play.svg) no-repeat center center;
+
+          &.disabled {
+            box-shadow: none;
+            border: solid 1px $white-small;
+          }
         }
       }
 
@@ -440,7 +458,7 @@ html {
 
       .col-center---oneitem {
         width: 100%;
-        max-width: 1100px;
+        max-width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding-right: $s-big;
@@ -474,7 +492,7 @@ html {
       }
 
       .separator {
-        font-size: $font-s-small;
+        font-size: $font-nav;
         color: $dark-grey;
         overflow: hidden;
 
@@ -865,7 +883,7 @@ html {
         align-items: center;
         justify-content: flex-start;
         height: 100%;
-        padding: 0;
+        padding: 0 0 0 $s-normal;
       }
 
       &.nav-overlay--column {

@@ -6,6 +6,7 @@
   font-size: $font-nav;
   transition: $tr-normal;
   border-radius: $br-normal;
+  padding: $s-small;
 
   &.nav-link {
     text-align: left;
@@ -186,6 +187,7 @@
   &.dropdown-toggle {
     border-radius: $br-small;
     justify-content: space-between;
+    padding: $s-min $s-small;
 
     &::after {
       width: 9px;
