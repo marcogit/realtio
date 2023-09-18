@@ -4,10 +4,13 @@
   &.modal-white {
     .modal-dialog {
       .modal-content {
+        padding-bottom: $s-big;
+  
         .modal-header {
           border-color: transparent;
           justify-content: center;
-          padding-top: $s-big;
+          padding-top: $s-extra;
+          padding-bottom: 0;
 
           .modal-title {
             text-align: center;
@@ -19,11 +22,12 @@
 
           .btn-close {
             position: absolute;
-            right: $s-normal;
-            top: $s-normal;
+            right: 20px;
+            top: 20px;
             width: 24px;
             height: 24px;
             padding: 0;
+            opacity: 1;
 
             background: url(../images/icon-close--modal.svg) no-repeat center
               center;
@@ -85,7 +89,7 @@
 
           .form-label,
           .form-check-label {
-            font-size: 12px;
+            font-size: $font-s-base;
             color: $dark-grey;
           }
 
@@ -106,6 +110,7 @@
           border-color: transparent;
           justify-content: center;
           padding-bottom: $s-medium;
+          padding-top: 0;
         }
       }
     }

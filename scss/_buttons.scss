@@ -6,7 +6,7 @@
   font-size: $font-nav;
   transition: $tr-normal;
   border-radius: $br-normal;
-  padding: $s-small;
+  padding: 5px $s-normal;
 
   &.nav-link {
     text-align: left;
@@ -83,6 +83,12 @@
 
       svg {
         transition: $tr-normal;
+      }
+
+      &.no-border {
+        border: none;
+        width: auto;
+        height: auto;
       }
     }
 

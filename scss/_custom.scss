@@ -1,6 +1,10 @@
 html {
   height: 100%;
 
+  svg {
+    shape-rendering: auto;
+  }
+
   body {
     height: 100%;
     font-family: $font-brand;
@@ -309,6 +313,7 @@ html {
           textarea.form-noedit {
             margin-left: $s-medium;
             text-shadow: 2px 2px 4px #22262c;
+            padding-left: 0;
           }
 
           .nav-overlay--row {
@@ -431,7 +436,7 @@ html {
         position: relative;
 
         .form-control {
-          padding-right: $s-extra;
+          height: 300px;
         }
       }
 
@@ -576,7 +581,7 @@ html {
           left: $s-padding;
           right: $s-padding;
           bottom: 0;
-          padding: 0 $s-small $s-extra-bottom $s-small;
+          padding: 0 $s-small;
 
           @media (max-width: $break-md) {
             left: 0;
@@ -674,6 +679,8 @@ html {
 
           &.box-scroll--left {
             padding-left: $s-big;
+            padding-right: 25px;
+            margin-right: -50px;
 
             @media (max-width: $break-xxl) {
               padding-left: $s-normal;
@@ -719,6 +726,7 @@ html {
           &.box-scroll--photo {
             max-width: 90%;
             margin-top: $s-extra;
+            margin-bottom: $s-extra-big;
             bottom: 0;
 
             @media (max-width: $break-xxl) {
@@ -731,7 +739,10 @@ html {
             }
 
             &::after {
-              bottom: 0;
+              bottom: -30px;
+              max-width: 620px;
+              background: rgba(34, 38, 44) 1%;
+              box-shadow: 0 -40px 30px rgb(34, 38, 44);
 
               @media (max-width: $break-xl) {
                 display: none;

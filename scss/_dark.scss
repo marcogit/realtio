@@ -286,11 +286,14 @@ body {
 
           span {
             border-color: $primary;
-            filter: brightness(1.2);
+            background: $primary;
 
             svg {
-              fill: $primary;
-              filter: brightness(1.2);
+              fill: white;
+            }
+
+            img {
+              filter: grayscale(1) invert(1);
             }
           }
         }

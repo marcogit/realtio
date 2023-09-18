@@ -15,10 +15,6 @@
       }
     }
 
-    &:hover {
-      background: $primary;
-    }
-
     img {
       max-width: 100%;
       border-radius: $br-normal;
@@ -229,7 +225,10 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &.card-item--active {
+      background: $primary;
+
       .card-img-overlay {
         &.card-img-overlay--ui {
           opacity: 1;
