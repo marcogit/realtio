@@ -200,6 +200,14 @@ body {
             border-color: transparent;
           }
         }
+
+        &.btn-ratio-dropdown {
+          &:hover {
+            span {
+              background: transparent;
+            }
+          }
+        }
       }
 
       &.btn-outline-light {

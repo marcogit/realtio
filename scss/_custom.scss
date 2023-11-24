@@ -35,6 +35,17 @@ html {
       z-index: -1;
     }
 
+    &.bg-dark--login {
+      p {
+        &.disabled {
+          @media (max-width: $break-sm) {
+            text-align: center;
+            max-width: 85%;
+          }
+        }
+      }
+    }
+
     main {
       height: 100%;
       display: flex;
@@ -157,7 +168,7 @@ html {
 
         @media (max-width: $break-sm) {
           flex: 0 0 100%;
-          height: calc(100% - 130px);
+          height: calc(100% - 250px);
         }
       }
 
@@ -169,6 +180,20 @@ html {
       .col-panorama--bottom {
         height: 150px;
         background: $gradient--panorama-bottom;
+
+        @media (max-width: $break-sm) {
+          height: 250px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        & > .h-100 {
+          @media (max-width: $break-sm) {
+            height: auto !important;
+          }
+        }
 
         .btn-panorama--add {
           @media (max-width: $break-sm) {
@@ -212,6 +237,7 @@ html {
           width: 100%;
           height: 100%;
           margin-bottom: auto;
+          overflow: hidden;
         }
 
         .col-map--header,
@@ -259,6 +285,7 @@ html {
 
           @media (max-width: $break-md) {
             padding-top: $s-medium;
+            padding-left: $s-min;
           }
         }
       }
@@ -583,6 +610,12 @@ html {
           bottom: 0;
           padding: 0 $s-small;
 
+          .mb-3 {
+            @media (max-width: $break-sm) {
+              margin-bottom: $s-min !important;
+            }
+          }
+
           @media (max-width: $break-md) {
             left: 0;
             right: 0;
@@ -772,7 +805,7 @@ html {
       .col-gallery--list {
         @media (max-width: $break-md) {
           order: 2;
-          height: 65%;
+          height: 100%;
         }
       }
 
@@ -796,6 +829,7 @@ html {
           @media (max-width: $break-lg) {
             padding-right: 0;
             padding-left: 0;
+            width: 100%;
           }
 
           @media (max-width: $break-md) {
@@ -835,7 +869,6 @@ html {
                 @media (max-width: $break-lg) {
                   top: $s-normal;
                   bottom: inherit;
-                  background: $black-med;
                   border-radius: $br-max;
                 }
 
@@ -843,7 +876,7 @@ html {
                   position: fixed;
                   top: $s-extra;
                   border-radius: $br-normal;
-
+                  right: 22px;
                 }
               }
             }
@@ -852,13 +885,21 @@ html {
         @media (max-width: $break-md) {
           display: flex;
           order: 1;
-          height: 45%;
+          height: auto;
         }
       }
     }
 
     .scroll-lateral {
       overflow-x: auto;
+
+      @media (max-width: $break-sm) {
+        overflow-x: inherit;
+        overflow-y: auto;
+        height: 250px;
+        padding-top: $s-normal;
+        padding-bottom: $s-normal;
+      }
     }
 
     a {
@@ -896,6 +937,17 @@ html {
         justify-content: flex-start;
         height: 100%;
         padding: 0 0 0 $s-normal;
+
+        @media (max-width: $break-sm) {
+          flex-wrap: wrap;
+          height: auto;
+        }
+
+        .nav-item {
+          @media (max-width: $break-sm) {
+            width: calc(33% - 5px);
+          }
+        }
       }
 
       &.nav-overlay--column {

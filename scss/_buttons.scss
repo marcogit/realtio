@@ -6,7 +6,7 @@
   font-size: $font-nav;
   transition: $tr-normal;
   border-radius: $br-normal;
-  padding: 5px $s-normal;
+  padding: $s-small $s-normal;
 
   &.nav-link {
     text-align: left;
@@ -16,14 +16,6 @@
 
   &.show {
     background: transparent;
-  }
-
-  &.navbar-toggler {
-    em {
-      font-style: normal;
-      color: white;
-      font-size: $font-s-base;
-    }
   }
 
   &.btn-thumb {
@@ -80,6 +72,11 @@
       height: $s-button;
       padding: 0;
       transition: $tr-normal;
+
+      @media (max-width: $break-sm) {
+        width: $s-button-mobile;
+        height: $s-button-mobile;
+      }
 
       svg {
         transition: $tr-normal;
@@ -215,6 +212,18 @@
       border-radius: 0;
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+
+  &.navbar-toggler {
+    em {
+      font-style: normal;
+      color: $primary;
+      font-size: $font-s-big;
+    }
+
+    svg {
+      max-width: 23px;
     }
   }
 }

@@ -7,6 +7,18 @@
     background: transparent;
     margin-bottom: $s-medium;
     border-width: 1.5px;
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 60%;
+    }
+
+    @media (max-width: $break-sm) {
+      margin-bottom: $s-normal;
+    }
 
     &.disabled {
       .card-img {
@@ -16,8 +28,12 @@
     }
 
     img {
-      max-width: 100%;
+      position: absolute;
       border-radius: $br-normal;
+      width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
     }
 
     .card-save-type {
@@ -52,6 +68,10 @@
         padding-top: $s-medium;
         background: $gradient-black;
         transition: $tr-normal;
+
+        @media (max-width: $break-sm) {
+          padding: $s-small;
+        }
 
         .card-text {
           color: $primary;
@@ -104,6 +124,10 @@
                 max-width: inherit;
                 margin-left: 0;
                 height: $s-extra;
+              }
+
+              @media (max-width: $break-sm) {
+                height: 38px;
               }
             }
 
@@ -246,7 +270,6 @@
     &.card-item--new {
       background: transparent;
       border-color: $white-med;
-      padding-bottom: 59%;
 
       .card-img-overlay {
         &.card-img-overlay--ui {
@@ -333,6 +356,10 @@
       .card-img-overlay {
         padding: $s-normal;
 
+        @media (max-width: $break-md) {
+          padding-bottom: $s-small;
+        }
+
         .nav {
           position: absolute;
           right: $s-small;
@@ -388,7 +415,7 @@
       padding: $s-big $s-extra $s-extra;
 
       @media (max-width: $break-sm) {
-        padding: $s-big $s-medium $s-extra;
+        padding: $s-medium $s-medium $s-normal;
       }
     }
   }
