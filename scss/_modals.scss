@@ -5,7 +5,7 @@
     .modal-dialog {
       .modal-content {
         padding-bottom: $s-big;
-  
+
         .modal-header {
           border-color: transparent;
           justify-content: center;
@@ -36,12 +36,17 @@
         }
 
         .modal-body {
-          width: 400px;
           max-width: 100%;
-          margin-left: auto;
-          margin-right: auto;
           color: $dark-grey;
           text-align: center;
+          padding: 0;
+
+          .modal-body {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: $s-normal;
+          }
 
           .share-list {
             display: flex;

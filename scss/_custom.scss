@@ -205,7 +205,12 @@ html {
 
         .col-panorama--bottom---items {
           position: relative;
-          flex: 0 0 1;
+          flex: 1;
+          height: 100%;
+
+          @media (max-width: $break-sm) {
+            flex: 0 0 100%;
+          }
 
           &::after {
             content: "";
@@ -495,7 +500,7 @@ html {
         margin-left: auto;
         margin-right: auto;
         padding-right: $s-big;
-        padding-left: $s-big ;
+        padding-left: $s-big;
 
         @media (max-width: $break-xxl) {
           max-width: 800px;
@@ -646,7 +651,9 @@ html {
             }
 
             &:horizontal {
-              display: none;
+              height: 3px;
+              background: transparent;
+              border-radius: $br-max;
             }
           }
 
@@ -741,7 +748,7 @@ html {
             margin-top: $s-medium;
             margin-left: auto;
             margin-right: auto;
-            
+
             @media (max-width: $break-md) {
               max-width: 100%;
             }
@@ -820,7 +827,7 @@ html {
           margin-right: auto;
           padding-top: $s-medium;
           padding-right: $s-big;
-          padding-left: $s-big ;
+          padding-left: $s-big;
 
           @media (max-width: $break-xxl) {
             max-width: 800px;
@@ -842,7 +849,6 @@ html {
 
           &.card-item {
             &.card-item--full {
-
               .card-img-overlay--title {
                 textarea {
                   max-width: inherit;
@@ -891,14 +897,29 @@ html {
     }
 
     .scroll-lateral {
-      overflow-x: auto;
+      overflow-x: scroll !important;
+      overflow-y: inherit !important;
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+
+        &:vertical {
+          width: 3px;
+          background: transparent;
+          border-radius: $br-max;
+        }
+      }
 
       @media (max-width: $break-sm) {
-        overflow-x: inherit;
-        overflow-y: auto;
+        overflow-x: inherit !important;
+        overflow-y: scroll !important;
         height: 250px;
-        padding-top: $s-normal;
-        padding-bottom: $s-normal;
+        padding-top: $s-normal !important;
+        padding-bottom: $s-normal !important;
+      }
+
+      &::after {
+        display: none !important;
       }
     }
 
@@ -941,6 +962,8 @@ html {
         @media (max-width: $break-sm) {
           flex-wrap: wrap;
           height: auto;
+          padding-left: 0;
+          justify-content: center;
         }
 
         .nav-item {
@@ -1098,6 +1121,35 @@ html {
 
     .logo-img--up {
       display: inline-flex;
+      flex-wrap: wrap;
+      margin-bottom: $s-small;
+      position: relative;
+
+      .btn-icon {
+        position: absolute;
+        right: $s-small;
+        top: $s-small;
+        opacity: 0;
+        transition: $tr-normal;
+        z-index: 1;
+      }
+
+      img {
+        width: auto;
+        height: auto;
+        max-width: 200px;
+        transition: $tr-normal;
+      }
+
+      &:hover {
+        .btn-icon {
+          opacity: 1;
+        }
+
+        img {
+          opacity: 0.2;
+        }
+      }
     }
 
     .thumb-img--up {
