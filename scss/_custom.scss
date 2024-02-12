@@ -46,6 +46,22 @@ html {
       }
     }
 
+    .d-desktop {
+      display: none;
+
+      @media (min-width: $break-md) {
+        display: block;
+      }
+    }
+
+    .d-mobile {
+      display: none !important;
+
+      @media (max-width: $break-md) {
+        display: block !important;
+      }
+    }
+
     main {
       height: 100%;
       display: flex;
@@ -58,6 +74,10 @@ html {
 
       @media (max-width: $break-lg) {
         padding-top: 37px;
+      }
+
+      @media (max-width: $break-md) {
+        background-size: cover;
       }
 
       h6 {
@@ -266,6 +286,10 @@ html {
           width: 30%;
           z-index: -1;
           background: $gradient-aside--2;
+
+          @media (max-width: $break-md) {
+            display: none;
+          }
         }
 
         &::before {
@@ -343,9 +367,10 @@ html {
           }
 
           textarea.form-noedit {
-            margin-left: $s-medium;
+            margin-left: 28px;
             text-shadow: 2px 2px 4px #22262c;
-            padding-left: 0;
+            padding: 5px;
+            margin-top: -8px;
           }
 
           .nav-overlay--row {
@@ -381,7 +406,7 @@ html {
             left: 0;
 
             @media (max-width: $break-sm) {
-              top: 0;
+              top: 12px;
             }
 
             .btn {
@@ -1084,11 +1109,26 @@ html {
     }
 
     .avatar-box {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: $s-small;
+      position: relative;
+
+      .btn-delete {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        opacity: 0;
+      }
+
+      &:hover {
+        .btn-delete {
+          opacity: 1;
+        }
+      }
     }
 
     .avatar {
@@ -1103,19 +1143,33 @@ html {
       border: solid 1px;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
 
       svg {
         transition: $tr-normal;
       }
 
-      img {
-        max-width: 100%;
+      .content-img {
+        object-fit: cover;
+        height: 100%;
+        opacity: 1;
+        transition: $tr-normal;
       }
 
       &:hover {
+        .content-img {
+          opacity: 0.4;
+        }
+
         svg {
           fill: $primary;
         }
+      }
+
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
       }
     }
 
@@ -1158,6 +1212,20 @@ html {
       overflow: hidden;
       position: relative;
 
+      .card-img {
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 60%;
+      }
+
       .thumb-img--up---ui {
         position: absolute;
         top: 0;
@@ -1168,7 +1236,7 @@ html {
         justify-content: flex-end;
         align-items: flex-start;
         padding: $s-normal;
-        min-height: 40%;
+        z-index: 2;
 
         ul {
           list-style: none;

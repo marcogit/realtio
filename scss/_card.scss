@@ -13,7 +13,7 @@
     &::after {
       content: "";
       display: block;
-      padding-bottom: 60%;
+      padding-bottom: 65%;
     }
 
     @media (max-width: $break-sm) {
@@ -27,13 +27,13 @@
       }
     }
 
-    img {
+    .card-img {
       position: absolute;
       border-radius: $br-normal;
       width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
     }
 
     .card-save-type {
@@ -50,6 +50,7 @@
       justify-content: center;
       box-shadow: $sh-card;
       transition: $tr-normal;
+      background: $black-med;
 
       svg,
       img {
@@ -70,7 +71,7 @@
         transition: $tr-normal;
 
         @media (max-width: $break-sm) {
-          padding: $s-small;
+          padding: 3px $s-small 0;
         }
 
         .card-text {
@@ -112,6 +113,8 @@
 
               @media (max-width: $break-md) {
                 max-width: inherit;
+                margin-bottom: -10px;
+                padding-left: 0;
               }
             }
 
@@ -124,6 +127,7 @@
                 max-width: inherit;
                 margin-left: 0;
                 height: $s-extra;
+                padding-left: 0;
               }
 
               @media (max-width: $break-sm) {
@@ -141,6 +145,8 @@
               @media (max-width: $break-md) {
                 opacity: 1;
                 top: -5px;
+                right: 0;
+                left: inherit;
               }
 
               .btn-ratio-dropdown {
@@ -357,7 +363,7 @@
         padding: $s-normal;
 
         @media (max-width: $break-md) {
-          padding-bottom: $s-small;
+          padding-bottom: 3px
         }
 
         .nav {

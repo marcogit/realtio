@@ -455,6 +455,34 @@ body {
         }
       }
 
+      &.btn-grey {
+        color: white;
+        text-shadow: $dark 1px 1px 1px;
+        span {
+          background: $dark-grey;
+          box-shadow: $sh-card;
+          color: white;
+
+          svg {
+            fill: white;
+          }
+        }
+
+        &:hover,
+        &:active {
+          color: white;
+
+          span {
+            opacity: 0.8;
+            color: white;
+
+            svg {
+              fill: white;
+            }
+          }
+        }
+      }
+
       &.dropdown-toggle {
         color: white;
         background: $black-min;

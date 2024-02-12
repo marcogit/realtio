@@ -115,6 +115,46 @@ textarea {
   &.form-control-sm {
     min-height: 100px;
   }
+
+  
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+
+    &:vertical {
+      width: 3px;
+      background: transparent;
+      border-radius: $br-max;
+    }
+
+    &:horizontal {
+      height: 3px;
+      background: transparent;
+      border-radius: $br-max;
+    }
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    &:increment {
+      display: none;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary-none;
+    border-radius: $br-max;
+    transition: $tr-normal;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: $s-small;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary-med;
+    }
+  }
 }
 
 input {

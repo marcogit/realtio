@@ -120,4 +120,18 @@
       }
     }
   }
+
+  .modal-dialog {
+    &.modal-lg,
+    &.modal-xl,
+    &.modal-md {
+      .modal-content {
+        .modal-body {
+          .modal-body {
+            width: inherit;
+          }
+        }
+      } 
+    }
+  }
 }

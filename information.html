@@ -69,7 +69,7 @@
               <a class="badge-link" href="#"
                 ><img src="images/icon-home.svg"
               /></a>
-              /
+              <div class="d-desktop">/</div>
               <span title="MY NEW TOUR IN FLORENCIA 22"
                 >MY NEW TOUR IN FLORENCIA 22</span
               >
@@ -397,9 +397,10 @@
               <div class="row">
                 <!-- ADD PHOTO -->
                 <div class="col-12">
+                  <!-- UI CARD TOP 
                   <div class="card card-item card-item--new">
                     <div class="card-img-overlay card-img-overlay--ui">
-                      <!-- UI CARD TOP-->
+                      
                       <div class="card-img-overlay--ui---top">
                         <button
                           class="btn btn-icon btn-outline-add"
@@ -429,7 +430,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- IMAGEN ya cargada
+                   END UI CARD TOP-->
+                  <!-- IMAGEN ya cargada -->
                   <div class="thumb-img--up mb-3">
                     <div class="thumb-img--up---ui">
                       <ul>
@@ -480,12 +482,65 @@
                       </ul>
                     </div>
                     <img
-                      src="https://picsum.photos/id/42/1024/600"
+                      src="https://picsum.photos/id/42/1024/800"
                       class="card-img"
                       alt="thumbnail_example"
                     />
                   </div>
-                   END IMAGEN ya cargada-->
+                  <!-- END IMAGEN ya cargada-->
+                </div>
+                <div class="col-map mt-3 mb-4 d-mobile">
+                  <div class="col-map--header">
+                    <label for="input-a-01" class="form-label">Location:</label>
+                  </div>
+                  <div class="col-map--body mb-2">
+                    <div class="ratio ratio-100">
+                      <div class="ratio-avise">PLEASE ENTER AN ADDRESS</div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.990287762106!2d-3.626291222406732!3d37.18094109705587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1680166848739!5m2!1ses!2ses"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="col-map--footer">
+                    <div class="input-group mb-2">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="input-a-01"
+                        placeholder="Enter property address..."
+                      />
+                      <button class="btn btn-outline-secondary btn-group-fix">
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16.44"
+                            height="12"
+                            viewBox="0 0 10.962 8"
+                          >
+                            <path
+                              d="M5724.259,3090.787a4.035,4.035,0,0,1-4-4v-.562l-1,1-.487-.488,1.862-1.862,1.863,1.862-.488.488-1-1v.562a3.266,3.266,0,0,0,3.25,3.25,3.613,3.613,0,0,0,.688-.062,2.882,2.882,0,0,0,.612-.188l.538.538a3.489,3.489,0,0,1-.906.356A4.087,4.087,0,0,1,5724.259,3090.787Zm3.613-2.112-1.863-1.863.5-.5.988.988v-.513a3.266,3.266,0,0,0-3.25-3.25,3.314,3.314,0,0,0-.688.069,5.053,5.053,0,0,0-.612.169l-.538-.538a3.366,3.366,0,0,1,.907-.35,4.383,4.383,0,0,1,.931-.1,4.034,4.034,0,0,1,4,4v.538l1-1,.487.487Z"
+                              transform="translate(-5718.772 -3082.787)"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Show the exact location
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <!-- Property Details -->
                 <div class="col-12 mb-3">
@@ -685,7 +740,7 @@
             </div>
             <!-- END PHOTO AND PROPERTY -->
             <!-- MAP -->
-            <div class="col-md-4 col-padding--fix">
+            <div class="col-md-4 col-padding--fix d-desktop">
               <div class="col-map">
                 <div class="col-map--header">
                   <label for="input-a-01" class="form-label">Location:</label>
