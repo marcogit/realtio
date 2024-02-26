@@ -1079,9 +1079,9 @@ html {
             height: 70px;
           }
 
-          svg {
-            height: 20px;
-            width: 20px;
+          svg, img {
+            height: auto;
+            width: auto;
             animation: rotating 3s linear infinite;
           }
         }
@@ -1104,6 +1104,13 @@ html {
 
         &:hover {
           cursor: grab;
+        }
+
+        &.nav-link--panorama-icon {
+          em {
+            width: 72px;
+            height: 72px;
+          }
         }
       }
     }
