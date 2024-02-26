@@ -230,6 +230,8 @@
 
 .dropdown-menu {
   padding: $s-min;
+  max-height: 200px;
+  overflow-y: scroll;
 
   li {
     .dropdown-item {
