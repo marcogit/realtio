@@ -643,6 +643,10 @@ body {
 
         &:hover {
           border-color: $primary;
+
+          @media (max-width: $break-md) {
+            border-color: transparent;
+          }
         }
 
         &:focus {
