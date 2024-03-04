@@ -152,10 +152,6 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
-
-      @media (max-width: $break-lg) {
-        display: none;
-      }
     }
 
     &.main-header--noshadow {

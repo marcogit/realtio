@@ -108,13 +108,34 @@
               </div>
             </div>
             <div class="col-auto col-user">
-              <button class="btn btn-thumb btn-outline-light" title="New Tour">
+              <button class="btn btn-thumb btn-user btn-outline-light" title="New Tour" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>
                   <img src="images/user-thumb.svg" />
                 </span>
                 <strong>JOHN DOE</strong>
               </button>
-              <button class="btn btn-icon btn-icon--small" title="view">
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu--user">
+                <li>
+                  <h6 class="dropdown-header">Idiomas:</h6>
+                </li>
+                <div class="dropdown-menu--user__language-list">
+                  <li><a class="dropdown-item dropdown-item--language active" href="#">Español <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z"/></svg></a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Inglés</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Alemán</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Francés</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Portugués</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Griego</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Holandés</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Japonés</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Ruso</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Turco</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Árabe</a></li>
+                  <li><a class="dropdown-item dropdown-item--language" href="#">Chino</a></li>
+                </div>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item dropdown-item--logout" href="#" role="button">Logout</a></li>
+              </ul>
+              <!-- <button class="btn btn-icon btn-icon--small" title="view">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +156,7 @@
                     </g>
                   </svg>
                 </span>
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
