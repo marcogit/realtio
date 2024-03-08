@@ -8,6 +8,14 @@
   border-radius: $br-normal;
   padding: 10px $s-normal;
 
+  &.show {
+    border-color: transparent;
+  }
+
+  &.disabled {
+    border-color: transparent;
+  }
+
   &.nav-link {
     text-align: left;
     justify-content: flex-start;
@@ -68,7 +76,9 @@
         height: $s-button-mobile;
       }
 
-      svg {
+      svg,
+      img {
+        max-width: 100%;
         transition: $tr-normal;
       }
 
@@ -331,6 +341,19 @@
       overflow-y: auto;
       margin-bottom: -3px;
       padding-bottom: 3px;
+    }
+  }
+
+  &.dropdown-menu--transparent {
+    max-height: inherit;
+    overflow: inherit;
+    background: transparent;
+    padding: 0;
+    border-color: transparent;
+    gap: $s-small;
+
+    li {
+      margin-bottom: $s-small;
     }
   }
 }

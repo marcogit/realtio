@@ -152,6 +152,7 @@ header {
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
+      padding-left: $s-small;
     }
 
     &.main-header--noshadow {

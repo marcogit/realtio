@@ -185,6 +185,12 @@ html {
       .col-panorama--iframe {
         padding: 0;
         height: calc(100% - 150px);
+        transition: $tr-normal;
+
+        &.panel-off {
+          height: 0;
+          overflow: hidden;
+        }
 
         @media (max-width: $break-sm) {
           flex: 0 0 100%;
@@ -200,6 +206,23 @@ html {
       .col-panorama--bottom {
         height: 150px;
         background: $gradient--panorama-bottom;
+        transition: $tr-normal;
+
+        .col-panorama--bottom-control {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          align-items: center;
+          justify-content: center;
+          padding: $s-small;
+          background: $gradient-bottom;
+
+          &.display {
+            display: flex;
+          }
+        }
 
         @media (max-width: $break-sm) {
           height: 250px;
@@ -217,9 +240,7 @@ html {
 
         .btn-panorama--add {
           @media (max-width: $break-sm) {
-            position: fixed;
-            bottom: 115px;
-            left: calc(50% - 26px);
+            display: none;
           }
         }
 
@@ -244,6 +265,18 @@ html {
 
             @media (max-width: $break-sm) {
               display: none;
+            }
+          }
+        }
+
+        &.panel-full {
+          height: 100%;
+
+          & > .h-100 {
+            height: 100% !important;
+
+            .scroll-lateral {
+              height: 100% !important;
             }
           }
         }
@@ -379,8 +412,7 @@ html {
             top: $s-normal;
 
             @media (max-width: $break-sm) {
-              top: 0;
-              right: 0;
+              display: none;
             }
           }
 
@@ -430,15 +462,11 @@ html {
           .btn {
             strong {
               font-weight: $f-weight--regular;
-
-              @media (max-width: $break-sm) {
-                display: none;
-              }
             }
           }
 
           @media (max-width: $break-sm) {
-            padding: 0;
+            display: none;
           }
         }
 
@@ -464,7 +492,40 @@ html {
           }
 
           @media (max-width: $break-sm) {
-            padding: 0;
+            display: none;
+          }
+        }
+
+        .ratio-bottom {
+          position: absolute;
+          z-index: 3;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: inherit;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          padding: $s-normal;
+          display: none;
+
+          @media (max-width: $break-sm) {
+            display: flex;
+          }
+          
+
+          .ratio-bottom--left {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            gap: $s-small;
+          }
+
+          .ratio-bottom--right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: $s-small;
           }
         }
 
