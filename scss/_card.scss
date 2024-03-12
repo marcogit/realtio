@@ -121,7 +121,7 @@
 
             .form-control-sm {
               margin-left: 24px;
-              padding: $s-small;
+              padding: 2px $s-small 0;
               max-width: 78%;
 
               @media (max-width: $break-md) {
