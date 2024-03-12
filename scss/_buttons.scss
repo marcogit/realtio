@@ -246,8 +246,12 @@
 
 .dropdown-menu {
   padding: $s-min;
-  max-height: 175px;
+  max-height: 300px;
   overflow-y: scroll;
+
+  @media (max-width: $break-md) {
+    max-height: 175px;
+  }
 
   li {
     .dropdown-divider {
