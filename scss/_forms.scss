@@ -24,7 +24,6 @@
     padding-top: 0;
     padding-bottom: 0;
     height: auto;
-    text-transform: uppercase;
     min-height: inherit;
 
     &.form-noedit {
@@ -33,6 +32,28 @@
       max-height: $s-big;
     }
 
+    @media (max-width: $break-sm) {
+      font-size: $font-title-card-small;
+      padding-top: $s-small;
+      padding-top: $s-small;
+    }
+  }
+
+  &.form-control-md {
+    font-size: $font-title-card;
+    font-weight: $f-weight--bold;
+    line-height: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    min-height: inherit;
+  
+    &.form-noedit {
+      min-height: inherit;
+      padding: 0;
+      max-height: $s-big;
+    }
+  
     @media (max-width: $break-sm) {
       font-size: $font-title-card-small;
       padding-top: $s-small;

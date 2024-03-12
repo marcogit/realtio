@@ -107,7 +107,8 @@
             transition: $tr-normal;
             position: relative;
 
-            .form-control-lg {
+            .form-control-lg,
+            .form-control-md {
               padding-left: $s-medium;
               max-width: 80%;
 
@@ -119,7 +120,7 @@
             }
 
             .form-control-sm {
-              margin-left: 28px;
+              margin-left: 24px;
               padding: $s-small;
               max-width: 78%;
 
@@ -364,7 +365,7 @@
         padding: $s-normal;
 
         @media (max-width: $break-md) {
-          padding-bottom: 3px
+          padding-bottom: 13px;
         }
 
         .nav {
