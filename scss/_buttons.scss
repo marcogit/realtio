@@ -246,9 +246,10 @@
 
 .dropdown-menu {
   padding: $s-min;
-  max-height: 300px;
+  max-height: 400px;
   overflow-x: hidden;
   overflow-y: scroll;
+  box-shadow: $sh-card;
 
   &::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -286,7 +287,7 @@
   }
 
   @media (max-width: $break-md) {
-    max-height: 175px;
+    max-height: 250px;
   }
 
   li {
@@ -377,7 +378,7 @@
     overflow: inherit;
 
     .dropdown-menu--user__language-list {
-      max-height: 172px;
+      max-height: 250px;
       margin-bottom: -3px;
       padding-bottom: 3px;
 
