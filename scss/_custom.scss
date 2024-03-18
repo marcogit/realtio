@@ -754,6 +754,10 @@ html {
             background-color: $secondary-none;
             border-radius: $br-max;
             transition: $tr-normal;
+
+            @media (max-width: $break-sm) {
+              background-color: $secondary-med;
+            }
           }
 
           &::-webkit-scrollbar-track {
@@ -1047,6 +1051,7 @@ html {
         padding: 0 0 0 $s-normal;
 
         @media (max-width: $break-sm) {
+          padding-right: $s-big;
           flex-wrap: wrap;
           height: auto;
           padding-left: 0;

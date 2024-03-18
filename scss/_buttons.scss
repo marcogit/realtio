@@ -111,6 +111,48 @@
         height: $s-medium;
       }
     }
+
+    &.btn-order {
+      display: none;
+
+      span {
+        overflow: hidden;
+        align-items: flex-start;
+
+        img {
+          width: auto;
+          height: auto;
+          transform: translateY(6px);
+          transition: $tr-normal;
+        }
+      }
+
+      &:hover {
+        border-color: transparent;
+        span {
+          background: $my-light !important;
+        }
+      }
+
+      &.active {
+        border-color: transparent;
+        span {
+          background: $alternative !important;
+
+          img {
+            transform: translateY(-21px);
+          }
+        }
+      }
+
+      @media (max-width: $break-sm) {
+        display: flex;
+        position: fixed;
+        bottom: $s-normal;
+        right: $s-normal;
+        z-index: 500;
+      }
+    }
   }
 
   &.btn-thumb {
@@ -429,6 +471,7 @@
     padding: 0;
     border-color: transparent;
     gap: $s-small;
+    box-shadow: none;
 
     li {
       margin-bottom: $s-small;
